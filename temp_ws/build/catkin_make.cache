@@ -1,0 +1,2 @@
+trollnode-master
+-DCATKIN_DEVEL_PREFIX=/home/johannhk/prosjekt_ws/temp_ws/devel -DCMAKE_INSTALL_PREFIX=/home/johannhk/prosjekt_ws/temp_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/install
+
+Name: speech_processing
+Description: Description of speech_processing
+Version: 0.0.0
+Cflags: -I/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/install/include
+Libs: -L/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/install/lib 
+Requires: message_runtime

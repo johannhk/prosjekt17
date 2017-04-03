@@ -1,0 +1,2 @@
+speech_processing:trollnode-master
+-DCATKIN_DEVEL_PREFIX=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel -DCMAKE_INSTALL_PREFIX=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/install -G Unix Makefiles
