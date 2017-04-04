@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/johs/prosjekt/steinar-code/CyborgWorkspace/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/johs/prosjekt/steinar-code/CyborgWorkspace/src:$ROS_PACKAGE_PATH"

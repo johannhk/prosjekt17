@@ -40,10 +40,9 @@
 #include "trollnode/expression_templates.h" //File that contains the premade troll expressions
 
 // NETWORK DETAILS
-#define EXPRESSION_PORT		8888 //Port used to send expression messages to the Trollserver
-
-//IP adress of Trollserver
-#define DEFAULT_ADDRESS 	"129.241.154.72" 
+#define EXPRESSION_PORT		"8888" //Port used to send expression messages to the Trollserver
+#define DEFAULT_ADDRESS 	"192.168.1.40" 
+int socket_id;
 
 //Other defines
 #define NEUTRAL_INTENSITY 	0 //Intensity value of an action unit when relaxed/inactive/neutral.
@@ -62,16 +61,6 @@ enum class Direction {
 	Right,
 	Neutral
 };
-
-
-
-// TCP variables for expressions
-int 				exprSocket, exprPortNo;
-bool 				exprTCPInit = false;
-struct sockaddr_in 	exprServerAddr;
-struct hostent 		*exprServer;
-
-
 
 
 //Pointers to current and earlier expressions
@@ -165,7 +154,7 @@ std::string getAUName(int AU)
 
 
 // Function for setting the current expression pointer at the right expression container
-int set_current_expression(const std::string & expression)
+actionUnit* set_current_expression(const std::string & expression)
 {
 	static std::map< std::string, actionUnit * > lookup = {
 		{ "angry", angry },
@@ -182,13 +171,13 @@ int set_current_expression(const std::string & expression)
 	if (expression.compare("") != 0) {
 		auto it = lookup.find(expression);
 		if (it != lookup.end()) {
-			currentExpression = it->second;
+			return it->second;
 		} else {
 			ROS_ERROR("Did not recognize expression [%s], current expression not changed.",expression.c_str());
-			return -1;
+			return NULL;
 		}
 	}
-	return 0;
+	return NULL;
 }
 
 
@@ -215,12 +204,45 @@ std::string createAUString(int AU, float startIntensity, float stopIntensity, fl
 	
 }
 
+//connects to trollserver
+int connectToServer(const char* ip_address, const char* port_number)
+{
+	struct addrinfo hints, *res;
+	int status, socket_id;
+	//
+	memset(&hints, 0, sizeof (hints));
+	hints.ai_family = AF_UNSPEC;
+    hints.ai_socktype = SOCK_STREAM;
+	hints.ai_flags = AI_PASSIVE;
+	
+	//get address info of ip_address, fill up linked list of res
+	status = getaddrinfo(ip_address, port_number, &hints, &res);
+	if(status != 0) {
+        ROS_INFO("Error getaddrinfo: [%s]:", strerror(errno));
+        exit(1);
+    }   
+    
+    //get file descriptor(handle to input/output resource)
+    socket_id = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
+    if(socket_id < 0) {
+        ROS_INFO("Error socket %s", strerror(errno));
+        exit(2);
+    }
+    //connect socket_id to address
+    status = connect(socket_id, res->ai_addr, res->ai_addrlen);
+    if(status < 0) {
+        ROS_INFO("Error connect %s", strerror(errno));
+        exit(3);
+    }
+    ROS_INFO("CONNECTED TO TCPSERVER");
+    return socket_id;
+}
 
 
 
 
 // Creates a BL readable message containing the received expression and speech, and sends it over TCP to the Trollserver.
-void sendMsg( const trollnode::Expression::ConstPtr& msg)
+void sendMsg( const trollnode::Expression::ConstPtr& msg, int socket_id)
 {
 	std::string msgString;
 	
@@ -230,10 +252,8 @@ void sendMsg( const trollnode::Expression::ConstPtr& msg)
 	
 
 	//Setting pointers to the new expression/direction
-	set_current_expression(msg->expression);
+	currentExpression=set_current_expression(msg->expression);
 	lookingExpression=set_looking_direction(Direction::Up);
-	//set_look_at_direction(msg->look);
-	//setCurrentExpression(msg->expression); 
 
 	int k = 0;
 	bool foundDuplicateAU;
@@ -308,15 +328,15 @@ void sendMsg( const trollnode::Expression::ConstPtr& msg)
 
 	// insert speech at the end of the BL message
 	msgString.append(msg->speech.c_str());
+	std::cout<<msgString<<'\n';
 	
 	
 	// Sending the BL message over TCP
-	if ( send(exprSocket,msgString.c_str(),strlen(msgString.c_str()), 0 ) < 0)
+	if ( send(socket_id,msgString.c_str(),strlen(msgString.c_str()), 0 ) < 0)
 	{
 		
 		ROS_ERROR("ERROR writing to socket, errorno: [%s]", strerror(errno));
-	    close(exprSocket);
-	    exprTCPInit = false;
+	    close(socket_id);
 	}
 	else
 		ROS_INFO("Message succesfully sent");
@@ -331,64 +351,26 @@ void expressionHandler(const trollnode::Expression::ConstPtr& msg)
 	
 	ROS_INFO("Received Expression: [%s], speech: [%s], Direction: [%s]", msg->expression.c_str(), msg->speech.c_str(), msg->look.c_str());
 	
-	if ( (!(exprTCPInit)) ||  errno == ECONNRESET || errno == ETIMEDOUT || errno == EPIPE )
-	{
+	if(errno == ECONNRESET || errno == ETIMEDOUT || errno == EPIPE )
+		return;
 
-		ROS_INFO("Initializing TCP, errorno: [%s]", strerror(errno));
-		errno = 0;
-
-		//Setting up sockets and client
-		exprPortNo = EXPRESSION_PORT;
-		exprSocket = socket(AF_INET, SOCK_STREAM, 0);
-
-		if (exprSocket < 0)
-			ROS_ERROR("ERROR opening socket");
-
-		exprServer = gethostbyname(DEFAULT_ADDRESS);
-
-		if (exprServer == NULL) 
-		{
-			ROS_ERROR("ERROR, no such host\n");
-			exit(0);
-		}
-
-		bzero((char *) &exprServerAddr, sizeof(exprServerAddr));
-
-		exprServerAddr.sin_family = AF_INET;
-		exprServerAddr.sin_port = htons(exprPortNo);
-
-
-		bcopy((char *)exprServer->h_addr, (char *)&exprServerAddr.sin_addr.s_addr, exprServer->h_length);
-
-
-
-		//Connecting to Trollserver
-		if (connect(exprSocket,(struct sockaddr *) &exprServerAddr,sizeof(exprServerAddr)) < 0)
-		{
-			ROS_ERROR("ERROR connecting");
-			close(exprSocket);
-			exprTCPInit = false;
-		}
-		else
-		{
-			exprTCPInit = true;
-			ROS_INFO("Created connection to Trollserver");
-		}
-	}
-	
-	if(exprTCPInit)
-	{
-		sendMsg(msg);
-	}
-	else
-		ROS_INFO("TCP connection not established, message disregarded");
+	sendMsg(msg, socket_id);
 }
 
 
 int main(int argc, char *argv[])
 {
-	//cout>>"heyhey\n";
-	ROS_INFO("HEY\n");
+	//set up connection to trollserver
+
+	socket_id=connectToServer(DEFAULT_ADDRESS, EXPRESSION_PORT);
+
+
+	    
+    const char* msg="hello\0";
+    send(socket_id, msg, strlen(msg), 0);
+   
+
+    ROS_INFO("CONNECTED TO TCPSERVER");
 	ros::init(argc, argv, "setExpression");
 	ros::NodeHandle n;
 

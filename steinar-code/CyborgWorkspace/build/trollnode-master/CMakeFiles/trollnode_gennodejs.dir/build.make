@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/build
 
 # Utility rule file for trollnode_gennodejs.
 
@@ -63,10 +63,10 @@ trollnode-master/CMakeFiles/trollnode_gennodejs.dir/build: trollnode_gennodejs
 .PHONY : trollnode-master/CMakeFiles/trollnode_gennodejs.dir/build
 
 trollnode-master/CMakeFiles/trollnode_gennodejs.dir/clean:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/trollnode-master && $(CMAKE_COMMAND) -P CMakeFiles/trollnode_gennodejs.dir/cmake_clean.cmake
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/trollnode-master && $(CMAKE_COMMAND) -P CMakeFiles/trollnode_gennodejs.dir/cmake_clean.cmake
 .PHONY : trollnode-master/CMakeFiles/trollnode_gennodejs.dir/clean
 
 trollnode-master/CMakeFiles/trollnode_gennodejs.dir/depend:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/trollnode-master /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/trollnode-master /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/trollnode-master/CMakeFiles/trollnode_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johs/prosjekt/steinar-code/CyborgWorkspace/src /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/trollnode-master /home/johs/prosjekt/steinar-code/CyborgWorkspace/build /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/trollnode-master /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/trollnode-master/CMakeFiles/trollnode_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trollnode-master/CMakeFiles/trollnode_gennodejs.dir/depend
 

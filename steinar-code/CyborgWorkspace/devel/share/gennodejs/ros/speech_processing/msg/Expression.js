@@ -5,44 +5,63 @@
 
 "use strict";
 
-let _serializer = require('../base_serialize.js');
-let _deserializer = require('../base_deserialize.js');
-let _finder = require('../find.js');
+const _serializer = _ros_msg_utils.Serialize;
+const _arraySerializer = _serializer.Array;
+const _deserializer = _ros_msg_utils.Deserialize;
+const _arrayDeserializer = _deserializer.Array;
+const _finder = _ros_msg_utils.Find;
+const _getByteLength = _ros_msg_utils.getByteLength;
 
 //-----------------------------------------------------------
 
 class Expression {
-  constructor() {
-    this.speech = '';
-    this.expression = '';
+  constructor(initObj={}) {
+    if (initObj === null) {
+      // initObj === null is a special case for deserialization where we don't initialize fields
+      this.speech = null;
+      this.expression = null;
+    }
+    else {
+      if (initObj.hasOwnProperty('speech')) {
+        this.speech = initObj.speech
+      }
+      else {
+        this.speech = '';
+      }
+      if (initObj.hasOwnProperty('expression')) {
+        this.expression = initObj.expression
+      }
+      else {
+        this.expression = '';
+      }
+    }
   }
 
-  static serialize(obj, bufferInfo) {
+  static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type Expression
     // Serialize message field [speech]
-    bufferInfo = _serializer.string(obj.speech, bufferInfo);
+    bufferOffset = _serializer.string(obj.speech, buffer, bufferOffset);
     // Serialize message field [expression]
-    bufferInfo = _serializer.string(obj.expression, bufferInfo);
-    return bufferInfo;
+    bufferOffset = _serializer.string(obj.expression, buffer, bufferOffset);
+    return bufferOffset;
   }
 
-  static deserialize(buffer) {
+  static deserialize(buffer, bufferOffset=[0]) {
     //deserializes a message object of type Expression
-    let tmp;
     let len;
-    let data = new Expression();
+    let data = new Expression(null);
     // Deserialize message field [speech]
-    tmp = _deserializer.string(buffer);
-    data.speech = tmp.data;
-    buffer = tmp.buffer;
+    data.speech = _deserializer.string(buffer, bufferOffset);
     // Deserialize message field [expression]
-    tmp = _deserializer.string(buffer);
-    data.expression = tmp.data;
-    buffer = tmp.buffer;
-    return {
-      data: data,
-      buffer: buffer
-    }
+    data.expression = _deserializer.string(buffer, bufferOffset);
+    return data;
+  }
+
+  static getMessageSize(object) {
+    let length = 0;
+    length += object.speech.length;
+    length += object.expression.length;
+    return length + 8;
   }
 
   static datatype() {
@@ -65,6 +84,28 @@ class Expression {
     `;
   }
 
+  static Resolve(msg) {
+    // deep-construct a valid message object instance of whatever was passed in
+    if (typeof msg !== 'object' || msg === null) {
+      msg = {};
+    }
+    const resolved = new Expression(null);
+    if (msg.speech !== undefined) {
+      resolved.speech = msg.speech;
+    }
+    else {
+      resolved.speech = ''
+    }
+
+    if (msg.expression !== undefined) {
+      resolved.expression = msg.expression;
+    }
+    else {
+      resolved.expression = ''
+    }
+
+    return resolved;
+    }
 };
 
 module.exports = Expression;

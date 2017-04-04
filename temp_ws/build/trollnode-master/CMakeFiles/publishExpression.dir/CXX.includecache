@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/johannhk/prosjekt_ws/temp_ws/devel/include/trollnode/Expression.h
+/home/johs/prosjekt/temp_ws/devel/include/trollnode/Expression.h
 string
 -
 vector
@@ -22,11 +22,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/src/publishExpression.cpp
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/publishExpression.cpp
 ros/ros.h
-/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/src/ros/ros.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/ros/ros.h
 trollnode/Expression.h
-/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/src/trollnode/Expression.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/trollnode/Expression.h
 stdio.h
 -
 stdlib.h
@@ -36,22 +36,6 @@ unistd.h
 string.h
 -
 sstream
--
-
-/opt/ros/kinetic/include/XmlRpcDecl.h
-ros/macros.h
--
-
-/opt/ros/kinetic/include/XmlRpcValue.h
-XmlRpcDecl.h
-/opt/ros/kinetic/include/XmlRpcDecl.h
-map
--
-string
--
-vector
--
-time.h
 -
 
 /opt/ros/kinetic/include/ros/advertise_options.h
@@ -211,8 +195,8 @@ common.h
 /opt/ros/kinetic/include/ros/master.h
 forwards.h
 /opt/ros/kinetic/include/ros/forwards.h
-XmlRpcValue.h
-/opt/ros/kinetic/include/ros/XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
 common.h
 /opt/ros/kinetic/include/ros/common.h
 
@@ -323,7 +307,7 @@ common.h
 /opt/ros/kinetic/include/ros/common.h
 boost/bind.hpp
 -
-XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
 -
 
 /opt/ros/kinetic/include/ros/param.h
@@ -331,8 +315,8 @@ forwards.h
 /opt/ros/kinetic/include/ros/forwards.h
 common.h
 /opt/ros/kinetic/include/ros/common.h
-XmlRpcValue.h
-/opt/ros/kinetic/include/ros/XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
 vector
 -
 map
@@ -683,4 +667,20 @@ ros/forwards.h
 /opt/ros/kinetic/include/ros/ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
+ros/macros.h
+-
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+map
+-
+string
+-
+vector
+-
+time.h
+-
 

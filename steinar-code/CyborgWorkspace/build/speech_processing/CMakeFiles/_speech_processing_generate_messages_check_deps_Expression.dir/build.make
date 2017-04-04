@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/build
 
 # Utility rule file for _speech_processing_generate_messages_check_deps_Expression.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
 include speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/progress.make
 
 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py speech_processing /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg 
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py speech_processing /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg 
 
 _speech_processing_generate_messages_check_deps_Expression: speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression
 _speech_processing_generate_messages_check_deps_Expression: speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build.make
@@ -67,10 +67,10 @@ speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Exp
 .PHONY : speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build
 
 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/clean:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing && $(CMAKE_COMMAND) -P CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/cmake_clean.cmake
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing && $(CMAKE_COMMAND) -P CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/cmake_clean.cmake
 .PHONY : speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/clean
 
 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/depend:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johs/prosjekt/steinar-code/CyborgWorkspace/src /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing /home/johs/prosjekt/steinar-code/CyborgWorkspace/build /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/depend
 

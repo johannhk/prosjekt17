@@ -67,14 +67,14 @@ set(speech_processing_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(speech_processing_SOURCE_PREFIX /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing)
-  set(speech_processing_DEVEL_PREFIX /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel)
+  set(speech_processing_SOURCE_PREFIX /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing)
+  set(speech_processing_DEVEL_PREFIX /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel)
   set(speech_processing_INSTALL_PREFIX "")
   set(speech_processing_PREFIX ${speech_processing_DEVEL_PREFIX})
 else()
   set(speech_processing_SOURCE_PREFIX "")
   set(speech_processing_DEVEL_PREFIX "")
-  set(speech_processing_INSTALL_PREFIX /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/install)
+  set(speech_processing_INSTALL_PREFIX /home/johs/prosjekt/steinar-code/CyborgWorkspace/install)
   set(speech_processing_PREFIX ${speech_processing_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(speech_processing_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/include " STREQUAL " ")
+if(NOT "/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/include " STREQUAL " ")
   set(speech_processing_INCLUDE_DIRS "")
-  set(_include_dirs "/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/include")
+  set(_include_dirs "/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -103,7 +103,7 @@ if(NOT "/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/include " 
         message(FATAL_ERROR "Project 'speech_processing' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'viki <steinar.kraugerud@gmail.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'speech_processing' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/${idir}'.  Ask the maintainer 'viki <steinar.kraugerud@gmail.com>' to fix it.")
+      message(FATAL_ERROR "Project 'speech_processing' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/${idir}'.  Ask the maintainer 'viki <steinar.kraugerud@gmail.com>' to fix it.")
     endif()
     _list_append_unique(speech_processing_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -43,26 +43,26 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/build
 
 # Utility rule file for speech_processing_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/progress.make
 
-speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js
+speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs: /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js
 
 
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from speech_processing/Expression.msg"
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg -Ispeech_processing:/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p speech_processing -o /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js: /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from speech_processing/Expression.msg"
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg -Ispeech_processing:/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p speech_processing -o /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg
 
 speech_processing_generate_messages_nodejs: speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs
-speech_processing_generate_messages_nodejs: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js
+speech_processing_generate_messages_nodejs: /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/gennodejs/ros/speech_processing/msg/Expression.js
 speech_processing_generate_messages_nodejs: speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build.make
 
 .PHONY : speech_processing_generate_messages_nodejs
@@ -73,10 +73,10 @@ speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/buil
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build
 
 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/clean:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing && $(CMAKE_COMMAND) -P CMakeFiles/speech_processing_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing && $(CMAKE_COMMAND) -P CMakeFiles/speech_processing_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/clean
 
 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/depend:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johs/prosjekt/steinar-code/CyborgWorkspace/src /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing /home/johs/prosjekt/steinar-code/CyborgWorkspace/build /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/depend
 

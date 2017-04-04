@@ -1,8 +1,8 @@
-# Install script for directory: /home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master
+# Install script for directory: /home/johs/prosjekt/temp_ws/src/trollnode-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/johannhk/prosjekt_ws/temp_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/johs/prosjekt/temp_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode/msg" TYPE FILE FILES "/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/msg/Expression.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode/msg" TYPE FILE FILES "/home/johs/prosjekt/temp_ws/src/trollnode-master/msg/Expression.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode/cmake" TYPE FILE FILES "/home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnode-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode/cmake" TYPE FILE FILES "/home/johs/prosjekt/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnode-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/johannhk/prosjekt_ws/temp_ws/devel/include/trollnode")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/johs/prosjekt/temp_ws/devel/include/trollnode")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/johannhk/prosjekt_ws/temp_ws/devel/share/roseus/ros/trollnode")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/johs/prosjekt/temp_ws/devel/share/roseus/ros/trollnode")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/johannhk/prosjekt_ws/temp_ws/devel/share/common-lisp/ros/trollnode")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/johs/prosjekt/temp_ws/devel/share/common-lisp/ros/trollnode")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/johannhk/prosjekt_ws/temp_ws/devel/share/gennodejs/ros/trollnode")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/trollnode")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/johannhk/prosjekt_ws/temp_ws/devel/lib/python2.7/dist-packages/trollnode")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/trollnode")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/johannhk/prosjekt_ws/temp_ws/devel/lib/python2.7/dist-packages/trollnode")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/trollnode")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnode.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/johs/prosjekt/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnode.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode/cmake" TYPE FILE FILES "/home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnode-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode/cmake" TYPE FILE FILES "/home/johs/prosjekt/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnode-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode/cmake" TYPE FILE FILES
-    "/home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnodeConfig.cmake"
-    "/home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnodeConfig-version.cmake"
+    "/home/johs/prosjekt/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnodeConfig.cmake"
+    "/home/johs/prosjekt/temp_ws/build/trollnode-master/catkin_generated/installspace/trollnodeConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode" TYPE FILE FILES "/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trollnode" TYPE FILE FILES "/home/johs/prosjekt/temp_ws/src/trollnode-master/package.xml")
 endif()
 

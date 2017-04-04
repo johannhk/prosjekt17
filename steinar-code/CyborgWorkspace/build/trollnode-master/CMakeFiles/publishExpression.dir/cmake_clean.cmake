@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/publishExpression.dir/src/publishExpression.cpp.o"
-  "/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/lib/trollnode/publishExpression.pdb"
-  "/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/lib/trollnode/publishExpression"
+  "/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/lib/trollnode/publishExpression.pdb"
+  "/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/lib/trollnode/publishExpression"
 )
 
 # Per-language clean rules from dependency scanning.

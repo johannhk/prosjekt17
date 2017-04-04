@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/include/trollnode/Expression.h
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/include/trollnode/Expression.h
 string
 -
 vector
@@ -22,11 +22,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/trollnode-master/include/trollnode/expression_templates.h
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/trollnode-master/include/trollnode/expression_templates.h
 
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/trollnode-master/src/setExpression.cpp
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/trollnode-master/src/setExpression.cpp
 ros/ros.h
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/trollnode-master/src/ros/ros.h
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/trollnode-master/src/ros/ros.h
 ros/callback_queue.h
 -
 sstream
@@ -58,25 +58,9 @@ netdb.h
 trollnode/Expression.h
 -
 std_msgs/String.h
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/trollnode-master/src/std_msgs/String.h
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/trollnode-master/src/std_msgs/String.h
 trollnode/expression_templates.h
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/trollnode-master/src/trollnode/expression_templates.h
-
-/opt/ros/kinetic/include/XmlRpcDecl.h
-ros/macros.h
--
-
-/opt/ros/kinetic/include/XmlRpcValue.h
-XmlRpcDecl.h
-/opt/ros/kinetic/include/XmlRpcDecl.h
-map
--
-string
--
-vector
--
-time.h
--
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/trollnode-master/src/trollnode/expression_templates.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h
@@ -265,8 +249,8 @@ common.h
 /opt/ros/kinetic/include/ros/master.h
 forwards.h
 /opt/ros/kinetic/include/ros/forwards.h
-XmlRpcValue.h
-/opt/ros/kinetic/include/ros/XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
 common.h
 /opt/ros/kinetic/include/ros/common.h
 
@@ -377,7 +361,7 @@ common.h
 /opt/ros/kinetic/include/ros/common.h
 boost/bind.hpp
 -
-XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
 -
 
 /opt/ros/kinetic/include/ros/param.h
@@ -385,8 +369,8 @@ forwards.h
 /opt/ros/kinetic/include/ros/forwards.h
 common.h
 /opt/ros/kinetic/include/ros/common.h
-XmlRpcValue.h
-/opt/ros/kinetic/include/ros/XmlRpcValue.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
 vector
 -
 map
@@ -752,5 +736,21 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
+-
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
+ros/macros.h
+-
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+map
+-
+string
+-
+vector
+-
+time.h
 -
 

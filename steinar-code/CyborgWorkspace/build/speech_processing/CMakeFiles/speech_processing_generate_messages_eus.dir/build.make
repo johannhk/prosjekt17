@@ -43,32 +43,32 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/build
 
 # Utility rule file for speech_processing_generate_messages_eus.
 
 # Include the progress variables for this target.
 include speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/progress.make
 
-speech_processing/CMakeFiles/speech_processing_generate_messages_eus: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l
-speech_processing/CMakeFiles/speech_processing_generate_messages_eus: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/manifest.l
+speech_processing/CMakeFiles/speech_processing_generate_messages_eus: /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l
+speech_processing/CMakeFiles/speech_processing_generate_messages_eus: /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/manifest.l
 
 
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from speech_processing/Expression.msg"
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg -Ispeech_processing:/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p speech_processing -o /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l: /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from speech_processing/Expression.msg"
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/msg/Expression.msg -Ispeech_processing:/home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p speech_processing -o /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg
 
-/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for speech_processing"
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing speech_processing std_msgs
+/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for speech_processing"
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing speech_processing std_msgs
 
 speech_processing_generate_messages_eus: speech_processing/CMakeFiles/speech_processing_generate_messages_eus
-speech_processing_generate_messages_eus: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l
-speech_processing_generate_messages_eus: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/manifest.l
+speech_processing_generate_messages_eus: /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/msg/Expression.l
+speech_processing_generate_messages_eus: /home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/share/roseus/ros/speech_processing/manifest.l
 speech_processing_generate_messages_eus: speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build.make
 
 .PHONY : speech_processing_generate_messages_eus
@@ -79,10 +79,10 @@ speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build: 
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build
 
 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/clean:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing && $(CMAKE_COMMAND) -P CMakeFiles/speech_processing_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing && $(CMAKE_COMMAND) -P CMakeFiles/speech_processing_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/clean
 
 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/depend:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src/speech_processing /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johs/prosjekt/steinar-code/CyborgWorkspace/src /home/johs/prosjekt/steinar-code/CyborgWorkspace/src/speech_processing /home/johs/prosjekt/steinar-code/CyborgWorkspace/build /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/depend
 

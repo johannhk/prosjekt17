@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/temp_ws/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/temp_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/temp_ws/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/temp_ws/build
 
 # Utility rule file for std_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/build: std_msgs_g
 .PHONY : trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 
 trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	cd /home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/depend:
-	cd /home/johannhk/prosjekt_ws/temp_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johannhk/prosjekt_ws/temp_ws/src /home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master /home/johannhk/prosjekt_ws/temp_ws/build /home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master /home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johs/prosjekt/temp_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johs/prosjekt/temp_ws/src /home/johs/prosjekt/temp_ws/src/trollnode-master /home/johs/prosjekt/temp_ws/build /home/johs/prosjekt/temp_ws/build/trollnode-master /home/johs/prosjekt/temp_ws/build/trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trollnode-master/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 

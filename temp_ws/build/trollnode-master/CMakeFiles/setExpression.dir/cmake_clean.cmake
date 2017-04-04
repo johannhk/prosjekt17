@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/setExpression.dir/src/setExpression.cpp.o"
-  "/home/johannhk/prosjekt_ws/temp_ws/devel/lib/trollnode/setExpression.pdb"
-  "/home/johannhk/prosjekt_ws/temp_ws/devel/lib/trollnode/setExpression"
+  "/home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression.pdb"
+  "/home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression"
 )
 
 # Per-language clean rules from dependency scanning.

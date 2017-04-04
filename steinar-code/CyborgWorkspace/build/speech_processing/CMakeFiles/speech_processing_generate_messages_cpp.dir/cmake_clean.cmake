@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/speech_processing_generate_messages_cpp"
-  "/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/include/speech_processing/Expression.h"
+  "/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/include/speech_processing/Expression.h"
 )
 
 # Per-language clean rules from dependency scanning.

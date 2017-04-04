@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp
+Change Dir: /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_00e91/fast"
-/usr/bin/make -f CMakeFiles/cmTC_00e91.dir/build.make CMakeFiles/cmTC_00e91.dir/build
-make[1]: Entering directory '/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_00e91.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_00e91.dir/CheckSymbolExists.c.o   -c /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_00e91
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00e91.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_00e91.dir/CheckSymbolExists.c.o  -o cmTC_00e91 -rdynamic 
-CMakeFiles/cmTC_00e91.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_afc90/fast"
+/usr/bin/make -f CMakeFiles/cmTC_afc90.dir/build.make CMakeFiles/cmTC_afc90.dir/build
+make[1]: Entering directory '/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_afc90.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_afc90.dir/CheckSymbolExists.c.o   -c /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_afc90
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afc90.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_afc90.dir/CheckSymbolExists.c.o  -o cmTC_afc90 -rdynamic 
+CMakeFiles/cmTC_afc90.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_00e91.dir/build.make:97: recipe for target 'cmTC_00e91' failed
-make[1]: *** [cmTC_00e91] Error 1
-make[1]: Leaving directory '/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_00e91/fast' failed
-make: *** [cmTC_00e91/fast] Error 2
+CMakeFiles/cmTC_afc90.dir/build.make:97: recipe for target 'cmTC_afc90' failed
+make[1]: *** [cmTC_afc90] Error 1
+make[1]: Leaving directory '/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_afc90/fast' failed
+make: *** [cmTC_afc90/fast] Error 2
 
-File /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp
+Change Dir: /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d76c2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d76c2.dir/build.make CMakeFiles/cmTC_d76c2.dir/build
-make[1]: Entering directory '/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d76c2.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d76c2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d76c2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d76c2.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d76c2.dir/CheckFunctionExists.c.o  -o cmTC_d76c2 -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_3ad85/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3ad85.dir/build.make CMakeFiles/cmTC_3ad85.dir/build
+make[1]: Entering directory '/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ad85.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3ad85.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3ad85
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ad85.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3ad85.dir/CheckFunctionExists.c.o  -o cmTC_3ad85 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_d76c2.dir/build.make:97: recipe for target 'cmTC_d76c2' failed
-make[1]: *** [cmTC_d76c2] Error 1
-make[1]: Leaving directory '/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_d76c2/fast' failed
-make: *** [cmTC_d76c2/fast] Error 2
+CMakeFiles/cmTC_3ad85.dir/build.make:97: recipe for target 'cmTC_3ad85' failed
+make[1]: *** [cmTC_3ad85] Error 1
+make[1]: Leaving directory '/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3ad85/fast' failed
+make: *** [cmTC_3ad85/fast] Error 2
 
 

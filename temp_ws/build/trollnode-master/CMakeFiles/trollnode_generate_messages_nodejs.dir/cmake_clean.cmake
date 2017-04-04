@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/trollnode_generate_messages_nodejs"
-  "/home/johannhk/prosjekt_ws/temp_ws/devel/share/gennodejs/ros/trollnode/msg/Expression.js"
+  "/home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/trollnode/msg/Expression.js"
 )
 
 # Per-language clean rules from dependency scanning.

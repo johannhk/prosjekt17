@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/src/publishExpression.cpp" "/home/johannhk/prosjekt_ws/temp_ws/build/trollnode-master/CMakeFiles/publishExpression.dir/src/publishExpression.cpp.o"
+  "/home/johs/prosjekt/temp_ws/src/trollnode-master/src/publishExpression.cpp" "/home/johs/prosjekt/temp_ws/build/trollnode-master/CMakeFiles/publishExpression.dir/src/publishExpression.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,11 +17,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/johannhk/prosjekt_ws/temp_ws/devel/include"
+  "/home/johs/prosjekt/temp_ws/devel/include"
   "/opt/ros/kinetic/include"
-  "/opt/ros/kinetic/include/opencv-3.1.0-dev/opencv"
-  "/opt/ros/kinetic/include/opencv-3.1.0-dev"
-  "/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/opt/ros/kinetic/include/opencv-3.2.0-dev"
+  "/opt/ros/kinetic/include/opencv-3.2.0-dev/opencv"
+  "/home/johs/prosjekt/temp_ws/src/trollnode-master/include"
   )
 
 # Targets to which this target links.

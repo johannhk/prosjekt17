@@ -67,14 +67,14 @@ set(trollnode_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(trollnode_SOURCE_PREFIX /home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master)
-  set(trollnode_DEVEL_PREFIX /home/johannhk/prosjekt_ws/temp_ws/devel)
+  set(trollnode_SOURCE_PREFIX /home/johs/prosjekt/temp_ws/src/trollnode-master)
+  set(trollnode_DEVEL_PREFIX /home/johs/prosjekt/temp_ws/devel)
   set(trollnode_INSTALL_PREFIX "")
   set(trollnode_PREFIX ${trollnode_DEVEL_PREFIX})
 else()
   set(trollnode_SOURCE_PREFIX "")
   set(trollnode_DEVEL_PREFIX "")
-  set(trollnode_INSTALL_PREFIX /home/johannhk/prosjekt_ws/temp_ws/install)
+  set(trollnode_INSTALL_PREFIX /home/johs/prosjekt/temp_ws/install)
   set(trollnode_PREFIX ${trollnode_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(trollnode_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/johannhk/prosjekt_ws/temp_ws/devel/include;/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/include " STREQUAL " ")
+if(NOT "/home/johs/prosjekt/temp_ws/devel/include;/home/johs/prosjekt/temp_ws/src/trollnode-master/include " STREQUAL " ")
   set(trollnode_INCLUDE_DIRS "")
-  set(_include_dirs "/home/johannhk/prosjekt_ws/temp_ws/devel/include;/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/include")
+  set(_include_dirs "/home/johs/prosjekt/temp_ws/devel/include;/home/johs/prosjekt/temp_ws/src/trollnode-master/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -103,7 +103,7 @@ if(NOT "/home/johannhk/prosjekt_ws/temp_ws/devel/include;/home/johannhk/prosjekt
         message(FATAL_ERROR "Project 'trollnode' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'Havard Svoen <havard.svoen@gmail.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'trollnode' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/${idir}'.  Ask the maintainer 'Havard Svoen <havard.svoen@gmail.com>' to fix it.")
+      message(FATAL_ERROR "Project 'trollnode' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/johs/prosjekt/temp_ws/src/trollnode-master/${idir}'.  Ask the maintainer 'Havard Svoen <havard.svoen@gmail.com>' to fix it.")
     endif()
     _list_append_unique(trollnode_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/johannhk/prosjekt_ws/temp_ws/devel/lib;/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/johs/prosjekt/temp_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,8 +1,8 @@
-prefix=/home/johannhk/prosjekt_ws/temp_ws/devel
+prefix=/home/johs/prosjekt/temp_ws/devel
 
 Name: trollnode
 Description: Description of trollnode
 Version: 1.0.0
-Cflags: -I/home/johannhk/prosjekt_ws/temp_ws/devel/include -I/home/johannhk/prosjekt_ws/temp_ws/src/trollnode-master/include
-Libs: -L/home/johannhk/prosjekt_ws/temp_ws/devel/lib -ltrollnode
+Cflags: -I/home/johs/prosjekt/temp_ws/devel/include -I/home/johs/prosjekt/temp_ws/src/trollnode-master/include
+Libs: -L/home/johs/prosjekt/temp_ws/devel/lib -ltrollnode
 Requires: roscpp rospy std_msgs geometry_msgs sensor_msgs image_transport cv_bridge message_runtime

@@ -1,8 +1,8 @@
-prefix=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel
+prefix=/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel
 
 Name: speech_processing
 Description: Description of speech_processing
 Version: 0.0.0
-Cflags: -I/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/include
-Libs: -L/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/devel/lib 
+Cflags: -I/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/include
+Libs: -L/home/johs/prosjekt/steinar-code/CyborgWorkspace/devel/lib 
 Requires: message_runtime

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/trollnode_generate_messages_py"
-  "/home/johannhk/prosjekt_ws/temp_ws/devel/lib/python2.7/dist-packages/trollnode/msg/_Expression.py"
-  "/home/johannhk/prosjekt_ws/temp_ws/devel/lib/python2.7/dist-packages/trollnode/msg/__init__.py"
+  "/home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/trollnode/msg/_Expression.py"
+  "/home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/trollnode/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

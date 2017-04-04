@@ -1,70 +1,65 @@
-//tcp.server - general
 #include <stdio.h>
-#include <string>
-#include <cstring>
 #include <stdlib.h>
-#include <sys/types.h>
+#include <string.h>
+#include <unistd.h>
 #include <sys/socket.h>
+#include <sys/types.h>
 #include <netdb.h>
-//#include <string>
-
-//
-#define PORTNUMBER "8888"
-#define IPADDRESS "129.241.154.72"
+#include <arpa/inet.h>
 
 
-
-void tcp_init_server(const char* ip_address, char* port_number)
+int main(int argv, char * argc [])
 {
-  struct addrinfo hints, *socket_list;
-  struct sockaddr_storage their_addr;
-  socklen_t addr_size;
-  int status, sockfd, new_sockfd;
-
-
-
-  memset(&hints, 0, sizeof( hints ));
-  hints.ai_family=AF_UNSPEC; //dont vare whether IPv4 or 6
-  hints.ai_socktype = SOCK_STREAM; //TCP streaming socket
-  hints.ai_protocol = 0; //socket address with any protocol can be returned
-  //hints.ai_flags=AI_PASSIVE; //fills in ip if ip_adress=null and uncommented
+  /*
+    1. getaddrinfo
+    2. create a new socket
+    3. connect to the socket
+    4. send data
+  */  
   
+  //Variables Declaration
+  struct addrinfo hints, * res;
+  int status;
+  int socket_id;
+  
+  //clear hints
+  memset(&hints, 0, sizeof hints);
+  hints.ai_family = AF_UNSPEC;
+  hints.ai_socktype = SOCK_STREAM;
+  hints.ai_flags = AI_PASSIVE;
 
-  //load up adress structs with getaddrinfo in socket_list, list because for several IPs of name it creates a linked list
-  if ((status = getaddrinfo(ip_address, port_number, &hints, &socket_list)) != 0) {
-      fprintf(stderr, "getaddrinfo error: %s\n", gai_strerror(status));
-      exit(1);
+  status = getaddrinfo("192.168.1.40 ","8888", &hints, &res);
+  if(status != 0)
+  {
+    fprintf(stderr, "Error getaddrinfo\n");
+    exit(1);
+  }   
+  
+  socket_id = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
+  if(socket_id < 0)
+  {
+    fprintf(stderr, "Error socket \n");
+    exit(2);
   }
-
-  //creates a socket descripter with the arguments from socket_list in getaddrinfo
-  sockfd=socket(socket_list->ai_family, socket_list->ai_socktype, socket_list->ai_protocol);
-  //bind socket descriptor and listen with up to 10 connnections
-  bind(sockfd, socket_list->ai_addr, socket_list->ai_addrlen);
-  if ((status=listen(sockfd, 10))!=0) {
-      fprintf(stderr, "getaddrinfo error: %s\n", gai_strerror(status));
-      exit(1);
+  
+  status = connect(socket_id, res->ai_addr, res->ai_addrlen);
+  if(status < 0)
+  {
+    fprintf(stderr, "Error connect \n");
+    exit(3);
   }
-
-  addr_size = sizeof their_addr;
-  new_sockfd=accept(sockfd, (struct sockaddr *)&their_addr, &addr_size);
-  std::string buf;
-  int len;
-  recv(new_sockfd, buf, len, 0);
-  //CODE GOES HERE
-
-  freeaddrinfo(socket_list);
-}
-
-void tcp_init_client()
-{
-
-
-}
-
-int main()
-{
-  tcp_init_server(IPADDRESS, PORTNUMBER);
-
+  
+  int numbytes = 0;
+  char buf[10];
+  numbytes = recv(socket_id,buf,10,0);
+  if(numbytes == -1)
+  {
+    fprintf(stderr, "Error receive \n");
+    exit(4);
+  }
+  buf[numbytes] = '\0';
+  printf("Received %s \n", buf);  
+  freeaddrinfo(res);
+  close(socket_id); 
   return 0;
-
 }

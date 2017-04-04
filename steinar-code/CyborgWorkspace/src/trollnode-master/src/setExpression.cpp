@@ -43,7 +43,7 @@
 #define EXPRESSION_PORT		8888 //Port used to send expression messages to the Trollserver
 
 //IP adress of Trollserver
-#define DEFAULT_ADDRESS 	"129.241.154.37" 
+#define DEFAULT_ADDRESS 	"192.168.1.40" 
 
 //Other defines
 #define NEUTRAL_INTENSITY 	0 //Intensity value of an action unit when relaxed/inactive/neutral.

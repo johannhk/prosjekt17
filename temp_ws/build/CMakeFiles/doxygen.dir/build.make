@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/temp_ws/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/temp_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/temp_ws/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/temp_ws/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/johannhk/prosjekt_ws/temp_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johannhk/prosjekt_ws/temp_ws/src /home/johannhk/prosjekt_ws/temp_ws/src /home/johannhk/prosjekt_ws/temp_ws/build /home/johannhk/prosjekt_ws/temp_ws/build /home/johannhk/prosjekt_ws/temp_ws/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/johs/prosjekt/temp_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/johs/prosjekt/temp_ws/src /home/johs/prosjekt/temp_ws/src /home/johs/prosjekt/temp_ws/build /home/johs/prosjekt/temp_ws/build /home/johs/prosjekt/temp_ws/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

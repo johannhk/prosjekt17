@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/progress.marks
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/speech_processing/CMakeFiles/progress.marks
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/clean
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/preinstall
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/preinstall
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ speech_processing_generate_messages_py: speech_processing/CMakeFiles/speech_proc
 
 # fast build rule for target.
 speech_processing_generate_messages_py/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/build
 .PHONY : speech_processing_generate_messages_py/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_genpy.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_genpy.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_genpy.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_genpy.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ speech_processing_genpy: speech_processing/CMakeFiles/speech_processing_genpy.di
 
 # fast build rule for target.
 speech_processing_genpy/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_genpy.dir/build.make speech_processing/CMakeFiles/speech_processing_genpy.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_genpy.dir/build.make speech_processing/CMakeFiles/speech_processing_genpy.dir/build
 .PHONY : speech_processing_genpy/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ speech_processing_generate_messages_nodejs: speech_processing/CMakeFiles/speech_
 
 # fast build rule for target.
 speech_processing_generate_messages_nodejs/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build
 .PHONY : speech_processing_generate_messages_nodejs/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -222,12 +222,12 @@ std_msgs_generate_messages_py: speech_processing/CMakeFiles/std_msgs_generate_me
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ roscpp_generate_messages_py: speech_processing/CMakeFiles/roscpp_generate_messag
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ rosgraph_msgs_generate_messages_nodejs: speech_processing/CMakeFiles/rosgraph_ms
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ roscpp_generate_messages_cpp: speech_processing/CMakeFiles/roscpp_generate_messa
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_gennodejs.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_gennodejs.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_gennodejs.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -282,12 +282,12 @@ speech_processing_gennodejs: speech_processing/CMakeFiles/speech_processing_genn
 
 # fast build rule for target.
 speech_processing_gennodejs/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_gennodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_gennodejs.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_gennodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_gennodejs.dir/build
 .PHONY : speech_processing_gennodejs/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -297,12 +297,12 @@ rosgraph_msgs_generate_messages_cpp: speech_processing/CMakeFiles/rosgraph_msgs_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -312,12 +312,12 @@ std_msgs_generate_messages_cpp: speech_processing/CMakeFiles/std_msgs_generate_m
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -327,12 +327,12 @@ roscpp_generate_messages_eus: speech_processing/CMakeFiles/roscpp_generate_messa
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ rosgraph_msgs_generate_messages_py: speech_processing/CMakeFiles/rosgraph_msgs_g
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -357,12 +357,12 @@ rosgraph_msgs_generate_messages_lisp: speech_processing/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -372,12 +372,12 @@ roscpp_generate_messages_nodejs: speech_processing/CMakeFiles/roscpp_generate_me
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -387,12 +387,12 @@ rosgraph_msgs_generate_messages_eus: speech_processing/CMakeFiles/rosgraph_msgs_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -402,12 +402,12 @@ speech_processing_generate_messages_lisp: speech_processing/CMakeFiles/speech_pr
 
 # fast build rule for target.
 speech_processing_generate_messages_lisp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/build
 .PHONY : speech_processing_generate_messages_lisp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -417,12 +417,12 @@ std_msgs_generate_messages_nodejs: speech_processing/CMakeFiles/std_msgs_generat
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -432,12 +432,12 @@ speech_processing_generate_messages_eus: speech_processing/CMakeFiles/speech_pro
 
 # fast build rule for target.
 speech_processing_generate_messages_eus/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build
 .PHONY : speech_processing_generate_messages_eus/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -447,12 +447,12 @@ roscpp_generate_messages_lisp: speech_processing/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -462,12 +462,12 @@ std_msgs_generate_messages_eus: speech_processing/CMakeFiles/std_msgs_generate_m
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -477,12 +477,12 @@ std_msgs_generate_messages_lisp: speech_processing/CMakeFiles/std_msgs_generate_
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -492,12 +492,12 @@ speech_processing_generate_messages: speech_processing/CMakeFiles/speech_process
 
 # fast build rule for target.
 speech_processing_generate_messages/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages.dir/build
 .PHONY : speech_processing_generate_messages/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/rule
 .PHONY : speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/rule
 
 # Convenience name for target.
@@ -507,12 +507,12 @@ _speech_processing_generate_messages_check_deps_Expression: speech_processing/CM
 
 # fast build rule for target.
 _speech_processing_generate_messages_check_deps_Expression/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build.make speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build.make speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build
 .PHONY : _speech_processing_generate_messages_check_deps_Expression/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -522,12 +522,12 @@ speech_processing_generate_messages_cpp: speech_processing/CMakeFiles/speech_pro
 
 # fast build rule for target.
 speech_processing_generate_messages_cpp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/build
 .PHONY : speech_processing_generate_messages_cpp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_genlisp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_genlisp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_genlisp.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_genlisp.dir/rule
 
 # Convenience name for target.
@@ -537,12 +537,12 @@ speech_processing_genlisp: speech_processing/CMakeFiles/speech_processing_genlis
 
 # fast build rule for target.
 speech_processing_genlisp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_genlisp.dir/build.make speech_processing/CMakeFiles/speech_processing_genlisp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_genlisp.dir/build.make speech_processing/CMakeFiles/speech_processing_genlisp.dir/build
 .PHONY : speech_processing_genlisp/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_geneus.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_geneus.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_geneus.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_geneus.dir/rule
 
 # Convenience name for target.
@@ -552,12 +552,12 @@ speech_processing_geneus: speech_processing/CMakeFiles/speech_processing_geneus.
 
 # fast build rule for target.
 speech_processing_geneus/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_geneus.dir/build.make speech_processing/CMakeFiles/speech_processing_geneus.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_geneus.dir/build.make speech_processing/CMakeFiles/speech_processing_geneus.dir/build
 .PHONY : speech_processing_geneus/fast
 
 # Convenience name for target.
 speech_processing/CMakeFiles/speech_processing_gencpp.dir/rule:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_gencpp.dir/rule
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_gencpp.dir/rule
 .PHONY : speech_processing/CMakeFiles/speech_processing_gencpp.dir/rule
 
 # Convenience name for target.
@@ -567,7 +567,7 @@ speech_processing_gencpp: speech_processing/CMakeFiles/speech_processing_gencpp.
 
 # fast build rule for target.
 speech_processing_gencpp/fast:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_gencpp.dir/build.make speech_processing/CMakeFiles/speech_processing_gencpp.dir/build
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(MAKE) -f speech_processing/CMakeFiles/speech_processing_gencpp.dir/build.make speech_processing/CMakeFiles/speech_processing_gencpp.dir/build
 .PHONY : speech_processing_gencpp/fast
 
 # Help Target
@@ -621,6 +621,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/johs/prosjekt/steinar-code/CyborgWorkspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

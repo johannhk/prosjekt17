@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/johannhk/prosjekt_ws/temp_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/johannhk/prosjekt_ws/temp_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/johannhk/prosjekt_ws/temp_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/johannhk/prosjekt_ws/temp_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/johs/prosjekt/temp_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/johs/prosjekt/temp_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/johs/prosjekt/temp_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/johs/prosjekt/temp_ws/src:$ROS_PACKAGE_PATH"

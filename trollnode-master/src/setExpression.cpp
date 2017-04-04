@@ -436,7 +436,7 @@ void expressionHandler(const trollnode::Expression::ConstPtr& msg)
 	
 	ROS_INFO("Received Expression: [%s], speech: [%s], Direction: [%s]", msg->expression.c_str(), msg->speech.c_str(), msg->look.c_str());
 	
-	if ( (!(exprTCPInit)) ||  errno == ECONNRESET || errno == ETIMEDOUT || errno == EPIPE )
+	if ( errno == ECONNRESET || errno == ETIMEDOUT || errno == EPIPE )
 	{
 
 		ROS_INFO("Initializing TCP, errorno: [%s]", strerror(errno));

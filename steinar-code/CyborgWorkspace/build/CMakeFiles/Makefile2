@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/src
+CMAKE_SOURCE_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
+CMAKE_BINARY_DIR = /home/johs/prosjekt/steinar-code/CyborgWorkspace/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/clean_test_results.dir
@@ -66,14 +66,14 @@ CMAKE_BINARY_DIR = /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target clean_test_results"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -98,14 +98,14 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -130,14 +130,14 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/download_extra_data.dir/all:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target download_extra_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target download_extra_data"
 .PHONY : CMakeFiles/download_extra_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : CMakeFiles/download_extra_data.dir/rule
 
 # Convenience name for target.
@@ -162,14 +162,14 @@ clean: CMakeFiles/download_extra_data.dir/clean
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -194,14 +194,14 @@ clean: CMakeFiles/tests.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -245,14 +245,14 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=1,2 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=1,2 "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -277,14 +277,14 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=3,4 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=3,4 "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -354,14 +354,14 @@ speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/all: spe
 speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/all: speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=16,17 "Built target speech_processing_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=16,17 "Built target speech_processing_generate_messages_py"
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -386,14 +386,14 @@ clean: speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/c
 speech_processing/CMakeFiles/speech_processing_genpy.dir/all: speech_processing/CMakeFiles/speech_processing_generate_messages_py.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_genpy.dir/build.make speech_processing/CMakeFiles/speech_processing_genpy.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_genpy.dir/build.make speech_processing/CMakeFiles/speech_processing_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_genpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_genpy"
 .PHONY : speech_processing/CMakeFiles/speech_processing_genpy.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_genpy.dir/rule
 
 # Convenience name for target.
@@ -419,14 +419,14 @@ speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/all:
 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/all: speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=15 "Built target speech_processing_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=15 "Built target speech_processing_generate_messages_nodejs"
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -451,14 +451,14 @@ clean: speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.d
 speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -483,14 +483,14 @@ clean: speech_processing/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -515,14 +515,14 @@ clean: speech_processing/CMakeFiles/roscpp_generate_messages_py.dir/clean
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -547,14 +547,14 @@ clean: speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/c
 speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -579,14 +579,14 @@ clean: speech_processing/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 speech_processing/CMakeFiles/speech_processing_gennodejs.dir/all: speech_processing/CMakeFiles/speech_processing_generate_messages_nodejs.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_gennodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_gennodejs.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_gennodejs.dir/build.make speech_processing/CMakeFiles/speech_processing_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_gennodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_gennodejs"
 .PHONY : speech_processing/CMakeFiles/speech_processing_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_gennodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -611,14 +611,14 @@ clean: speech_processing/CMakeFiles/speech_processing_gennodejs.dir/clean
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -643,14 +643,14 @@ clean: speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clea
 speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -675,14 +675,14 @@ clean: speech_processing/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -707,14 +707,14 @@ clean: speech_processing/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -739,14 +739,14 @@ clean: speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -771,14 +771,14 @@ clean: speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cle
 speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -803,14 +803,14 @@ clean: speech_processing/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -836,14 +836,14 @@ speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/all: s
 speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/all: speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=14 "Built target speech_processing_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=14 "Built target speech_processing_generate_messages_lisp"
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -868,14 +868,14 @@ clean: speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir
 speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -901,14 +901,14 @@ speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/all: sp
 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/all: speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=12,13 "Built target speech_processing_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=12,13 "Built target speech_processing_generate_messages_eus"
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -933,14 +933,14 @@ clean: speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/
 speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -965,14 +965,14 @@ clean: speech_processing/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -997,14 +997,14 @@ clean: speech_processing/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1033,7 +1033,7 @@ speech_processing/CMakeFiles/speech_processing_generate_messages.dir/all: speech
 speech_processing/CMakeFiles/speech_processing_generate_messages.dir/all: speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_generate_messages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_generate_messages"
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages.dir/all
 
 # Include target in all.
@@ -1043,9 +1043,9 @@ all: speech_processing/CMakeFiles/speech_processing_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -1070,14 +1070,14 @@ clean: speech_processing/CMakeFiles/speech_processing_generate_messages.dir/clea
 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all:
 	$(MAKE) -f speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build.make speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build.make speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target _speech_processing_generate_messages_check_deps_Expression"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target _speech_processing_generate_messages_check_deps_Expression"
 .PHONY : speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/rule
 
 # Convenience name for target.
@@ -1103,14 +1103,14 @@ speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/all: sp
 speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/all: speech_processing/CMakeFiles/_speech_processing_generate_messages_check_deps_Expression.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/build.make speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=11 "Built target speech_processing_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=11 "Built target speech_processing_generate_messages_cpp"
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1135,14 +1135,14 @@ clean: speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/
 speech_processing/CMakeFiles/speech_processing_genlisp.dir/all: speech_processing/CMakeFiles/speech_processing_generate_messages_lisp.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_genlisp.dir/build.make speech_processing/CMakeFiles/speech_processing_genlisp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_genlisp.dir/build.make speech_processing/CMakeFiles/speech_processing_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_genlisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_genlisp"
 .PHONY : speech_processing/CMakeFiles/speech_processing_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_genlisp.dir/rule
 
 # Convenience name for target.
@@ -1167,14 +1167,14 @@ clean: speech_processing/CMakeFiles/speech_processing_genlisp.dir/clean
 speech_processing/CMakeFiles/speech_processing_geneus.dir/all: speech_processing/CMakeFiles/speech_processing_generate_messages_eus.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_geneus.dir/build.make speech_processing/CMakeFiles/speech_processing_geneus.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_geneus.dir/build.make speech_processing/CMakeFiles/speech_processing_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_geneus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_geneus"
 .PHONY : speech_processing/CMakeFiles/speech_processing_geneus.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_geneus.dir/rule
 
 # Convenience name for target.
@@ -1199,14 +1199,14 @@ clean: speech_processing/CMakeFiles/speech_processing_geneus.dir/clean
 speech_processing/CMakeFiles/speech_processing_gencpp.dir/all: speech_processing/CMakeFiles/speech_processing_generate_messages_cpp.dir/all
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_gencpp.dir/build.make speech_processing/CMakeFiles/speech_processing_gencpp.dir/depend
 	$(MAKE) -f speech_processing/CMakeFiles/speech_processing_gencpp.dir/build.make speech_processing/CMakeFiles/speech_processing_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_gencpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target speech_processing_gencpp"
 .PHONY : speech_processing/CMakeFiles/speech_processing_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 speech_processing/CMakeFiles/speech_processing_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 speech_processing/CMakeFiles/speech_processing_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : speech_processing/CMakeFiles/speech_processing_gencpp.dir/rule
 
 # Convenience name for target.
@@ -1276,7 +1276,7 @@ trollnode-master/preinstall:
 trollnode-master/CMakeFiles/setExpression.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=9,10 "Built target setExpression"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=9,10 "Built target setExpression"
 .PHONY : trollnode-master/CMakeFiles/setExpression.dir/all
 
 # Include target in all.
@@ -1286,9 +1286,9 @@ all: trollnode-master/CMakeFiles/setExpression.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/setExpression.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/setExpression.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/setExpression.dir/rule
 
 # Convenience name for target.
@@ -1313,7 +1313,7 @@ clean: trollnode-master/CMakeFiles/setExpression.dir/clean
 trollnode-master/CMakeFiles/publishExpression.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/publishExpression.dir/build.make trollnode-master/CMakeFiles/publishExpression.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/publishExpression.dir/build.make trollnode-master/CMakeFiles/publishExpression.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=5,6 "Built target publishExpression"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=5,6 "Built target publishExpression"
 .PHONY : trollnode-master/CMakeFiles/publishExpression.dir/all
 
 # Include target in all.
@@ -1323,9 +1323,9 @@ all: trollnode-master/CMakeFiles/publishExpression.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/publishExpression.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/publishExpression.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/publishExpression.dir/rule
 
 # Convenience name for target.
@@ -1350,7 +1350,7 @@ clean: trollnode-master/CMakeFiles/publishExpression.dir/clean
 trollnode-master/CMakeFiles/sendVideo.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/sendVideo.dir/build.make trollnode-master/CMakeFiles/sendVideo.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/sendVideo.dir/build.make trollnode-master/CMakeFiles/sendVideo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=7,8 "Built target sendVideo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=7,8 "Built target sendVideo"
 .PHONY : trollnode-master/CMakeFiles/sendVideo.dir/all
 
 # Include target in all.
@@ -1360,9 +1360,9 @@ all: trollnode-master/CMakeFiles/sendVideo.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/sendVideo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/sendVideo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/sendVideo.dir/rule
 
 # Convenience name for target.
@@ -1387,14 +1387,14 @@ clean: trollnode-master/CMakeFiles/sendVideo.dir/clean
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1419,14 +1419,14 @@ clean: trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/cl
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1451,14 +1451,14 @@ clean: trollnode-master/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1483,14 +1483,14 @@ clean: trollnode-master/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 trollnode-master/CMakeFiles/trollnode_genlisp.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_genlisp.dir/build.make trollnode-master/CMakeFiles/trollnode_genlisp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_genlisp.dir/build.make trollnode-master/CMakeFiles/trollnode_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_genlisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_genlisp"
 .PHONY : trollnode-master/CMakeFiles/trollnode_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_genlisp.dir/rule
 
 # Convenience name for target.
@@ -1515,14 +1515,14 @@ clean: trollnode-master/CMakeFiles/trollnode_genlisp.dir/clean
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1547,14 +1547,14 @@ clean: trollnode-master/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1579,14 +1579,14 @@ clean: trollnode-master/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1611,14 +1611,14 @@ clean: trollnode-master/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1643,14 +1643,14 @@ clean: trollnode-master/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clea
 trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/build.make trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/build.make trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target _trollnode_generate_messages_check_deps_Expression"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target _trollnode_generate_messages_check_deps_Expression"
 .PHONY : trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/rule
 
 # Convenience name for target.
@@ -1678,14 +1678,14 @@ trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/all: trollnode-
 trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/all: trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=21 "Built target trollnode_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=21 "Built target trollnode_generate_messages_lisp"
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1710,14 +1710,14 @@ clean: trollnode-master/CMakeFiles/trollnode_generate_messages_lisp.dir/clean
 trollnode-master/CMakeFiles/trollnode_genpy.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_genpy.dir/build.make trollnode-master/CMakeFiles/trollnode_genpy.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_genpy.dir/build.make trollnode-master/CMakeFiles/trollnode_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_genpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_genpy"
 .PHONY : trollnode-master/CMakeFiles/trollnode_genpy.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_genpy.dir/rule
 
 # Convenience name for target.
@@ -1742,14 +1742,14 @@ clean: trollnode-master/CMakeFiles/trollnode_genpy.dir/clean
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1778,7 +1778,7 @@ trollnode-master/CMakeFiles/trollnode_generate_messages.dir/all: trollnode-maste
 trollnode-master/CMakeFiles/trollnode_generate_messages.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_generate_messages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_generate_messages"
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages.dir/all
 
 # Include target in all.
@@ -1788,9 +1788,9 @@ all: trollnode-master/CMakeFiles/trollnode_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -1815,14 +1815,14 @@ clean: trollnode-master/CMakeFiles/trollnode_generate_messages.dir/clean
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1850,14 +1850,14 @@ trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all: trollnode-m
 trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all: trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=18 "Built target trollnode_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=18 "Built target trollnode_generate_messages_cpp"
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1882,14 +1882,14 @@ clean: trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/clean
 trollnode-master/CMakeFiles/trollnode_gencpp.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_cpp.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_gencpp.dir/build.make trollnode-master/CMakeFiles/trollnode_gencpp.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_gencpp.dir/build.make trollnode-master/CMakeFiles/trollnode_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_gencpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_gencpp"
 .PHONY : trollnode-master/CMakeFiles/trollnode_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_gencpp.dir/rule
 
 # Convenience name for target.
@@ -1917,14 +1917,14 @@ trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/all: trollnode-m
 trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/all: trollnode-master/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=19,20 "Built target trollnode_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=19,20 "Built target trollnode_generate_messages_eus"
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1949,14 +1949,14 @@ clean: trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/clean
 trollnode-master/CMakeFiles/trollnode_geneus.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_eus.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_geneus.dir/build.make trollnode-master/CMakeFiles/trollnode_geneus.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_geneus.dir/build.make trollnode-master/CMakeFiles/trollnode_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_geneus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_geneus"
 .PHONY : trollnode-master/CMakeFiles/trollnode_geneus.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_geneus.dir/rule
 
 # Convenience name for target.
@@ -1981,14 +1981,14 @@ clean: trollnode-master/CMakeFiles/trollnode_geneus.dir/clean
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2016,14 +2016,14 @@ trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/all: trollnod
 trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/all: trollnode-master/CMakeFiles/_trollnode_generate_messages_check_deps_Expression.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=22 "Built target trollnode_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=22 "Built target trollnode_generate_messages_nodejs"
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -2048,14 +2048,14 @@ clean: trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/clean
 trollnode-master/CMakeFiles/trollnode_gennodejs.dir/all: trollnode-master/CMakeFiles/trollnode_generate_messages_nodejs.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_gennodejs.dir/build.make trollnode-master/CMakeFiles/trollnode_gennodejs.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_gennodejs.dir/build.make trollnode-master/CMakeFiles/trollnode_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_gennodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num= "Built target trollnode_gennodejs"
 .PHONY : trollnode-master/CMakeFiles/trollnode_gennodejs.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_gennodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -2083,14 +2083,14 @@ trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/all: trollnode-ma
 trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/all: trollnode-master/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/depend
 	$(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=23,24 "Built target trollnode_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles --progress-num=23,24 "Built target trollnode_generate_messages_py"
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johannhk/prosjekt_ws/steinar-code/CyborgWorkspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johs/prosjekt/steinar-code/CyborgWorkspace/build/CMakeFiles 0
 .PHONY : trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/rule
 
 # Convenience name for target.
