@@ -22,7 +22,13 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+/home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/expression_class.h
+trollnode/expression_templates.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/trollnode/expression_templates.h
+
 /home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/expression_templates.h
+string.h
+-
 
 /home/johs/prosjekt/temp_ws/src/trollnode-master/src/setExpression.cpp
 ros/ros.h
@@ -31,22 +37,12 @@ ros/callback_queue.h
 -
 sstream
 -
-stdio.h
--
-unistd.h
--
-fcntl.h
--
-errno.h
--
-stdlib.h
--
-unistd.h
--
-string.h
--
-vector
--
+std_msgs/String.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/std_msgs/String.h
+trollnode/Expression.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/trollnode/Expression.h
+trollnode/expression_class.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/trollnode/expression_class.h
 sys/types.h
 -
 sys/socket.h
@@ -55,12 +51,6 @@ netinet/in.h
 -
 netdb.h
 -
-trollnode/Expression.h
--
-std_msgs/String.h
-/home/johs/prosjekt/temp_ws/src/trollnode-master/src/std_msgs/String.h
-trollnode/expression_templates.h
-/home/johs/prosjekt/temp_ws/src/trollnode-master/src/trollnode/expression_templates.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

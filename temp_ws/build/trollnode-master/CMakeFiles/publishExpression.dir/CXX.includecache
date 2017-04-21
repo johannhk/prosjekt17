@@ -22,12 +22,12 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+/home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/expression_class.h
+
 /home/johs/prosjekt/temp_ws/src/trollnode-master/src/publishExpression.cpp
-ros/ros.h
-/home/johs/prosjekt/temp_ws/src/trollnode-master/src/ros/ros.h
-trollnode/Expression.h
-/home/johs/prosjekt/temp_ws/src/trollnode-master/src/trollnode/Expression.h
-stdio.h
+sstream
+-
+errno.h
 -
 stdlib.h
 -
@@ -35,8 +35,16 @@ unistd.h
 -
 string.h
 -
-sstream
+ros/ros.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/ros/ros.h
+ros/callback_queue.h
 -
+std_msgs/String.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/std_msgs/String.h
+trollnode/Expression.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/trollnode/Expression.h
+trollnode/expression_class.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/src/trollnode/expression_class.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h
@@ -73,6 +81,36 @@ message_traits.h
 /opt/ros/kinetic/include/ros/message_traits.h
 ros/time.h
 /opt/ros/kinetic/include/ros/ros/time.h
+
+/opt/ros/kinetic/include/ros/callback_queue.h
+ros/callback_queue_interface.h
+/opt/ros/kinetic/include/ros/ros/callback_queue_interface.h
+ros/time.h
+/opt/ros/kinetic/include/ros/ros/time.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+boost/shared_ptr.hpp
+-
+boost/thread/mutex.hpp
+-
+boost/thread/shared_mutex.hpp
+-
+boost/thread/condition_variable.hpp
+-
+boost/thread/tss.hpp
+-
+list
+-
+deque
+-
+
+/opt/ros/kinetic/include/ros/callback_queue_interface.h
+boost/shared_ptr.hpp
+-
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/types.h
+/opt/ros/kinetic/include/ros/ros/types.h
 
 /opt/ros/kinetic/include/ros/common.h
 stdint.h
@@ -667,6 +705,22 @@ ros/forwards.h
 /opt/ros/kinetic/include/ros/ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
+
+/opt/ros/kinetic/include/std_msgs/String.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h

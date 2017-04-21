@@ -107,6 +107,3 @@ add_executable(setExpression src/setExpression.cpp )
 target_link_libraries(setExpression ${catkin_LIBRARIES} )
 add_dependencies(setExpression  trollnode_generate_messages_cpp )
 
-add_executable(sendVideo src/sendVideo.cpp )
-target_link_libraries(sendVideo ${catkin_LIBRARIES} ${OpenCV_LIBS})
-add_dependencies(sendVideo  trollnode_generate_messages_cpp )
