@@ -1,2 +1,2 @@
-trollnode-master
+estimate_interest:trollnode-master
 -DCATKIN_DEVEL_PREFIX=/home/johs/prosjekt/temp_ws/devel -DCMAKE_INSTALL_PREFIX=/home/johs/prosjekt/temp_ws/install -G Unix Makefiles

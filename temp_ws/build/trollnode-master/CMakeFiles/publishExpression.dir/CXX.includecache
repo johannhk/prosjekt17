@@ -23,6 +23,12 @@ ros/message_operations.h
 -
 
 /home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/expression_class.h
+trollnode/expression_templates.h
+/home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/trollnode/expression_templates.h
+
+/home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/expression_templates.h
+string.h
+-
 
 /home/johs/prosjekt/temp_ws/src/trollnode-master/src/publishExpression.cpp
 sstream

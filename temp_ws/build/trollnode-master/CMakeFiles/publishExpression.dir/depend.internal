@@ -4,6 +4,7 @@
 trollnode-master/CMakeFiles/publishExpression.dir/src/publishExpression.cpp.o
  /home/johs/prosjekt/temp_ws/devel/include/trollnode/Expression.h
  /home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/expression_class.h
+ /home/johs/prosjekt/temp_ws/src/trollnode-master/include/trollnode/expression_templates.h
  /home/johs/prosjekt/temp_ws/src/trollnode-master/src/publishExpression.cpp
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h

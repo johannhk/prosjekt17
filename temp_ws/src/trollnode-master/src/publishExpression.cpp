@@ -9,10 +9,9 @@
 #include "ros/ros.h"
 #include <ros/callback_queue.h>
 #include "std_msgs/String.h"
-//Custom ROS messages and headers
+//Custom ROS messages and headers(Messages are in uppercase)
 #include "trollnode/Expression.h"
 #include "trollnode/expression_class.h"
-//#include "trollnode/expression_templates.h"
 
 
 
@@ -42,15 +41,13 @@ void set_message(trollnode::Expression *msg)
 
 int main(int argc, char **argv)
 {
-	trollnode::Expression msg;
 	//calling ROS functions to initialize the node
 	ros::init(argc, argv, "publishExpression");
 	ros::NodeHandle n;
-
-
 	ros::Publisher expressionPublisher = n.advertise<trollnode::Expression>("expression_topic", 100);
 	ros::Rate loop_rate(0.2);
-	//std::string action = set_message();
+	
+	trollnode::Expression msg;
 	while(ros::ok())
 	{
 		
