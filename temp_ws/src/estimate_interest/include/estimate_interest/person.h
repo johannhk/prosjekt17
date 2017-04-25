@@ -16,55 +16,66 @@
 #include "estimate_interest/PersonInfo.h"
 #include "estimate_interest/PersonsArray.h"
 
-//enum classes - enumerator names are local to the enum and their values do not implicitly convert to other t
+//using weak typed to easier send across ROS
 enum Status {
 	Interested,
 	Not_interested,
 	Hesitating,
 	Indecisive,
-	Init
+	Init,
+	NotTracked
 };
 
 //print status by overloading?????
 
 //using carthesian coordinates with origo for current position of cyborg
 class Position{
-	int pos_x;
-	int pos_y;
-	double pos_time;
+	int x;
+	int y;
+	double time;
 public:
+	//constructors
 	Position(){}
-	Position(estimate_interest::PersonInfo msg, double ros_time)
-	{
-		pos_x = msg.x;
-		pos_y = msg.y;
-		pos_time=ros_time;
+	//!!!!Cant call from callback function
+	Position(estimate_interest::PersonInfo msg) : x(msg.x), y(msg.y) {}
+	//Position(estimate_interest::PersonInfo::ConstPtr& msg) : x(msg->x), y(msg->y) {}
+	Position(int x, int y, double ros_time) : x(x), y(y), time(time){}
 
-	}
-	double get_distance_cyborg();
+
+	double getDistanceCyborg();
 };
 
 class Person{
-	int number;
+	int id;
 	std::vector<Position> positions;
-	Status status;
+	int status;
 
 public:
 	//constructors
 	Person(){}
-	Person(int person_number, Status start_status, Position start_pos)
-	{
-		number=person_number;
-		status=start_status;
-		//positions(1, Position start_pos);
-		std::vector<Position>temp(1, start_pos);
-		positions=temp;
-	}
-	//!!make empty option
-	Position get_position();
-	//!!make empty option
-	Status get_status(){ return status;}
 
+	//!!!!!!!!!!construct with int and typecase to enum Status
+	Person(estimate_interest::PersonInfo msg): id(msg.id), positions(1, Position(msg)), status(msg.status){}
+	//member functions
+	void print();	
+	Position getPosition();
+	void addPosition(Position pos);
+	void setStatus();
+	int getStatus(){ return status;}
 };
+
+
+class PersonList{
+	std::vector<Person> persons;
+public:
+	//constructors
+	PersonList() : persons(){}
+	void updatePersons(const estimate_interest::PersonsArray::ConstPtr& msg);
+	void updatePositions();
+	void updateStatus();
+};
+
+
+
 
 #endif // __PERSON_H_INCLUDED__ 

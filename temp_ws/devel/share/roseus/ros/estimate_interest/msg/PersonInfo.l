@@ -14,12 +14,12 @@
 
 (defclass estimate_interest::PersonInfo
   :super ros::object
-  :slots (_person_id _status _stamp _x _y _z ))
+  :slots (_id _status _stamp _x _y _z ))
 
 (defmethod estimate_interest::PersonInfo
   (:init
    (&key
-    ((:person_id __person_id) 0)
+    ((:id __id) 0)
     ((:status __status) 0)
     ((:stamp __stamp) (instance ros::time :init))
     ((:x __x) 0.0)
@@ -27,16 +27,16 @@
     ((:z __z) 0.0)
     )
    (send-super :init)
-   (setq _person_id (round __person_id))
+   (setq _id (round __id))
    (setq _status (round __status))
    (setq _stamp __stamp)
    (setq _x (float __x))
    (setq _y (float __y))
    (setq _z (float __z))
    self)
-  (:person_id
-   (&optional __person_id)
-   (if __person_id (setq _person_id __person_id)) _person_id)
+  (:id
+   (&optional __id)
+   (if __id (setq _id __id)) _id)
   (:status
    (&optional __status)
    (if __status (setq _status __status)) _status)
@@ -55,7 +55,7 @@
   (:serialization-length
    ()
    (+
-    ;; uint8 _person_id
+    ;; uint8 _id
     1
     ;; uint8 _status
     1
@@ -72,8 +72,8 @@
    (&optional strm)
    (let ((s (if strm strm
               (make-string-output-stream (send self :serialization-length)))))
-     ;; uint8 _person_id
-       (write-byte _person_id s)
+     ;; uint8 _id
+       (write-byte _id s)
      ;; uint8 _status
        (write-byte _status s)
      ;; time _stamp
@@ -88,8 +88,8 @@
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
    (buf &optional (ptr- 0))
-   ;; uint8 _person_id
-     (setq _person_id (sys::peek buf ptr- :char)) (incf ptr- 1)
+   ;; uint8 _id
+     (setq _id (sys::peek buf ptr- :char)) (incf ptr- 1)
    ;; uint8 _status
      (setq _status (sys::peek buf ptr- :char)) (incf ptr- 1)
    ;; time _stamp
@@ -104,10 +104,10 @@
    self)
   )
 
-(setf (get estimate_interest::PersonInfo :md5sum-) "e4b2c17bf05b415b48cf7ca9d72fa1ad")
+(setf (get estimate_interest::PersonInfo :md5sum-) "a7a0575857dde4b72a9ea8498f21f47a")
 (setf (get estimate_interest::PersonInfo :datatype-) "estimate_interest/PersonInfo")
 (setf (get estimate_interest::PersonInfo :definition-)
-      "uint8 person_id
+      "uint8 id
 uint8 status
 time stamp
 float64 x
@@ -117,6 +117,6 @@ float64 z
 
 
 
-(provide :estimate_interest/PersonInfo "e4b2c17bf05b415b48cf7ca9d72fa1ad")
+(provide :estimate_interest/PersonInfo "a7a0575857dde4b72a9ea8498f21f47a")
 
 

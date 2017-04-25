@@ -19,7 +19,7 @@
 int count = 0;
 
 
-void set_message(trollnode::Expression *msg)
+void setMessage(trollnode::Expression *msg)
 {
 	std::stringstream ss;
 	switch(count)
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 	while(ros::ok())
 	{
 		
-		set_message(&msg);
+		setMessage(&msg);
 
 		expressionPublisher.publish(msg);
 		ROS_INFO("sent message %s", msg.speech.c_str());

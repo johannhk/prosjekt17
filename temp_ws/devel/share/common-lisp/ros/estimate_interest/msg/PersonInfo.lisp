@@ -7,9 +7,9 @@
 ;//! \htmlinclude PersonInfo.msg.html
 
 (cl:defclass <PersonInfo> (roslisp-msg-protocol:ros-message)
-  ((person_id
-    :reader person_id
-    :initarg :person_id
+  ((id
+    :reader id
+    :initarg :id
     :type cl:fixnum
     :initform 0)
    (status
@@ -47,10 +47,10 @@
   (cl:unless (cl:typep m 'PersonInfo)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name estimate_interest-msg:<PersonInfo> is deprecated: use estimate_interest-msg:PersonInfo instead.")))
 
-(cl:ensure-generic-function 'person_id-val :lambda-list '(m))
-(cl:defmethod person_id-val ((m <PersonInfo>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader estimate_interest-msg:person_id-val is deprecated.  Use estimate_interest-msg:person_id instead.")
-  (person_id m))
+(cl:ensure-generic-function 'id-val :lambda-list '(m))
+(cl:defmethod id-val ((m <PersonInfo>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader estimate_interest-msg:id-val is deprecated.  Use estimate_interest-msg:id instead.")
+  (id m))
 
 (cl:ensure-generic-function 'status-val :lambda-list '(m))
 (cl:defmethod status-val ((m <PersonInfo>))
@@ -78,7 +78,7 @@
   (z m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <PersonInfo>) ostream)
   "Serializes a message object of type '<PersonInfo>"
-  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'person_id)) ostream)
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'id)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'status)) ostream)
   (cl:let ((__sec (cl:floor (cl:slot-value msg 'stamp)))
         (__nsec (cl:round (cl:* 1e9 (cl:- (cl:slot-value msg 'stamp) (cl:floor (cl:slot-value msg 'stamp)))))))
@@ -120,7 +120,7 @@
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <PersonInfo>) istream)
   "Deserializes a message object of type '<PersonInfo>"
-    (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'person_id)) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'id)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'status)) (cl:read-byte istream))
     (cl:let ((__sec 0) (__nsec 0))
       (cl:setf (cl:ldb (cl:byte 8 0) __sec) (cl:read-byte istream))
@@ -172,16 +172,16 @@
   "estimate_interest/PersonInfo")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<PersonInfo>)))
   "Returns md5sum for a message object of type '<PersonInfo>"
-  "e4b2c17bf05b415b48cf7ca9d72fa1ad")
+  "a7a0575857dde4b72a9ea8498f21f47a")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'PersonInfo)))
   "Returns md5sum for a message object of type 'PersonInfo"
-  "e4b2c17bf05b415b48cf7ca9d72fa1ad")
+  "a7a0575857dde4b72a9ea8498f21f47a")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<PersonInfo>)))
   "Returns full string definition for message of type '<PersonInfo>"
-  (cl:format cl:nil "uint8 person_id~%uint8 status~%time stamp~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "uint8 id~%uint8 status~%time stamp~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'PersonInfo)))
   "Returns full string definition for message of type 'PersonInfo"
-  (cl:format cl:nil "uint8 person_id~%uint8 status~%time stamp~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "uint8 id~%uint8 status~%time stamp~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <PersonInfo>))
   (cl:+ 0
      1
@@ -194,7 +194,7 @@
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <PersonInfo>))
   "Converts a ROS message object to a list"
   (cl:list 'PersonInfo
-    (cl:cons ':person_id (person_id msg))
+    (cl:cons ':id (id msg))
     (cl:cons ':status (status msg))
     (cl:cons ':stamp (stamp msg))
     (cl:cons ':x (x msg))

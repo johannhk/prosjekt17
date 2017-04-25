@@ -53,7 +53,7 @@ int connectToServer(const char* ip_address, const char* port_number)
 }
 
 
-void ExprQueue::add_expression(const trollnode::Expression::ConstPtr& msg)
+void ExprQueue::addExpression(const trollnode::Expression::ConstPtr& msg)
 {
 	ROS_INFO("got message %s", msg->speech.c_str());
 	//send()
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 
 	//subscribes to publishExpression and adds to queue
 	ExprQueue queue;
-	ros::Subscriber setExpression = n.subscribe("expression_topic", 100, &ExprQueue::add_expression, &queue);
+	ros::Subscriber setExpression = n.subscribe("expression_topic", 100, &ExprQueue::addExpression, &queue);
 
 	ros::spin();
 	

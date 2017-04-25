@@ -4,21 +4,27 @@
 
 class Expression
 {
-public:
-	std::string getActionName();
-private:
-	int action_size;
+
+	int actionSize;
 	actionUnit actions[];
 	std::string speech;
+
+
+public:
+	//NEED CONSTRUCTIORS
+	std::string getActionName();
+
 };
 
 
 class ExprQueue
 {
 public:
-	void send_expression();
-	void add_expression(const trollnode::Expression::ConstPtr& msg);
-	void ignore_expression();
+	//NEED CONSTRUCTORS
+
+	void sendExpression();
+	void addExpression(const trollnode::Expression::ConstPtr& msg);
+	void ignoreExpression();
 private:
 	int current_length;
 	int max_length;

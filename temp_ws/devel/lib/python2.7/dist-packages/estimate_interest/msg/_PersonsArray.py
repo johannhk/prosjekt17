@@ -9,13 +9,13 @@ import genpy
 import estimate_interest.msg
 
 class PersonsArray(genpy.Message):
-  _md5sum = "2751dcec21709afa24648dc8b398e8ec"
+  _md5sum = "f57b15010fa4594dd3c7a208c2ed5847"
   _type = "estimate_interest/PersonsArray"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """PersonInfo[] persons
 ================================================================================
 MSG: estimate_interest/PersonInfo
-uint8 person_id
+uint8 id
 uint8 status
 time stamp
 float64 x
@@ -62,7 +62,7 @@ float64 z"""
       buff.write(_struct_I.pack(length))
       for val1 in self.persons:
         _x = val1
-        buff.write(_get_struct_2B().pack(_x.person_id, _x.status))
+        buff.write(_get_struct_2B().pack(_x.id, _x.status))
         _v1 = val1.stamp
         _x = _v1
         buff.write(_get_struct_2I().pack(_x.secs, _x.nsecs))
@@ -89,7 +89,7 @@ float64 z"""
         _x = val1
         start = end
         end += 2
-        (_x.person_id, _x.status,) = _get_struct_2B().unpack(str[start:end])
+        (_x.id, _x.status,) = _get_struct_2B().unpack(str[start:end])
         _v2 = val1.stamp
         _x = _v2
         start = end
@@ -116,7 +116,7 @@ float64 z"""
       buff.write(_struct_I.pack(length))
       for val1 in self.persons:
         _x = val1
-        buff.write(_get_struct_2B().pack(_x.person_id, _x.status))
+        buff.write(_get_struct_2B().pack(_x.id, _x.status))
         _v3 = val1.stamp
         _x = _v3
         buff.write(_get_struct_2I().pack(_x.secs, _x.nsecs))
@@ -144,7 +144,7 @@ float64 z"""
         _x = val1
         start = end
         end += 2
-        (_x.person_id, _x.status,) = _get_struct_2B().unpack(str[start:end])
+        (_x.id, _x.status,) = _get_struct_2B().unpack(str[start:end])
         _v4 = val1.stamp
         _x = _v4
         start = end

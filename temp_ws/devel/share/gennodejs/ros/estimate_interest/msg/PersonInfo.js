@@ -18,7 +18,7 @@ class PersonInfo {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
-      this.person_id = null;
+      this.id = null;
       this.status = null;
       this.stamp = null;
       this.x = null;
@@ -26,11 +26,11 @@ class PersonInfo {
       this.z = null;
     }
     else {
-      if (initObj.hasOwnProperty('person_id')) {
-        this.person_id = initObj.person_id
+      if (initObj.hasOwnProperty('id')) {
+        this.id = initObj.id
       }
       else {
-        this.person_id = 0;
+        this.id = 0;
       }
       if (initObj.hasOwnProperty('status')) {
         this.status = initObj.status
@@ -67,8 +67,8 @@ class PersonInfo {
 
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type PersonInfo
-    // Serialize message field [person_id]
-    bufferOffset = _serializer.uint8(obj.person_id, buffer, bufferOffset);
+    // Serialize message field [id]
+    bufferOffset = _serializer.uint8(obj.id, buffer, bufferOffset);
     // Serialize message field [status]
     bufferOffset = _serializer.uint8(obj.status, buffer, bufferOffset);
     // Serialize message field [stamp]
@@ -86,8 +86,8 @@ class PersonInfo {
     //deserializes a message object of type PersonInfo
     let len;
     let data = new PersonInfo(null);
-    // Deserialize message field [person_id]
-    data.person_id = _deserializer.uint8(buffer, bufferOffset);
+    // Deserialize message field [id]
+    data.id = _deserializer.uint8(buffer, bufferOffset);
     // Deserialize message field [status]
     data.status = _deserializer.uint8(buffer, bufferOffset);
     // Deserialize message field [stamp]
@@ -112,13 +112,13 @@ class PersonInfo {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'e4b2c17bf05b415b48cf7ca9d72fa1ad';
+    return 'a7a0575857dde4b72a9ea8498f21f47a';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    uint8 person_id
+    uint8 id
     uint8 status
     time stamp
     float64 x
@@ -133,11 +133,11 @@ class PersonInfo {
       msg = {};
     }
     const resolved = new PersonInfo(null);
-    if (msg.person_id !== undefined) {
-      resolved.person_id = msg.person_id;
+    if (msg.id !== undefined) {
+      resolved.id = msg.id;
     }
     else {
-      resolved.person_id = 0
+      resolved.id = 0
     }
 
     if (msg.status !== undefined) {

@@ -10,11 +10,12 @@
 //headerfiles
 #include "estimate_interest/person.h"
 
-void update_positions(estimate_interest::PersonsArray* msg)
+void updatePositions(estimate_interest::PersonsArray* msg)
 {
 	estimate_interest::PersonInfo person;
 	for (int i=0;i<3;i++)
 	{
+		person.id=i+2;
 		person.x=i;
 		person.y=i;
 		msg->persons.push_back(person);
@@ -36,7 +37,7 @@ int main(int argc, char** argv)
 
 	while(ros::ok())
 	{
-		update_positions(&arr);
+		updatePositions(&arr);
 		lookPublisher.publish(arr);
 		ROS_INFO("Sent message with array");
 

@@ -69,7 +69,7 @@ class PersonsArray {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '2751dcec21709afa24648dc8b398e8ec';
+    return 'f57b15010fa4594dd3c7a208c2ed5847';
   }
 
   static messageDefinition() {
@@ -78,7 +78,7 @@ class PersonsArray {
     PersonInfo[] persons
     ================================================================================
     MSG: estimate_interest/PersonInfo
-    uint8 person_id
+    uint8 id
     uint8 status
     time stamp
     float64 x

@@ -114,12 +114,12 @@ struct MD5Sum< ::estimate_interest::PersonsArray_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "2751dcec21709afa24648dc8b398e8ec";
+    return "f57b15010fa4594dd3c7a208c2ed5847";
   }
 
   static const char* value(const ::estimate_interest::PersonsArray_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x2751dcec21709afaULL;
-  static const uint64_t static_value2 = 0x24648dc8b398e8ecULL;
+  static const uint64_t static_value1 = 0xf57b15010fa4594dULL;
+  static const uint64_t static_value2 = 0xd3c7a208c2ed5847ULL;
 };
 
 template<class ContainerAllocator>
@@ -141,7 +141,7 @@ struct Definition< ::estimate_interest::PersonsArray_<ContainerAllocator> >
     return "PersonInfo[] persons\n\
 ================================================================================\n\
 MSG: estimate_interest/PersonInfo\n\
-uint8 person_id\n\
+uint8 id\n\
 uint8 status\n\
 time stamp\n\
 float64 x\n\

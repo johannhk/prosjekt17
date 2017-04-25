@@ -1,6 +1,6 @@
 (cl:in-package estimate_interest-msg)
-(cl:export '(PERSON_ID-VAL
-          PERSON_ID
+(cl:export '(ID-VAL
+          ID
           STATUS-VAL
           STATUS
           STAMP-VAL

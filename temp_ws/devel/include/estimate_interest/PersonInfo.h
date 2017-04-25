@@ -24,7 +24,7 @@ struct PersonInfo_
   typedef PersonInfo_<ContainerAllocator> Type;
 
   PersonInfo_()
-    : person_id(0)
+    : id(0)
     , status(0)
     , stamp()
     , x(0.0)
@@ -32,7 +32,7 @@ struct PersonInfo_
     , z(0.0)  {
     }
   PersonInfo_(const ContainerAllocator& _alloc)
-    : person_id(0)
+    : id(0)
     , status(0)
     , stamp()
     , x(0.0)
@@ -43,8 +43,8 @@ struct PersonInfo_
 
 
 
-   typedef uint8_t _person_id_type;
-  _person_id_type person_id;
+   typedef uint8_t _id_type;
+  _id_type id;
 
    typedef uint8_t _status_type;
   _status_type status;
@@ -138,12 +138,12 @@ struct MD5Sum< ::estimate_interest::PersonInfo_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "e4b2c17bf05b415b48cf7ca9d72fa1ad";
+    return "a7a0575857dde4b72a9ea8498f21f47a";
   }
 
   static const char* value(const ::estimate_interest::PersonInfo_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xe4b2c17bf05b415bULL;
-  static const uint64_t static_value2 = 0x48cf7ca9d72fa1adULL;
+  static const uint64_t static_value1 = 0xa7a0575857dde4b7ULL;
+  static const uint64_t static_value2 = 0x2a9ea8498f21f47aULL;
 };
 
 template<class ContainerAllocator>
@@ -162,7 +162,7 @@ struct Definition< ::estimate_interest::PersonInfo_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "uint8 person_id\n\
+    return "uint8 id\n\
 uint8 status\n\
 time stamp\n\
 float64 x\n\
@@ -186,7 +186,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.person_id);
+      stream.next(m.id);
       stream.next(m.status);
       stream.next(m.stamp);
       stream.next(m.x);
@@ -210,8 +210,8 @@ struct Printer< ::estimate_interest::PersonInfo_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::estimate_interest::PersonInfo_<ContainerAllocator>& v)
   {
-    s << indent << "person_id: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.person_id);
+    s << indent << "id: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.id);
     s << indent << "status: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.status);
     s << indent << "stamp: ";

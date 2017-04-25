@@ -8,16 +8,16 @@ import struct
 import genpy
 
 class PersonInfo(genpy.Message):
-  _md5sum = "e4b2c17bf05b415b48cf7ca9d72fa1ad"
+  _md5sum = "a7a0575857dde4b72a9ea8498f21f47a"
   _type = "estimate_interest/PersonInfo"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """uint8 person_id
+  _full_text = """uint8 id
 uint8 status
 time stamp
 float64 x
 float64 y
 float64 z"""
-  __slots__ = ['person_id','status','stamp','x','y','z']
+  __slots__ = ['id','status','stamp','x','y','z']
   _slot_types = ['uint8','uint8','time','float64','float64','float64']
 
   def __init__(self, *args, **kwds):
@@ -28,7 +28,7 @@ float64 z"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       person_id,status,stamp,x,y,z
+       id,status,stamp,x,y,z
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -37,8 +37,8 @@ float64 z"""
     if args or kwds:
       super(PersonInfo, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
-      if self.person_id is None:
-        self.person_id = 0
+      if self.id is None:
+        self.id = 0
       if self.status is None:
         self.status = 0
       if self.stamp is None:
@@ -50,7 +50,7 @@ float64 z"""
       if self.z is None:
         self.z = 0.
     else:
-      self.person_id = 0
+      self.id = 0
       self.status = 0
       self.stamp = genpy.Time()
       self.x = 0.
@@ -70,7 +70,7 @@ float64 z"""
     """
     try:
       _x = self
-      buff.write(_get_struct_2B2I3d().pack(_x.person_id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z))
+      buff.write(_get_struct_2B2I3d().pack(_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -86,7 +86,7 @@ float64 z"""
       _x = self
       start = end
       end += 34
-      (_x.person_id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_2B2I3d().unpack(str[start:end])
+      (_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_2B2I3d().unpack(str[start:end])
       self.stamp.canon()
       return self
     except struct.error as e:
@@ -101,7 +101,7 @@ float64 z"""
     """
     try:
       _x = self
-      buff.write(_get_struct_2B2I3d().pack(_x.person_id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z))
+      buff.write(_get_struct_2B2I3d().pack(_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -118,7 +118,7 @@ float64 z"""
       _x = self
       start = end
       end += 34
-      (_x.person_id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_2B2I3d().unpack(str[start:end])
+      (_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_2B2I3d().unpack(str[start:end])
       self.stamp.canon()
       return self
     except struct.error as e:

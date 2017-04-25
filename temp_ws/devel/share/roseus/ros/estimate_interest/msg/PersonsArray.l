@@ -61,13 +61,13 @@
    self)
   )
 
-(setf (get estimate_interest::PersonsArray :md5sum-) "2751dcec21709afa24648dc8b398e8ec")
+(setf (get estimate_interest::PersonsArray :md5sum-) "f57b15010fa4594dd3c7a208c2ed5847")
 (setf (get estimate_interest::PersonsArray :datatype-) "estimate_interest/PersonsArray")
 (setf (get estimate_interest::PersonsArray :definition-)
       "PersonInfo[] persons
 ================================================================================
 MSG: estimate_interest/PersonInfo
-uint8 person_id
+uint8 id
 uint8 status
 time stamp
 float64 x
@@ -77,6 +77,6 @@ float64 z
 
 
 
-(provide :estimate_interest/PersonsArray "2751dcec21709afa24648dc8b398e8ec")
+(provide :estimate_interest/PersonsArray "f57b15010fa4594dd3c7a208c2ed5847")
 
 
