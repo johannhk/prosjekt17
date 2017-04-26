@@ -19,8 +19,7 @@ class PersonInfo {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.id = null;
-      this.status = null;
-      this.stamp = null;
+      this.timestamp = null;
       this.x = null;
       this.y = null;
       this.z = null;
@@ -32,17 +31,11 @@ class PersonInfo {
       else {
         this.id = 0;
       }
-      if (initObj.hasOwnProperty('status')) {
-        this.status = initObj.status
+      if (initObj.hasOwnProperty('timestamp')) {
+        this.timestamp = initObj.timestamp
       }
       else {
-        this.status = 0;
-      }
-      if (initObj.hasOwnProperty('stamp')) {
-        this.stamp = initObj.stamp
-      }
-      else {
-        this.stamp = {secs: 0, nsecs: 0};
+        this.timestamp = {secs: 0, nsecs: 0};
       }
       if (initObj.hasOwnProperty('x')) {
         this.x = initObj.x
@@ -69,10 +62,8 @@ class PersonInfo {
     // Serializes a message object of type PersonInfo
     // Serialize message field [id]
     bufferOffset = _serializer.uint8(obj.id, buffer, bufferOffset);
-    // Serialize message field [status]
-    bufferOffset = _serializer.uint8(obj.status, buffer, bufferOffset);
-    // Serialize message field [stamp]
-    bufferOffset = _serializer.time(obj.stamp, buffer, bufferOffset);
+    // Serialize message field [timestamp]
+    bufferOffset = _serializer.time(obj.timestamp, buffer, bufferOffset);
     // Serialize message field [x]
     bufferOffset = _serializer.float64(obj.x, buffer, bufferOffset);
     // Serialize message field [y]
@@ -88,10 +79,8 @@ class PersonInfo {
     let data = new PersonInfo(null);
     // Deserialize message field [id]
     data.id = _deserializer.uint8(buffer, bufferOffset);
-    // Deserialize message field [status]
-    data.status = _deserializer.uint8(buffer, bufferOffset);
-    // Deserialize message field [stamp]
-    data.stamp = _deserializer.time(buffer, bufferOffset);
+    // Deserialize message field [timestamp]
+    data.timestamp = _deserializer.time(buffer, bufferOffset);
     // Deserialize message field [x]
     data.x = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [y]
@@ -102,7 +91,7 @@ class PersonInfo {
   }
 
   static getMessageSize(object) {
-    return 34;
+    return 33;
   }
 
   static datatype() {
@@ -112,15 +101,14 @@ class PersonInfo {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'a7a0575857dde4b72a9ea8498f21f47a';
+    return '995ca4e5dfc4608addcf503c50d9ac84';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
     uint8 id
-    uint8 status
-    time stamp
+    time timestamp
     float64 x
     float64 y
     float64 z
@@ -140,18 +128,11 @@ class PersonInfo {
       resolved.id = 0
     }
 
-    if (msg.status !== undefined) {
-      resolved.status = msg.status;
+    if (msg.timestamp !== undefined) {
+      resolved.timestamp = msg.timestamp;
     }
     else {
-      resolved.status = 0
-    }
-
-    if (msg.stamp !== undefined) {
-      resolved.stamp = msg.stamp;
-    }
-    else {
-      resolved.stamp = {secs: 0, nsecs: 0}
+      resolved.timestamp = {secs: 0, nsecs: 0}
     }
 
     if (msg.x !== undefined) {

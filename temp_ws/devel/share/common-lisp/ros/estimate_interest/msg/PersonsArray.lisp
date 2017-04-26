@@ -58,16 +58,16 @@
   "estimate_interest/PersonsArray")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<PersonsArray>)))
   "Returns md5sum for a message object of type '<PersonsArray>"
-  "f57b15010fa4594dd3c7a208c2ed5847")
+  "17dc4f3d71f5a82ce376e93eda1f9791")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'PersonsArray)))
   "Returns md5sum for a message object of type 'PersonsArray"
-  "f57b15010fa4594dd3c7a208c2ed5847")
+  "17dc4f3d71f5a82ce376e93eda1f9791")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<PersonsArray>)))
   "Returns full string definition for message of type '<PersonsArray>"
-  (cl:format cl:nil "PersonInfo[] persons~%================================================================================~%MSG: estimate_interest/PersonInfo~%uint8 id~%uint8 status~%time stamp~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "PersonInfo[] persons~%================================================================================~%MSG: estimate_interest/PersonInfo~%uint8 id~%time timestamp~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'PersonsArray)))
   "Returns full string definition for message of type 'PersonsArray"
-  (cl:format cl:nil "PersonInfo[] persons~%================================================================================~%MSG: estimate_interest/PersonInfo~%uint8 id~%uint8 status~%time stamp~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "PersonInfo[] persons~%================================================================================~%MSG: estimate_interest/PersonInfo~%uint8 id~%time timestamp~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <PersonsArray>))
   (cl:+ 0
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'persons) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ (roslisp-msg-protocol:serialization-length ele))))

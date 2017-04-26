@@ -25,16 +25,14 @@ struct PersonInfo_
 
   PersonInfo_()
     : id(0)
-    , status(0)
-    , stamp()
+    , timestamp()
     , x(0.0)
     , y(0.0)
     , z(0.0)  {
     }
   PersonInfo_(const ContainerAllocator& _alloc)
     : id(0)
-    , status(0)
-    , stamp()
+    , timestamp()
     , x(0.0)
     , y(0.0)
     , z(0.0)  {
@@ -46,11 +44,8 @@ struct PersonInfo_
    typedef uint8_t _id_type;
   _id_type id;
 
-   typedef uint8_t _status_type;
-  _status_type status;
-
-   typedef ros::Time _stamp_type;
-  _stamp_type stamp;
+   typedef ros::Time _timestamp_type;
+  _timestamp_type timestamp;
 
    typedef double _x_type;
   _x_type x;
@@ -138,12 +133,12 @@ struct MD5Sum< ::estimate_interest::PersonInfo_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "a7a0575857dde4b72a9ea8498f21f47a";
+    return "995ca4e5dfc4608addcf503c50d9ac84";
   }
 
   static const char* value(const ::estimate_interest::PersonInfo_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xa7a0575857dde4b7ULL;
-  static const uint64_t static_value2 = 0x2a9ea8498f21f47aULL;
+  static const uint64_t static_value1 = 0x995ca4e5dfc4608aULL;
+  static const uint64_t static_value2 = 0xddcf503c50d9ac84ULL;
 };
 
 template<class ContainerAllocator>
@@ -163,8 +158,7 @@ struct Definition< ::estimate_interest::PersonInfo_<ContainerAllocator> >
   static const char* value()
   {
     return "uint8 id\n\
-uint8 status\n\
-time stamp\n\
+time timestamp\n\
 float64 x\n\
 float64 y\n\
 float64 z\n\
@@ -187,8 +181,7 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.id);
-      stream.next(m.status);
-      stream.next(m.stamp);
+      stream.next(m.timestamp);
       stream.next(m.x);
       stream.next(m.y);
       stream.next(m.z);
@@ -212,10 +205,8 @@ struct Printer< ::estimate_interest::PersonInfo_<ContainerAllocator> >
   {
     s << indent << "id: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.id);
-    s << indent << "status: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.status);
-    s << indent << "stamp: ";
-    Printer<ros::Time>::stream(s, indent + "  ", v.stamp);
+    s << indent << "timestamp: ";
+    Printer<ros::Time>::stream(s, indent + "  ", v.timestamp);
     s << indent << "x: ";
     Printer<double>::stream(s, indent + "  ", v.x);
     s << indent << "y: ";

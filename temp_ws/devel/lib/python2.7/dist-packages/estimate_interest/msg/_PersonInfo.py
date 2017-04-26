@@ -8,17 +8,16 @@ import struct
 import genpy
 
 class PersonInfo(genpy.Message):
-  _md5sum = "a7a0575857dde4b72a9ea8498f21f47a"
+  _md5sum = "995ca4e5dfc4608addcf503c50d9ac84"
   _type = "estimate_interest/PersonInfo"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """uint8 id
-uint8 status
-time stamp
+time timestamp
 float64 x
 float64 y
 float64 z"""
-  __slots__ = ['id','status','stamp','x','y','z']
-  _slot_types = ['uint8','uint8','time','float64','float64','float64']
+  __slots__ = ['id','timestamp','x','y','z']
+  _slot_types = ['uint8','time','float64','float64','float64']
 
   def __init__(self, *args, **kwds):
     """
@@ -28,7 +27,7 @@ float64 z"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       id,status,stamp,x,y,z
+       id,timestamp,x,y,z
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -39,10 +38,8 @@ float64 z"""
       #message fields cannot be None, assign default values for those that are
       if self.id is None:
         self.id = 0
-      if self.status is None:
-        self.status = 0
-      if self.stamp is None:
-        self.stamp = genpy.Time()
+      if self.timestamp is None:
+        self.timestamp = genpy.Time()
       if self.x is None:
         self.x = 0.
       if self.y is None:
@@ -51,8 +48,7 @@ float64 z"""
         self.z = 0.
     else:
       self.id = 0
-      self.status = 0
-      self.stamp = genpy.Time()
+      self.timestamp = genpy.Time()
       self.x = 0.
       self.y = 0.
       self.z = 0.
@@ -70,7 +66,7 @@ float64 z"""
     """
     try:
       _x = self
-      buff.write(_get_struct_2B2I3d().pack(_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z))
+      buff.write(_get_struct_B2I3d().pack(_x.id, _x.timestamp.secs, _x.timestamp.nsecs, _x.x, _x.y, _x.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -80,14 +76,14 @@ float64 z"""
     :param str: byte array of serialized message, ``str``
     """
     try:
-      if self.stamp is None:
-        self.stamp = genpy.Time()
+      if self.timestamp is None:
+        self.timestamp = genpy.Time()
       end = 0
       _x = self
       start = end
-      end += 34
-      (_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_2B2I3d().unpack(str[start:end])
-      self.stamp.canon()
+      end += 33
+      (_x.id, _x.timestamp.secs, _x.timestamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_B2I3d().unpack(str[start:end])
+      self.timestamp.canon()
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -101,7 +97,7 @@ float64 z"""
     """
     try:
       _x = self
-      buff.write(_get_struct_2B2I3d().pack(_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z))
+      buff.write(_get_struct_B2I3d().pack(_x.id, _x.timestamp.secs, _x.timestamp.nsecs, _x.x, _x.y, _x.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -112,14 +108,14 @@ float64 z"""
     :param numpy: numpy python module
     """
     try:
-      if self.stamp is None:
-        self.stamp = genpy.Time()
+      if self.timestamp is None:
+        self.timestamp = genpy.Time()
       end = 0
       _x = self
       start = end
-      end += 34
-      (_x.id, _x.status, _x.stamp.secs, _x.stamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_2B2I3d().unpack(str[start:end])
-      self.stamp.canon()
+      end += 33
+      (_x.id, _x.timestamp.secs, _x.timestamp.nsecs, _x.x, _x.y, _x.z,) = _get_struct_B2I3d().unpack(str[start:end])
+      self.timestamp.canon()
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -128,9 +124,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_2B2I3d = None
-def _get_struct_2B2I3d():
-    global _struct_2B2I3d
-    if _struct_2B2I3d is None:
-        _struct_2B2I3d = struct.Struct("<2B2I3d")
-    return _struct_2B2I3d
+_struct_B2I3d = None
+def _get_struct_B2I3d():
+    global _struct_B2I3d
+    if _struct_B2I3d is None:
+        _struct_B2I3d = struct.Struct("<B2I3d")
+    return _struct_B2I3d

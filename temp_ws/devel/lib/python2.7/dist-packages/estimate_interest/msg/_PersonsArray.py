@@ -9,15 +9,14 @@ import genpy
 import estimate_interest.msg
 
 class PersonsArray(genpy.Message):
-  _md5sum = "f57b15010fa4594dd3c7a208c2ed5847"
+  _md5sum = "17dc4f3d71f5a82ce376e93eda1f9791"
   _type = "estimate_interest/PersonsArray"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """PersonInfo[] persons
 ================================================================================
 MSG: estimate_interest/PersonInfo
 uint8 id
-uint8 status
-time stamp
+time timestamp
 float64 x
 float64 y
 float64 z"""
@@ -61,9 +60,8 @@ float64 z"""
       length = len(self.persons)
       buff.write(_struct_I.pack(length))
       for val1 in self.persons:
-        _x = val1
-        buff.write(_get_struct_2B().pack(_x.id, _x.status))
-        _v1 = val1.stamp
+        buff.write(_get_struct_B().pack(val1.id))
+        _v1 = val1.timestamp
         _x = _v1
         buff.write(_get_struct_2I().pack(_x.secs, _x.nsecs))
         _x = val1
@@ -86,11 +84,10 @@ float64 z"""
       self.persons = []
       for i in range(0, length):
         val1 = estimate_interest.msg.PersonInfo()
-        _x = val1
         start = end
-        end += 2
-        (_x.id, _x.status,) = _get_struct_2B().unpack(str[start:end])
-        _v2 = val1.stamp
+        end += 1
+        (val1.id,) = _get_struct_B().unpack(str[start:end])
+        _v2 = val1.timestamp
         _x = _v2
         start = end
         end += 8
@@ -115,9 +112,8 @@ float64 z"""
       length = len(self.persons)
       buff.write(_struct_I.pack(length))
       for val1 in self.persons:
-        _x = val1
-        buff.write(_get_struct_2B().pack(_x.id, _x.status))
-        _v3 = val1.stamp
+        buff.write(_get_struct_B().pack(val1.id))
+        _v3 = val1.timestamp
         _x = _v3
         buff.write(_get_struct_2I().pack(_x.secs, _x.nsecs))
         _x = val1
@@ -141,11 +137,10 @@ float64 z"""
       self.persons = []
       for i in range(0, length):
         val1 = estimate_interest.msg.PersonInfo()
-        _x = val1
         start = end
-        end += 2
-        (_x.id, _x.status,) = _get_struct_2B().unpack(str[start:end])
-        _v4 = val1.stamp
+        end += 1
+        (val1.id,) = _get_struct_B().unpack(str[start:end])
+        _v4 = val1.timestamp
         _x = _v4
         start = end
         end += 8
@@ -163,18 +158,18 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
+_struct_B = None
+def _get_struct_B():
+    global _struct_B
+    if _struct_B is None:
+        _struct_B = struct.Struct("<B")
+    return _struct_B
 _struct_2I = None
 def _get_struct_2I():
     global _struct_2I
     if _struct_2I is None:
         _struct_2I = struct.Struct("<2I")
     return _struct_2I
-_struct_2B = None
-def _get_struct_2B():
-    global _struct_2B
-    if _struct_2B is None:
-        _struct_2B = struct.Struct("<2B")
-    return _struct_2B
 _struct_3d = None
 def _get_struct_3d():
     global _struct_3d

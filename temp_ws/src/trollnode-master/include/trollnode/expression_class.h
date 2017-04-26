@@ -1,17 +1,31 @@
+#ifndef __EXPRESSION_CLASS_H_INCLUDED__
+#define __EXPRESSION_CLASS_H_INCLUDED__
+
+
+#include <vector>
 #include "trollnode/expression_templates.h"
 
+
+//!!!!!NOT USED AS OF NOW
+enum class LookDirection {
+	Up,
+	Down,
+	Left,
+	Right,
+	Neutral
+};
 
 
 class Expression
 {
-
-	int actionSize;
-	actionUnit actions[];
+	std::vector<actionUnit> actions;
 	std::string speech;
-
 
 public:
 	//NEED CONSTRUCTIORS
+	Expression(){};
+
+	void setRecvExpr(trollnode::Expression msg);
 	std::string getActionName();
 
 };
@@ -19,40 +33,13 @@ public:
 
 class ExprQueue
 {
+	std::vector<Expression> exprQueue;
 public:
 	//NEED CONSTRUCTORS
 
 	void sendExpression();
 	void addExpression(const trollnode::Expression::ConstPtr& msg);
 	void ignoreExpression();
-private:
-	int current_length;
-	int max_length;
-	Expression buffer[];
 };
 
-/*actionUnit* set_current_expression(const std::string & expression)
-{
-	static std::map< std::string, actionUnit * > lookup = {
-		{ "angry", angry },
-		{ "smile", smile },
-		{ "neutral", neutral},
-		{ "happy", happy },
-		{ "sad", sad },
-		{ "surprise", surprise },
-		{ "suspicious", suspicious },
-		{ "disgust", disgust },
-		{ "pain", pain },
-	};
-
-	if (expression.compare("") != 0) {
-		auto it = lookup.find(expression);
-		if (it != lookup.end()) {
-			return it->second;
-		} else {
-			ROS_ERROR("Did not recognize expression [%s], current expression not changed.",expression.c_str());
-			return NULL;
-		}
-	}
-	return NULL;
-}*/
+#endif // __EXPRESSION_CLASS_H_INCLUDED__

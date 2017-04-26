@@ -1,10 +1,8 @@
 (cl:in-package estimate_interest-msg)
 (cl:export '(ID-VAL
           ID
-          STATUS-VAL
-          STATUS
-          STAMP-VAL
-          STAMP
+          TIMESTAMP-VAL
+          TIMESTAMP
           X-VAL
           X
           Y-VAL

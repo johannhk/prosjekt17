@@ -58,7 +58,7 @@ class PersonsArray {
 
   static getMessageSize(object) {
     let length = 0;
-    length += 34 * object.persons.length;
+    length += 33 * object.persons.length;
     return length + 4;
   }
 
@@ -69,7 +69,7 @@ class PersonsArray {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'f57b15010fa4594dd3c7a208c2ed5847';
+    return '17dc4f3d71f5a82ce376e93eda1f9791';
   }
 
   static messageDefinition() {
@@ -79,8 +79,7 @@ class PersonsArray {
     ================================================================================
     MSG: estimate_interest/PersonInfo
     uint8 id
-    uint8 status
-    time stamp
+    time timestamp
     float64 x
     float64 y
     float64 z

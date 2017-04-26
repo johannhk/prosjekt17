@@ -12,11 +12,56 @@
 //Custom ROS messages and headers(Messages are in uppercase)
 #include "trollnode/Expression.h"
 #include "trollnode/expression_class.h"
-
-
-
+#include "trollnode/expression_templates.h"
 
 int count = 0;
+//std::string Expression::getActionName()
+
+//this function sets an expression to what has been recived over ROS
+void Expression::setRecvExpr(trollnode::Expression msg)
+{
+	//map to translate strings from to actionunits being sent to the trollface
+	static std::map< std::string, std::vector<actionUnit> > lookup = {
+		{ "angry", angry },
+		{ "smile", smile },
+		{ "neutral", neutral},
+		{ "happy", happy },
+		{ "sad", sad },
+		{ "surprise", surprise },
+		{ "suspicious", suspicious },
+		{ "disgust", disgust },
+		{ "pain", pain },
+	};
+
+
+
+	//setting actions to vector<actionUnit> corrensponding to the recieved expression
+	if (msg.expression.compare("") != 0) {
+		auto it = lookup.find(msg.expression);
+		if (it != lookup.end()) {
+			actions.push_back(it->second);
+		} else {
+			ROS_ERROR("Did not recognize expression [%s], current expression not changed.",msg.expression.c_str());
+			//actions = NULL;
+		}
+	}
+
+	//appending the expression with looking direction
+	if (msg.look.compare("") != 0) {
+		auto it = lookup.find(msg.expression);
+		if (it != lookup.end()) {
+			//appending looking direction to the expression vector, as both is to be sent the face
+			actions.insert(actions.end(), it->second.begin(), it->second.end());
+		} else {
+			ROS_ERROR("Did not recognize direction [%s], current direction not changed.",msg.look.c_str());
+			//actions = NULL;
+		}
+	}
+	speech = msg.speech;
+
+
+}
+
 
 
 void setMessage(trollnode::Expression *msg)
@@ -25,7 +70,6 @@ void setMessage(trollnode::Expression *msg)
 	switch(count)
 	{
 		case 0: case 1 : case 2:
-			//sprintf(value, "nummer %i", count);
 			ss << "nummer" << count;
 			msg->speech= ss.str();
 			msg->expression= ss.str();
@@ -37,7 +81,6 @@ void setMessage(trollnode::Expression *msg)
 			return;
 	}
 }
-
 
 int main(int argc, char **argv)
 {
