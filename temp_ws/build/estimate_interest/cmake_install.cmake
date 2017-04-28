@@ -36,6 +36,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/estimate_interest/msg" TYPE FILE FILES
     "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg"
     "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg"
+    "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg"
     )
 endif()
 

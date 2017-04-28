@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/estimate_interest_generate_messages_lisp"
+  "/home/johs/prosjekt/temp_ws/devel/share/common-lisp/ros/estimate_interest/msg/DirectionStatus.lisp"
   "/home/johs/prosjekt/temp_ws/devel/share/common-lisp/ros/estimate_interest/msg/PersonsArray.lisp"
   "/home/johs/prosjekt/temp_ws/devel/share/common-lisp/ros/estimate_interest/msg/PersonInfo.lisp"
 )

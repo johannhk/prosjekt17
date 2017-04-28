@@ -29,7 +29,7 @@ int main(int argc, char** argv)
 	//initializing node and rate
 	ros::init(argc, argv, "lookingNode");
 	ros::NodeHandle n;
-	ros::Publisher lookPublisher = n.advertise<estimate_interest::PersonsArray>("persons_information", 100);
+	ros::Publisher lookPublisher = n.advertise<estimate_interest::PersonsArray>("persons_information", 10);
 	ros::Rate loop_rate(0.2);
 
 	//estimate_interest::PersonInfo persons;

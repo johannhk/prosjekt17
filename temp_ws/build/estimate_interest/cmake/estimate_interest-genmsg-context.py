@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg;/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg"
+messages_str = "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg;/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg;/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg"
 services_str = ""
 pkg_name = "estimate_interest"
 dependencies_str = "std_msgs"

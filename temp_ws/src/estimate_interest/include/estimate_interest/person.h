@@ -15,6 +15,7 @@
 //Custom message files from /msg
 #include "estimate_interest/PersonInfo.h"
 #include "estimate_interest/PersonsArray.h"
+#include "estimate_interest/DirectionStatus.h"
 
 #define SOCIAL_DISTANCE 2.5
 #define PUBLIC_DISTANCE 3.5
@@ -22,11 +23,7 @@
 #define STATIONARY_SPEED 0.2
 #define UPDATE_RATE 1
 
-enum class Direction{
-	Right,
-	Left,
-	Front
-};
+
 
 
 
@@ -37,6 +34,7 @@ class Position{
 	int x;
 	int y;
 	double time;
+
 public:
 	//constructors
 	Position(){}
@@ -45,10 +43,10 @@ public:
 		: x(msg.x)
 		, y(msg.y) 
 	{}
-	Position(estimate_interest::PersonInfo::ConstPtr& msg) 
+	/*Position(estimate_interest::PersonInfo::ConstPtr& msg) 
 		: x(msg->x)
 		, y(msg->y) 
-	{}
+	{}*/
 	Position(int x, int y, double ros_time) 
 		: x(x)
 		, y(y)
@@ -59,24 +57,32 @@ public:
 	double getDistanceCyborg();
 	double getTimeDifference(Position position);
 	double getDistanceToPoint(Position position);
+
 };
 
+class PersonList;
+
 class Person{
+	friend class PersonList;
+private:
 	enum class Status {
-	Interested,
-	Not_interested,
-	Hesitating,
-	Indecisive,
-	Init,
-	NotTracked
+	INTERESTED,
+	HESITATING,
+	INDECISIVE,
+	NOT_INTERESTED,
+	INIT
 	};
-
+	enum class Direction{
+	RIGHT,
+	LEFT,
+	FRONT
+	};
 	//enum class Direction 
-
 	int id;
 	std::vector<Position> positions;
 	double speed;
 	Status status;
+	Direction dir;
 public:
 	//constructors
 	Person(){}
@@ -92,11 +98,19 @@ public:
 	void setSpeed();
 	void addPosition(Position pos) { positions.push_back(pos); }
 	void setStatus();
+	void setDirection();
+
 	Status getStatus(){ return status;}
+	Direction getDirection(){return dir;}
+
+
+
+
 };
 
 
 class PersonList{
+
 	std::vector<Person> persons;
 public:
 	//constructors
@@ -104,6 +118,7 @@ public:
 	void updatePersons(const estimate_interest::PersonsArray::ConstPtr& msg);
 	void updatePositions();
 	void updateStatus();
+	void setMessage(estimate_interest::DirectionStatus& msg);
 };
 
 

@@ -267,6 +267,9 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
@@ -280,7 +283,16 @@ cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 cv_bridge_DIR:PATH=/opt/ros/kinetic/share/cv_bridge/cmake
 
 //Value Computed by CMake
+cyborg_controller_BINARY_DIR:STATIC=/home/johs/prosjekt/temp_ws/build/cyborg_ros_controller
+
+//Value Computed by CMake
+cyborg_controller_SOURCE_DIR:STATIC=/home/johs/prosjekt/temp_ws/src/cyborg_ros_controller
+
+//Value Computed by CMake
 estimate_interest_BINARY_DIR:STATIC=/home/johs/prosjekt/temp_ws/build/estimate_interest
+
+//The directory containing a CMake configuration file for estimate_interest.
+estimate_interest_DIR:PATH=/home/johs/prosjekt/temp_ws/devel/share/estimate_interest/cmake
 
 //Value Computed by CMake
 estimate_interest_SOURCE_DIR:STATIC=/home/johs/prosjekt/temp_ws/src/estimate_interest
@@ -335,7 +347,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 image_transport_DIR:PATH=/opt/ros/kinetic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libcv_bridge.so
+lib:FILEPATH=lib-NOTFOUND
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -381,6 +393,18 @@ rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+set_emotion_BINARY_DIR:STATIC=/home/johs/prosjekt/temp_ws/build/set_emotion
+
+//Value Computed by CMake
+set_emotion_SOURCE_DIR:STATIC=/home/johs/prosjekt/temp_ws/src/set_emotion
+
+//Value Computed by CMake
+speech_processing_BINARY_DIR:STATIC=/home/johs/prosjekt/temp_ws/build/speech_processing
+
+//Value Computed by CMake
+speech_processing_SOURCE_DIR:STATIC=/home/johs/prosjekt/temp_ws/src/speech_processing
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
@@ -508,7 +532,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

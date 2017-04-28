@@ -52,6 +52,7 @@ add_message_files(
    FILES
    PersonInfo.msg
    PersonsArray.msg
+   DirectionStatus.msg
  )
 
 ## Generate services in the 'srv' folder

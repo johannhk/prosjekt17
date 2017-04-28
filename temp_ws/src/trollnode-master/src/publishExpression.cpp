@@ -20,7 +20,7 @@ int count = 0;
 //this function sets an expression to what has been recived over ROS
 void Expression::setRecvExpr(trollnode::Expression msg)
 {
-	//map to translate strings from to actionunits being sent to the trollface
+	//map to translate strings to pre-defined expressions being sent to the trollface
 	static std::map< std::string, std::vector<actionUnit> > lookup = {
 		{ "angry", angry },
 		{ "smile", smile },
@@ -35,11 +35,11 @@ void Expression::setRecvExpr(trollnode::Expression msg)
 
 
 
-	//setting actions to vector<actionUnit> corrensponding to the recieved expression
+	//setting actions to vector<actionUnit> corresponding to the recieved expression
 	if (msg.expression.compare("") != 0) {
 		auto it = lookup.find(msg.expression);
 		if (it != lookup.end()) {
-			actions.push_back(it->second);
+			//actions.push_back(it->second);
 		} else {
 			ROS_ERROR("Did not recognize expression [%s], current expression not changed.",msg.expression.c_str());
 			//actions = NULL;
@@ -64,16 +64,16 @@ void Expression::setRecvExpr(trollnode::Expression msg)
 
 
 
-void setMessage(trollnode::Expression *msg)
+void setMessage(trollnode::Expression& msg)
 {
 	std::stringstream ss;
 	switch(count)
 	{
 		case 0: case 1 : case 2:
 			ss << "nummer" << count;
-			msg->speech= ss.str();
-			msg->expression= ss.str();
-			msg->look = ss.str();
+			msg.speech= ss.str();
+			msg.expression= ss.str();
+			msg.look = ss.str();
 			count++;
 			return;
 		default:
@@ -94,7 +94,7 @@ int main(int argc, char **argv)
 	while(ros::ok())
 	{
 		
-		setMessage(&msg);
+		setMessage(msg);
 
 		expressionPublisher.publish(msg);
 		ROS_INFO("sent message %s", msg.speech.c_str());

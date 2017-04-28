@@ -53,29 +53,37 @@ CMAKE_BINARY_DIR = /home/johs/prosjekt/temp_ws/build
 # Include the progress variables for this target.
 include estimate_interest/CMakeFiles/estimate_interest_generate_messages_py.dir/progress.make
 
+estimate_interest/CMakeFiles/estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_DirectionStatus.py
 estimate_interest/CMakeFiles/estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonsArray.py
 estimate_interest/CMakeFiles/estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonInfo.py
 estimate_interest/CMakeFiles/estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/__init__.py
 
 
+/home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_DirectionStatus.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_DirectionStatus.py: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG estimate_interest/DirectionStatus"
+	cd /home/johs/prosjekt/temp_ws/build/estimate_interest && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg -Iestimate_interest:/home/johs/prosjekt/temp_ws/src/estimate_interest/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p estimate_interest -o /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg
+
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonsArray.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonsArray.py: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonsArray.py: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG estimate_interest/PersonsArray"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG estimate_interest/PersonsArray"
 	cd /home/johs/prosjekt/temp_ws/build/estimate_interest && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg -Iestimate_interest:/home/johs/prosjekt/temp_ws/src/estimate_interest/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p estimate_interest -o /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg
 
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonInfo.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonInfo.py: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG estimate_interest/PersonInfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG estimate_interest/PersonInfo"
 	cd /home/johs/prosjekt/temp_ws/build/estimate_interest && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg -Iestimate_interest:/home/johs/prosjekt/temp_ws/src/estimate_interest/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p estimate_interest -o /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg
 
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/__init__.py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_DirectionStatus.py
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/__init__.py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonsArray.py
 /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/__init__.py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonInfo.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for estimate_interest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for estimate_interest"
 	cd /home/johs/prosjekt/temp_ws/build/estimate_interest && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg --initpy
 
 estimate_interest_generate_messages_py: estimate_interest/CMakeFiles/estimate_interest_generate_messages_py
+estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_DirectionStatus.py
 estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonsArray.py
 estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/_PersonInfo.py
 estimate_interest_generate_messages_py: /home/johs/prosjekt/temp_ws/devel/lib/python2.7/dist-packages/estimate_interest/msg/__init__.py

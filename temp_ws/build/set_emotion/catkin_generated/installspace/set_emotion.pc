@@ -1,0 +1,8 @@
+prefix=/home/johs/prosjekt/temp_ws/install
+
+Name: set_emotion
+Description: Description of set_emotion
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johs/prosjekt/temp_ws/install/lib 
+Requires: 

@@ -26,19 +26,20 @@ public:
 	Expression(){};
 
 	void setRecvExpr(trollnode::Expression msg);
-	std::string getActionName();
+	std::string createExpressionString();
 
 };
 
 
 class ExprQueue
 {
-	std::vector<Expression> exprQueue;
+	std::vector<Expression> expressions;
 public:
-	//NEED CONSTRUCTORS
+	ExprQueue(){};
 
+	//Need to figure out when/how to send
 	void sendExpression();
-	void addExpression(const trollnode::Expression::ConstPtr& msg);
+	void addExpression(Expression expr);
 	void ignoreExpression();
 };
 

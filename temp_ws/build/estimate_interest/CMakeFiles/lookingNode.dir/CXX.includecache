@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/johs/prosjekt/temp_ws/devel/include/estimate_interest/DirectionStatus.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/johs/prosjekt/temp_ws/devel/include/estimate_interest/PersonInfo.h
 string
 -
@@ -63,6 +79,8 @@ estimate_interest/PersonInfo.h
 /home/johs/prosjekt/temp_ws/src/estimate_interest/include/estimate_interest/estimate_interest/PersonInfo.h
 estimate_interest/PersonsArray.h
 /home/johs/prosjekt/temp_ws/src/estimate_interest/include/estimate_interest/estimate_interest/PersonsArray.h
+estimate_interest/DirectionStatus.h
+/home/johs/prosjekt/temp_ws/src/estimate_interest/include/estimate_interest/estimate_interest/DirectionStatus.h
 
 /home/johs/prosjekt/temp_ws/src/estimate_interest/src/lookingNode.cpp
 sstream

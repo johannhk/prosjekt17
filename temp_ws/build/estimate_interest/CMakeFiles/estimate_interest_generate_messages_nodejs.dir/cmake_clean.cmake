@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/estimate_interest_generate_messages_nodejs"
+  "/home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/DirectionStatus.js"
   "/home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonsArray.js"
   "/home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonInfo.js"
 )

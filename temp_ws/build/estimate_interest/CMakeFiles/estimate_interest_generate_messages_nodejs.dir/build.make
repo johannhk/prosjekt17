@@ -53,22 +53,29 @@ CMAKE_BINARY_DIR = /home/johs/prosjekt/temp_ws/build
 # Include the progress variables for this target.
 include estimate_interest/CMakeFiles/estimate_interest_generate_messages_nodejs.dir/progress.make
 
+estimate_interest/CMakeFiles/estimate_interest_generate_messages_nodejs: /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/DirectionStatus.js
 estimate_interest/CMakeFiles/estimate_interest_generate_messages_nodejs: /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonsArray.js
 estimate_interest/CMakeFiles/estimate_interest_generate_messages_nodejs: /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonInfo.js
 
 
+/home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/DirectionStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/DirectionStatus.js: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from estimate_interest/DirectionStatus.msg"
+	cd /home/johs/prosjekt/temp_ws/build/estimate_interest && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg -Iestimate_interest:/home/johs/prosjekt/temp_ws/src/estimate_interest/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p estimate_interest -o /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg
+
 /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonsArray.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonsArray.js: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg
 /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonsArray.js: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from estimate_interest/PersonsArray.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from estimate_interest/PersonsArray.msg"
 	cd /home/johs/prosjekt/temp_ws/build/estimate_interest && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg -Iestimate_interest:/home/johs/prosjekt/temp_ws/src/estimate_interest/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p estimate_interest -o /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg
 
 /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonInfo.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonInfo.js: /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from estimate_interest/PersonInfo.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from estimate_interest/PersonInfo.msg"
 	cd /home/johs/prosjekt/temp_ws/build/estimate_interest && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg -Iestimate_interest:/home/johs/prosjekt/temp_ws/src/estimate_interest/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p estimate_interest -o /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg
 
 estimate_interest_generate_messages_nodejs: estimate_interest/CMakeFiles/estimate_interest_generate_messages_nodejs
+estimate_interest_generate_messages_nodejs: /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/DirectionStatus.js
 estimate_interest_generate_messages_nodejs: /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonsArray.js
 estimate_interest_generate_messages_nodejs: /home/johs/prosjekt/temp_ws/devel/share/gennodejs/ros/estimate_interest/msg/PersonInfo.js
 estimate_interest_generate_messages_nodejs: estimate_interest/CMakeFiles/estimate_interest_generate_messages_nodejs.dir/build.make

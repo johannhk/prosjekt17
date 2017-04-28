@@ -13,8 +13,10 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   image_transport
   cv_bridge
-  ##k2_client
   roslaunch
+  estimate_interest
+  ##k2_client
+
 )
 find_package( OpenCV  REQUIRED )
 
@@ -74,7 +76,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES trollnode
+  LIBRARIES trollnode estimate_interest
    CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs sensor_msgs image_transport  cv_bridge
 #  DEPENDS system_lib
    CATKIN_DEPENDS message_runtime
@@ -99,9 +101,10 @@ include_directories(
 # )
 
 
-add_executable(publishExpression src/publishExpression.cpp)
-target_link_libraries(publishExpression ${catkin_LIBRARIES})
-add_dependencies(publishExpression trollnode_generate_messages_cpp)
+add_executable(createExpression src/createExpression.cpp)
+target_link_libraries(createExpression ${catkin_LIBRARIES})
+add_dependencies(createExpression trollnode_generate_messages_cpp)
+add_dependencies(createExpression ${catkin_EXPORTED_TARGETS})
 
 add_executable(setExpression src/setExpression.cpp )
 target_link_libraries(setExpression ${catkin_LIBRARIES} )

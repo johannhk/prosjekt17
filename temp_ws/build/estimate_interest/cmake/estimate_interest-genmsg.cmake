@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "estimate_interest: 2 messages, 0 services")
+message(STATUS "estimate_interest: 3 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iestimate_interest:/home/johs/prosjekt/temp_ws/src/estimate_interest/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -16,6 +16,11 @@ add_custom_target(estimate_interest_generate_messages ALL)
 # verify that message/service dependencies have not changed since configure
 
 
+
+get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg" NAME_WE)
+add_custom_target(_estimate_interest_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "estimate_interest" "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg" ""
+)
 
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg" NAME_WE)
 add_custom_target(_estimate_interest_generate_messages_check_deps_${_filename}
@@ -33,6 +38,12 @@ add_custom_target(_estimate_interest_generate_messages_check_deps_${_filename}
 
 ### Section generating for lang: gencpp
 ### Generating Messages
+_generate_msg_cpp(estimate_interest
+  "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/estimate_interest
+)
 _generate_msg_cpp(estimate_interest
   "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg"
   "${MSG_I_FLAGS}"
@@ -60,6 +71,8 @@ add_custom_target(estimate_interest_generate_messages_cpp
 add_dependencies(estimate_interest_generate_messages estimate_interest_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg" NAME_WE)
+add_dependencies(estimate_interest_generate_messages_cpp _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg" NAME_WE)
 add_dependencies(estimate_interest_generate_messages_cpp _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg" NAME_WE)
@@ -74,6 +87,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS estimate_interest_generate_messages
 
 ### Section generating for lang: geneus
 ### Generating Messages
+_generate_msg_eus(estimate_interest
+  "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/estimate_interest
+)
 _generate_msg_eus(estimate_interest
   "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg"
   "${MSG_I_FLAGS}"
@@ -101,6 +120,8 @@ add_custom_target(estimate_interest_generate_messages_eus
 add_dependencies(estimate_interest_generate_messages estimate_interest_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg" NAME_WE)
+add_dependencies(estimate_interest_generate_messages_eus _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg" NAME_WE)
 add_dependencies(estimate_interest_generate_messages_eus _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg" NAME_WE)
@@ -115,6 +136,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS estimate_interest_generate_messages
 
 ### Section generating for lang: genlisp
 ### Generating Messages
+_generate_msg_lisp(estimate_interest
+  "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/estimate_interest
+)
 _generate_msg_lisp(estimate_interest
   "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg"
   "${MSG_I_FLAGS}"
@@ -142,6 +169,8 @@ add_custom_target(estimate_interest_generate_messages_lisp
 add_dependencies(estimate_interest_generate_messages estimate_interest_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg" NAME_WE)
+add_dependencies(estimate_interest_generate_messages_lisp _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg" NAME_WE)
 add_dependencies(estimate_interest_generate_messages_lisp _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg" NAME_WE)
@@ -156,6 +185,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS estimate_interest_generate_messages
 
 ### Section generating for lang: gennodejs
 ### Generating Messages
+_generate_msg_nodejs(estimate_interest
+  "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/estimate_interest
+)
 _generate_msg_nodejs(estimate_interest
   "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg"
   "${MSG_I_FLAGS}"
@@ -183,6 +218,8 @@ add_custom_target(estimate_interest_generate_messages_nodejs
 add_dependencies(estimate_interest_generate_messages estimate_interest_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg" NAME_WE)
+add_dependencies(estimate_interest_generate_messages_nodejs _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg" NAME_WE)
 add_dependencies(estimate_interest_generate_messages_nodejs _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg" NAME_WE)
@@ -197,6 +234,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS estimate_interest_generate_messages
 
 ### Section generating for lang: genpy
 ### Generating Messages
+_generate_msg_py(estimate_interest
+  "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/estimate_interest
+)
 _generate_msg_py(estimate_interest
   "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg"
   "${MSG_I_FLAGS}"
@@ -224,6 +267,8 @@ add_custom_target(estimate_interest_generate_messages_py
 add_dependencies(estimate_interest_generate_messages estimate_interest_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/DirectionStatus.msg" NAME_WE)
+add_dependencies(estimate_interest_generate_messages_py _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonInfo.msg" NAME_WE)
 add_dependencies(estimate_interest_generate_messages_py _estimate_interest_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/johs/prosjekt/temp_ws/src/estimate_interest/msg/PersonsArray.msg" NAME_WE)

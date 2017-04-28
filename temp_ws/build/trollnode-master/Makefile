@@ -181,19 +181,19 @@ setExpression/fast:
 .PHONY : setExpression/fast
 
 # Convenience name for target.
-trollnode-master/CMakeFiles/publishExpression.dir/rule:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/publishExpression.dir/rule
-.PHONY : trollnode-master/CMakeFiles/publishExpression.dir/rule
+trollnode-master/CMakeFiles/createExpression.dir/rule:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/createExpression.dir/rule
+.PHONY : trollnode-master/CMakeFiles/createExpression.dir/rule
 
 # Convenience name for target.
-publishExpression: trollnode-master/CMakeFiles/publishExpression.dir/rule
+createExpression: trollnode-master/CMakeFiles/createExpression.dir/rule
 
-.PHONY : publishExpression
+.PHONY : createExpression
 
 # fast build rule for target.
-publishExpression/fast:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/publishExpression.dir/build.make trollnode-master/CMakeFiles/publishExpression.dir/build
-.PHONY : publishExpression/fast
+createExpression/fast:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/build
+.PHONY : createExpression/fast
 
 # Convenience name for target.
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
@@ -525,32 +525,32 @@ trollnode_generate_messages_py/fast:
 	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/build
 .PHONY : trollnode_generate_messages_py/fast
 
-src/publishExpression.o: src/publishExpression.cpp.o
+src/createExpression.o: src/createExpression.cpp.o
 
-.PHONY : src/publishExpression.o
+.PHONY : src/createExpression.o
 
 # target to build an object file
-src/publishExpression.cpp.o:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/publishExpression.dir/build.make trollnode-master/CMakeFiles/publishExpression.dir/src/publishExpression.cpp.o
-.PHONY : src/publishExpression.cpp.o
+src/createExpression.cpp.o:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/src/createExpression.cpp.o
+.PHONY : src/createExpression.cpp.o
 
-src/publishExpression.i: src/publishExpression.cpp.i
+src/createExpression.i: src/createExpression.cpp.i
 
-.PHONY : src/publishExpression.i
+.PHONY : src/createExpression.i
 
 # target to preprocess a source file
-src/publishExpression.cpp.i:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/publishExpression.dir/build.make trollnode-master/CMakeFiles/publishExpression.dir/src/publishExpression.cpp.i
-.PHONY : src/publishExpression.cpp.i
+src/createExpression.cpp.i:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/src/createExpression.cpp.i
+.PHONY : src/createExpression.cpp.i
 
-src/publishExpression.s: src/publishExpression.cpp.s
+src/createExpression.s: src/createExpression.cpp.s
 
-.PHONY : src/publishExpression.s
+.PHONY : src/createExpression.s
 
 # target to generate assembly for a file
-src/publishExpression.cpp.s:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/publishExpression.dir/build.make trollnode-master/CMakeFiles/publishExpression.dir/src/publishExpression.cpp.s
-.PHONY : src/publishExpression.cpp.s
+src/createExpression.cpp.s:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/src/createExpression.cpp.s
+.PHONY : src/createExpression.cpp.s
 
 src/setExpression.o: src/setExpression.cpp.o
 
@@ -590,7 +590,7 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... setExpression"
-	@echo "... publishExpression"
+	@echo "... createExpression"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
@@ -616,9 +616,9 @@ help:
 	@echo "... trollnode_generate_messages_nodejs"
 	@echo "... trollnode_gennodejs"
 	@echo "... trollnode_generate_messages_py"
-	@echo "... src/publishExpression.o"
-	@echo "... src/publishExpression.i"
-	@echo "... src/publishExpression.s"
+	@echo "... src/createExpression.o"
+	@echo "... src/createExpression.i"
+	@echo "... src/createExpression.s"
 	@echo "... src/setExpression.o"
 	@echo "... src/setExpression.i"
 	@echo "... src/setExpression.s"
