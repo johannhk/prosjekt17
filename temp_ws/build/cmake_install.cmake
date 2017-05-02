@@ -120,7 +120,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/johs/prosjekt/temp_ws/build/set_emotion/cmake_install.cmake")
   include("/home/johs/prosjekt/temp_ws/build/estimate_interest/cmake_install.cmake")
   include("/home/johs/prosjekt/temp_ws/build/speech_processing/cmake_install.cmake")
-  include("/home/johs/prosjekt/temp_ws/build/cyborg_ros_controller/cmake_install.cmake")
   include("/home/johs/prosjekt/temp_ws/build/trollnode-master/cmake_install.cmake")
 
 endif()

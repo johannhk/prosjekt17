@@ -22,7 +22,7 @@ double Position::getTimeDifference(Position position)
 
 void Position::print()
 {
-	ROS_INFO("Position is x = %.3f, y = %.3f", x, y);
+	ROS_INFO("Position is x = %i, y = %i", x, y);
 	return;
 }
 

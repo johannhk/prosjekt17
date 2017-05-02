@@ -6,7 +6,6 @@
 
 //headerfiles and messagefiles relevant for this package
 #include "std_msgs/String.h"
-#include "trollnode/Expression.h"
 #include "trollnode/expression_class.h"
 //#include "trollnode/expression_templates.h"
 //sockets

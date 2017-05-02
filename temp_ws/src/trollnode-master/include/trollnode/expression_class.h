@@ -4,6 +4,8 @@
 
 #include <vector>
 #include "trollnode/expression_templates.h"
+#include "estimate_interest/DirectionStatus.h"
+#include "speech_processing/Expression.h"
 
 
 //!!!!!NOT USED AS OF NOW
@@ -24,8 +26,9 @@ class Expression
 public:
 	//NEED CONSTRUCTIORS
 	Expression(){};
-
-	void setRecvExpr(trollnode::Expression msg);
+	void addLookDirection(const estimate_interest::DirectionStatus& msg);
+	//void setRecvExpr(trollnode::Expression msg);
+	void setSpeech(const speech_processing::Expression& msg);
 	std::string createExpressionString();
 
 };

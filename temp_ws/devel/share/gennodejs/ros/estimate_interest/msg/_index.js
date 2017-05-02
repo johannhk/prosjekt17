@@ -1,12 +1,12 @@
 
 "use strict";
 
-let DirectionStatus = require('./DirectionStatus.js');
 let PersonsArray = require('./PersonsArray.js');
 let PersonInfo = require('./PersonInfo.js');
+let DirectionStatus = require('./DirectionStatus.js');
 
 module.exports = {
-  DirectionStatus: DirectionStatus,
   PersonsArray: PersonsArray,
   PersonInfo: PersonInfo,
+  DirectionStatus: DirectionStatus,
 };

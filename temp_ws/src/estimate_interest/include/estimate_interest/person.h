@@ -77,7 +77,8 @@ private:
 	LEFT,
 	FRONT
 	};
-	//enum class Direction 
+
+	
 	int id;
 	std::vector<Position> positions;
 	double speed;

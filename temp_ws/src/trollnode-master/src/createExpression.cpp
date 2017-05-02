@@ -11,17 +11,16 @@
 #include "std_msgs/String.h"
 //Custom ROS messages and headers(Messages are in uppercase)
 #include "estimate_interest/DirectionStatus.h"
-#include "trollnode/Expression.h"
+#include "speech_processing/Expression.h"
 #include "trollnode/expression_class.h"
 #include "trollnode/expression_templates.h"
 
 int count = 0;
 //std::string Expression::getActionName()
 
-//this function sets an expression to what has been recived over ROS
-void Expression::setRecvExpr(trollnode::Expression msg)
+/*void Expression::setRecvExpr(trollnode::Expression msg)
 {
-	//map to translate strings to pre-defined expressions being sent to the trollface
+	//map to translate strings to pre-defined expressionstring sent to the trollface
 	static std::map< std::string, std::vector<actionUnit> > lookup = {
 		{ "angry", angry },
 		{ "smile", smile },
@@ -32,49 +31,38 @@ void Expression::setRecvExpr(trollnode::Expression msg)
 		{ "suspicious", suspicious },
 		{ "disgust", disgust },
 		{ "pain", pain },
+		{ "right", right},
+		{ "left", left},
+		{ "up", up},
+		{ "down", down}
 	};
-
-
 
 	//setting actions to vector<actionUnit> corresponding to the recieved expression
 	if (msg.expression.compare("") != 0) {
 		auto it = lookup.find(msg.expression);
 		if (it != lookup.end()) {
-			//actions.push_back(it->second);
+			actions.insert(actions.end(), it->second.begin(), it->second.end());
 		} else {
 			ROS_ERROR("Did not recognize expression [%s], current expression not changed.",msg.expression.c_str());
 			//actions = NULL;
 		}
-	}
-
-	//appending the expression with looking direction
-	if (msg.look.compare("") != 0) {
-		auto it = lookup.find(msg.expression);
-		if (it != lookup.end()) {
-			//appending looking direction to the expression vector, as both is to be sent the face
-			actions.insert(actions.end(), it->second.begin(), it->second.end());
-		} else {
-			ROS_ERROR("Did not recognize direction [%s], current direction not changed.",msg.look.c_str());
-			//actions = NULL;
-		}
-	}
+	 }	
 	speech = msg.speech;
 }
-
-void Expression::addLookDirection(const estimate_interest::)
-
-std::string Expression::createExpressionString()
+*/
+void Expression::addLookDirection(const estimate_interest::DirectionStatus& msg)
 {
-	//asd
+	
+	//switch(msg.direction)
+	return;	
 
-
-
-	return "asd";
 }
 
+//void Expression:addSpeech(const speech_processing::Expression& msg)
 
 
-void setMessage(trollnode::Expression& msg)
+
+/*void setMessage(trollnode::Expression& msg)
 {
 	std::stringstream ss;
 	switch(count)
@@ -90,24 +78,24 @@ void setMessage(trollnode::Expression& msg)
 			count = 0;
 			return;
 	}
-}
+}*/
 
 int main(int argc, char **argv)
 {
 	//calling ROS functions to initialize the node
 	ros::init(argc, argv, "publishExpression");
 	ros::NodeHandle n;
-	ros::Publisher expressionPublisher = n.advertise<trollnode::Expression>("expression_topic", 100);
+	//ros::Publisher expressionPublisher = n.advertise<trollnode::Expression>("expression_topic", 100);
 	ros::Rate loop_rate(0.2);
 	
-	trollnode::Expression msg;
+	//trollnode::Expression msg;
 	while(ros::ok())
 	{
 		
-		setMessage(msg);
+		//setMessage(msg);
 
-		expressionPublisher.publish(msg);
-		ROS_INFO("sent message %s", msg.speech.c_str());
+		//expressionPublisher.publish(msg);
+		//ROS_INFO("sent message %s", msg.speech.c_str());
 
 		ros::spinOnce();
 		loop_rate.sleep();

@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
   cv_bridge
   roslaunch
-  estimate_interest
+  ##estimate_interest
   ##k2_client
 
 )
@@ -60,7 +60,6 @@ set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
    DEPENDENCIES
    std_msgs
    sensor_msgs
-   geometry_msgs
  )
 
 
@@ -76,7 +75,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES trollnode estimate_interest
+  LIBRARIES trollnode 
    CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs sensor_msgs image_transport  cv_bridge
 #  DEPENDS system_lib
    CATKIN_DEPENDS message_runtime
@@ -103,10 +102,14 @@ include_directories(
 
 add_executable(createExpression src/createExpression.cpp)
 target_link_libraries(createExpression ${catkin_LIBRARIES})
-add_dependencies(createExpression trollnode_generate_messages_cpp)
+##add_dependencies(createExpression trollnode_generate_messages_cpp)
 add_dependencies(createExpression ${catkin_EXPORTED_TARGETS})
+add_dependencies(createExpression estimate_interest_generate_messages_cpp)
+add_dependencies(createExpression speech_processing_generate_messages_cpp)
 
 add_executable(setExpression src/setExpression.cpp )
 target_link_libraries(setExpression ${catkin_LIBRARIES} )
-add_dependencies(setExpression  trollnode_generate_messages_cpp )
-
+##add_dependencies(setExpression  trollnode_generate_messages_cpp )
+add_dependencies(setExpression ${catkin_EXPORTED_TARGETS})
+add_dependencies(setExpression estimate_interest_generate_messages_cpp)
+add_dependencies(setExpression speech_processing_generate_messages_cpp)

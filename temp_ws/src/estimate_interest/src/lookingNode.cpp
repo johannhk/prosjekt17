@@ -22,8 +22,6 @@ void updatePositions(estimate_interest::PersonsArray* msg)
 	}
 }
 
-
-//int main(int argc, char** argv)
 int main(int argc, char** argv)
 {
 	//initializing node and rate

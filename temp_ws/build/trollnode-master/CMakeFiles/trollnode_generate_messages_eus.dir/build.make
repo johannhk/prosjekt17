@@ -64,7 +64,7 @@ trollnode-master/CMakeFiles/trollnode_generate_messages_eus: /home/johs/prosjekt
 
 /home/johs/prosjekt/temp_ws/devel/share/roseus/ros/trollnode/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for trollnode"
-	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/johs/prosjekt/temp_ws/devel/share/roseus/ros/trollnode trollnode std_msgs sensor_msgs geometry_msgs
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/johs/prosjekt/temp_ws/devel/share/roseus/ros/trollnode trollnode std_msgs sensor_msgs
 
 trollnode_generate_messages_eus: trollnode-master/CMakeFiles/trollnode_generate_messages_eus
 trollnode_generate_messages_eus: /home/johs/prosjekt/temp_ws/devel/share/roseus/ros/trollnode/msg/Expression.l

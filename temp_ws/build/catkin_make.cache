@@ -1,2 +1,2 @@
-cyborg_ros_controller:estimate_interest:set_emotion:speech_processing:trollnode-master
+estimate_interest:set_emotion:speech_processing:trollnode-master
 -DCATKIN_DEVEL_PREFIX=/home/johs/prosjekt/temp_ws/devel -DCMAKE_INSTALL_PREFIX=/home/johs/prosjekt/temp_ws/install -G Unix Makefiles

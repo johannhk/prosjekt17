@@ -58,11 +58,7 @@ void Expression::setRecvExpr(trollnode::Expression msg)
 		}
 	}
 	speech = msg.speech;
-
-
 }
-
-
 
 void setMessage(trollnode::Expression& msg)
 {
@@ -81,6 +77,7 @@ void setMessage(trollnode::Expression& msg)
 			return;
 	}
 }
+
 
 int main(int argc, char **argv)
 {
