@@ -40,6 +40,7 @@ void Person::setSpeed()
 	}
 }
 
+//!!!!!!!!!!!!!!!!!!!NOT FINISHED
 void Person::setStatus()
 {
 	double stationary_threshold = 0.08;
@@ -61,7 +62,7 @@ void Person::setStatus()
 		status=Person::Status::INTERESTED;
 	}
 	else
-		status=Person::Status::INTERESTED;
+		status=Person::Status::NOT_INTERESTED;
 	//else if(cur_dist < PUBLIC_DISTANCE &&  )
 }
 
@@ -82,17 +83,16 @@ void PersonList::updatePersons(const estimate_interest::PersonsArray::ConstPtr& 
 		persons.push_back(person);
 		person.print();
 	}
+
 	return;
 }
-
-
 
 void PersonList::setMessage(estimate_interest::DirectionStatus& msg)
 {
 	msg.interested=false;
 	//loop through list of person to find potentional interested
 	for(int i=0;i<persons.size(); i++) {
-		if(persons[i].getStatus() > Person::Status::INTERESTED) {
+		if(persons[i].getStatus() == Person::Status::INTERESTED) {
 			ROS_INFO("INTERESTED PERSON FOUND");
 			msg.interested = true;
 			switch(persons[i].dir)
@@ -109,25 +109,22 @@ void PersonList::setMessage(estimate_interest::DirectionStatus& msg)
 			}
 		}
 	}
-
 }
 
 
 int main(int argc, char** argv)
 {
-	ROS_INFO("START");
 	ros::init(argc, argv, "classifyPersons");
 	ros::NodeHandle n;
 
-	//std::vector<Person>* persons;
 	PersonList persons;
-	//creating callback function updatePersons for perceived persons
+	
+	//callback function updatePersons for perceived persons
 	ros::Subscriber classifyPerson = n.subscribe("persons_information", 10, &PersonList::updatePersons, &persons);
-	//creating publisher node sending direction and whether interested to expressionNode
-	ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("send_expression", 10);
-	ros::Rate loop_rate (0.2);
+	//publisher node sending direction and status
+	ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10);
+	ros::Rate loop_rate (0.5);
 
-	//sendDirection and greetings
 	estimate_interest::DirectionStatus msg;
 	while(ros::ok())
 	{

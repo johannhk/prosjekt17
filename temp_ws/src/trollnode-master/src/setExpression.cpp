@@ -1,21 +1,24 @@
+//ROS specific
 #include "ros/ros.h"
 #include <ros/callback_queue.h>
+//#include "std_msgs/String.h"
 
-//rest
-#include <sstream>
+//custom header- and messagefiles from ROS
 
-//headerfiles and messagefiles relevant for this package
-#include "std_msgs/String.h"
 #include "trollnode/expression_class.h"
-//#include "trollnode/expression_templates.h"
+
+
 //sockets
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h> 
 
+//ip4 address and port for the trollface TCP server
 #define IP_ADDRESS 	"10.0.2.15"
 #define PORT 		"8888"
+
+//static const actionUnit emptyAU;
 
 //connects to trollserver via TCP
 int connectToServer(const char* ip_address, const char* port_number)
@@ -51,14 +54,6 @@ int connectToServer(const char* ip_address, const char* port_number)
     return socket_id;
 }
 
-
-/*void ExprQueue::addExpression(const trollnode::Expression::ConstPtr& msg)
-{
-	ROS_INFO("got message %s", msg->speech.c_str());
-	//send()
-
-
-}*/
 void ExprQueue::addExpression(Expression expr)
 {
 	expressions.push_back(expr);
@@ -66,19 +61,29 @@ void ExprQueue::addExpression(Expression expr)
 	return;
 }
 
+void ExprQueue::sendExpression()
+{
+
+	return;
+}
+
 int main(int argc, char **argv)
 {
 
 	int socket_id=connectToServer(IP_ADDRESS, PORT);
+	
 	ros::init(argc, argv, "setExpression");
 	ros::NodeHandle n;
+
+	Expression expr;
+	ros::Subscriber dirSub = n.subscribe("direction_and_status", 10, &Expression::addLookDirection, &expr);
+	ros::Subscriber speechSub = n.subscribe("speech_topic", 10, &Expression::addSpeech, &expr);
 
 
 	//subscribes to publishExpression and adds to queue
 	ExprQueue queue;
 	//ros::Subscriber setExpression = n.subscribe("expression_topic", 100, &ExprQueue::addExpression, &queue);
-
 	ros::spin();
-	
+	//Send expression over TCP
 
 }

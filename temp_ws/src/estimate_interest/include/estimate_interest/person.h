@@ -23,17 +23,11 @@
 #define STATIONARY_SPEED 0.2
 #define UPDATE_RATE 1
 
-
-
-
-
-//print status by overloading?????
-
 //using carthesian coordinates with origo for current position of cyborg
 class Position{
 	int x;
 	int y;
-	double time;
+	float time;
 
 public:
 	//constructors

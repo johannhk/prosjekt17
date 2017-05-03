@@ -3,31 +3,28 @@
 
 #include <string.h>
 //structure which can be used by 
-struct actionUnit
-{
-	int AU;
-	double intensity;
-};
+
 
 
 //Emotions
-std::vector<actionUnit> neutral = { };
-std::vector<actionUnit> sad = { {1,1},{15,1},{41,1} };
-std::vector<actionUnit> happy = { {6,1},{12,1},{25,1}  };
-std::vector<actionUnit> suspicious = { {9,1},{17,1},{42,1} };
-std::vector<actionUnit> angry = { {3,1},{4,1},{5,1},{6,1},{7,1},{23,1} };
-std::vector<actionUnit> surprise = { {1,1},{2,1},{5,1},{26,0.5},{27,0.5} };
-std::vector<actionUnit> disgust = { {4,1},{6,1},{7,1},{9,1},{10,1},{11,1},{23,1},{44,1} };
-std::vector<actionUnit> fear = { {1,1},{2,1},{4,1},{5,1},{7,1},{20,1},{26,0.25},{27,0.25} };
+/*static std::vector<actionUnit> neutral = { };
+static std::vector<actionUnit> sad = { {1,1},{15,1},{41,1} };
+static std::vector<actionUnit> happy = { {6,1},{12,1},{25,1}  };
+static std::vector<actionUnit> suspicious = { {9,1},{17,1},{42,1} };
+static std::vector<actionUnit> angry = { {3,1},{4,1},{5,1},{6,1},{7,1},{23,1} };
+static std::vector<actionUnit> surprise = { {1,1},{2,1},{5,1},{26,0.5},{27,0.5} };
+static std::vector<actionUnit> disgust = { {4,1},{6,1},{7,1},{9,1},{10,1},{11,1},{23,1},{44,1} };
+static std::vector<actionUnit> fear = { {1,1},{2,1},{4,1},{5,1},{7,1},{20,1},{26,0.25},{27,0.25} };
 //Expressions
-std::vector<actionUnit> smile = { {12,1} };
-std::vector<actionUnit> duckface = { {18,1},{22,1} };
-std::vector<actionUnit> pain = { {4,1},{7,1},{9,1},{10,1},{12,1},{25,1},{26,0.5},{43,1} };
+static std::vector<actionUnit> smile = { {12,1} };
+static std::vector<actionUnit> duckface = { {18,1},{22,1} };
+static std::vector<actionUnit> pain = { {4,1},{7,1},{9,1},{10,1},{12,1},{25,1},{26,0.5},{43,1} };
 //looking directions 
-std::vector<actionUnit> up = { {53,0.35} };
-std::vector<actionUnit> down = { {54,0.35} };
-std::vector<actionUnit> left = { {51,0.35} };
-std::vector<actionUnit> right = { {52,0.35} };
+static std::vector<actionUnit> up = { {53,0.35} };
+static std::vector<actionUnit> down = { {54,0.35} };
+static std::vector<actionUnit> left = { {51,0.35} };
+static std::vector<actionUnit> right = { {52,0.35} };
+
 
 
 
@@ -100,5 +97,5 @@ static std::map<int, std::string> actionValueToActionName {
 	{58 ,  "AU58headback"},
 	{66 ,  "AU66crosseye"}
 };
-
+*/
 #endif // __EXPRESSION_TEMPLATES_H_INCLUDED__

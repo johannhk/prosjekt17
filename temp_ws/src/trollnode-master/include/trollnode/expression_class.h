@@ -3,32 +3,36 @@
 
 
 #include <vector>
-#include "trollnode/expression_templates.h"
+#include <string.h>
+//Custom ROS messages and headers(Messages are in uppercase)
+//#include "trollnode/expression_templates.h"
 #include "estimate_interest/DirectionStatus.h"
 #include "speech_processing/Expression.h"
 
-
-//!!!!!NOT USED AS OF NOW
-enum class LookDirection {
-	Up,
-	Down,
-	Left,
-	Right,
-	Neutral
+struct actionUnit
+{
+	int AU;
+	double intensity;
 };
+
 
 
 class Expression
 {
-	std::vector<actionUnit> actions;
+	//actionUnit lookDirection;
+
+	std::string lookDir;
+	std::string emotion;
 	std::string speech;
+
+	std::vector<actionUnit> actions;
 
 public:
 	//NEED CONSTRUCTIORS
 	Expression(){};
-	void addLookDirection(const estimate_interest::DirectionStatus& msg);
-	//void setRecvExpr(trollnode::Expression msg);
-	void setSpeech(const speech_processing::Expression& msg);
+	void addActions(std::string expr);
+	void addLookDirection(const estimate_interest::DirectionStatus::ConstPtr& msg);
+	void addSpeech(const speech_processing::Expression::ConstPtr& msg);
 	std::string createExpressionString();
 
 };
@@ -39,11 +43,12 @@ class ExprQueue
 	std::vector<Expression> expressions;
 public:
 	ExprQueue(){};
-
-	//Need to figure out when/how to send
-	void sendExpression();
+	
 	void addExpression(Expression expr);
-	void ignoreExpression();
+	//void ignoreExpression();
+
+
+	void sendExpression();
 };
 
 #endif // __EXPRESSION_CLASS_H_INCLUDED__

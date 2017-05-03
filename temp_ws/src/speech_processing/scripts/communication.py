@@ -39,7 +39,7 @@ def load_question_bank():
 #Update the ROS topic sending the information to the trollface software.
 def update_troll(text_reply):
 
-	publish_interpretion = rospy.Publisher("trollExpression",Expression, queue_size = 100)
+	publish_interpretion = rospy.Publisher("speech_topic",Expression, queue_size = 100)
 
 	expr_msg = Expression()
 	expr_msg.speech = text_reply["reply"]
@@ -54,8 +54,8 @@ def get_facial_expression(mode):
 	facial_expressions = {}
 	facial_expressions["report_mode"] 		= 	"neutral"
 	facial_expressions["jokes_mode"] 		= 	"surprise"
-	facial_expressions["repeating_mode"] 		= 	"neutral"
-	facial_expressions["cleverbot_mode"] 		= 	"smile"
+	facial_expressions["repeating_mode"] 	= 	"neutral"
+	facial_expressions["cleverbot_mode"] 	= 	"smile"
 	facial_expressions["abusive_mode"]		= 	"angry"
 	facial_expressions["tired_mode"] 		= 	"pain"
 	facial_expressions["lunch_mode"] 		= 	"blink"

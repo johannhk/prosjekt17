@@ -10,6 +10,9 @@
 //headerfiles
 #include "estimate_interest/person.h"
 
+
+/*this function should be replaced when a camera with human detection for the cyborg
+is ready and position and personID can be read from there*/
 void updatePositions(estimate_interest::PersonsArray* msg)
 {
 	estimate_interest::PersonInfo person;
@@ -24,20 +27,20 @@ void updatePositions(estimate_interest::PersonsArray* msg)
 
 int main(int argc, char** argv)
 {
-	//initializing node and rate
+	//initializing publisher node of personID and positions for tracked objects
 	ros::init(argc, argv, "lookingNode");
 	ros::NodeHandle n;
 	ros::Publisher lookPublisher = n.advertise<estimate_interest::PersonsArray>("persons_information", 10);
-	ros::Rate loop_rate(0.2);
+	ros::Rate loop_rate(1);
 
-	//estimate_interest::PersonInfo persons;
 	estimate_interest::PersonsArray arr;
+
 
 	while(ros::ok())
 	{
 		updatePositions(&arr);
 		lookPublisher.publish(arr);
-		ROS_INFO("Sent message with array");
+		ROS_INFO("Sent PersonArray");
 
 		ros::spinOnce();
 		loop_rate.sleep();

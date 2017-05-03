@@ -181,21 +181,6 @@ setExpression/fast:
 .PHONY : setExpression/fast
 
 # Convenience name for target.
-trollnode-master/CMakeFiles/createExpression.dir/rule:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/createExpression.dir/rule
-.PHONY : trollnode-master/CMakeFiles/createExpression.dir/rule
-
-# Convenience name for target.
-createExpression: trollnode-master/CMakeFiles/createExpression.dir/rule
-
-.PHONY : createExpression
-
-# fast build rule for target.
-createExpression/fast:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/build
-.PHONY : createExpression/fast
-
-# Convenience name for target.
 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : trollnode-master/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
@@ -531,7 +516,7 @@ src/createExpression.o: src/createExpression.cpp.o
 
 # target to build an object file
 src/createExpression.cpp.o:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/src/createExpression.cpp.o
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o
 .PHONY : src/createExpression.cpp.o
 
 src/createExpression.i: src/createExpression.cpp.i
@@ -540,7 +525,7 @@ src/createExpression.i: src/createExpression.cpp.i
 
 # target to preprocess a source file
 src/createExpression.cpp.i:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/src/createExpression.cpp.i
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.i
 .PHONY : src/createExpression.cpp.i
 
 src/createExpression.s: src/createExpression.cpp.s
@@ -549,7 +534,7 @@ src/createExpression.s: src/createExpression.cpp.s
 
 # target to generate assembly for a file
 src/createExpression.cpp.s:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/createExpression.dir/build.make trollnode-master/CMakeFiles/createExpression.dir/src/createExpression.cpp.s
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.s
 .PHONY : src/createExpression.cpp.s
 
 src/setExpression.o: src/setExpression.cpp.o
@@ -590,7 +575,6 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... setExpression"
-	@echo "... createExpression"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"

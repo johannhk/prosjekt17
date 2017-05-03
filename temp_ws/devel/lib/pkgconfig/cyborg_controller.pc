@@ -1,0 +1,8 @@
+prefix=/home/johs/prosjekt/temp_ws/devel
+
+Name: cyborg_controller
+Description: Description of cyborg_controller
+Version: 0.0.2
+Cflags: -I/home/johs/prosjekt/temp_ws/devel/include
+Libs: -L/home/johs/prosjekt/temp_ws/devel/lib 
+Requires: message_runtime actionlib_msgs roscpp rospy std_msgs

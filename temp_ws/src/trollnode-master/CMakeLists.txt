@@ -49,10 +49,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
- add_message_files(
-   FILES
-   Expression.msg
- )
+ add_message_files()
 
 
 ## Generate added messages and services with any dependencies listed here
@@ -100,14 +97,7 @@ include_directories(
 # )
 
 
-add_executable(createExpression src/createExpression.cpp)
-target_link_libraries(createExpression ${catkin_LIBRARIES})
-##add_dependencies(createExpression trollnode_generate_messages_cpp)
-add_dependencies(createExpression ${catkin_EXPORTED_TARGETS})
-add_dependencies(createExpression estimate_interest_generate_messages_cpp)
-add_dependencies(createExpression speech_processing_generate_messages_cpp)
-
-add_executable(setExpression src/setExpression.cpp )
+add_executable(setExpression src/setExpression.cpp src/createExpression.cpp)
 target_link_libraries(setExpression ${catkin_LIBRARIES} )
 ##add_dependencies(setExpression  trollnode_generate_messages_cpp )
 add_dependencies(setExpression ${catkin_EXPORTED_TARGETS})
