@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f754f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f754f.dir/build.make CMakeFiles/cmTC_f754f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c3b72/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3b72.dir/build.make CMakeFiles/cmTC_c3b72.dir/build
 make[1]: Entering directory '/home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f754f.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_f754f.dir/CheckSymbolExists.c.o   -c /home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_f754f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f754f.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_f754f.dir/CheckSymbolExists.c.o  -o cmTC_f754f -rdynamic 
-CMakeFiles/cmTC_f754f.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_c3b72.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c3b72.dir/CheckSymbolExists.c.o   -c /home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c3b72
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3b72.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c3b72.dir/CheckSymbolExists.c.o  -o cmTC_c3b72 -rdynamic 
+CMakeFiles/cmTC_c3b72.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f754f.dir/build.make:97: recipe for target 'cmTC_f754f' failed
-make[1]: *** [cmTC_f754f] Error 1
+CMakeFiles/cmTC_c3b72.dir/build.make:97: recipe for target 'cmTC_c3b72' failed
+make[1]: *** [cmTC_c3b72] Error 1
 make[1]: Leaving directory '/home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_f754f/fast' failed
-make: *** [cmTC_f754f/fast] Error 2
+Makefile:126: recipe for target 'cmTC_c3b72/fast' failed
+make: *** [cmTC_c3b72/fast] Error 2
 
 File /home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_48b43/fast"
-/usr/bin/make -f CMakeFiles/cmTC_48b43.dir/build.make CMakeFiles/cmTC_48b43.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8404f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8404f.dir/build.make CMakeFiles/cmTC_8404f.dir/build
 make[1]: Entering directory '/home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_48b43.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_48b43.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_48b43
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48b43.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_48b43.dir/CheckFunctionExists.c.o  -o cmTC_48b43 -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTC_8404f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8404f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8404f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8404f.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8404f.dir/CheckFunctionExists.c.o  -o cmTC_8404f -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_48b43.dir/build.make:97: recipe for target 'cmTC_48b43' failed
-make[1]: *** [cmTC_48b43] Error 1
+CMakeFiles/cmTC_8404f.dir/build.make:97: recipe for target 'cmTC_8404f' failed
+make[1]: *** [cmTC_8404f] Error 1
 make[1]: Leaving directory '/home/johs/prosjekt/temp_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_48b43/fast' failed
-make: *** [cmTC_48b43/fast] Error 2
+Makefile:126: recipe for target 'cmTC_8404f/fast' failed
+make: *** [cmTC_8404f/fast] Error 2
 
 

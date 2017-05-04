@@ -1,18 +1,19 @@
 //ROS specific
 #include "ros/ros.h"
 #include <ros/callback_queue.h>
-//#include "std_msgs/String.h"
+#include <ros/time.h>
 
 //custom header- and messagefiles from ROS
 
-#include "trollnode/expression_class.h"
+#include "trollnode/expression.h"
 
 
-//sockets
+//sockets/misc
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h> 
+
 
 //ip4 address and port for the trollface TCP server
 #define IP_ADDRESS 	"10.0.2.15"
@@ -54,36 +55,46 @@ int connectToServer(const char* ip_address, const char* port_number)
     return socket_id;
 }
 
-void ExprQueue::addExpression(Expression expr)
+void sendString(int socket_id, std::string msgString)
 {
-	expressions.push_back(expr);
-	ROS_INFO("added expression ");
-	return;
+	//add check if still up
+	send(socket_id, msgString.c_str(), msgString.size(), 0);
 }
 
-void ExprQueue::sendExpression()
-{
-
-	return;
-}
 
 int main(int argc, char **argv)
 {
 
-	int socket_id=connectToServer(IP_ADDRESS, PORT);
+
+
+	int socket_id = connectToServer(IP_ADDRESS, PORT);
 	
 	ros::init(argc, argv, "setExpression");
 	ros::NodeHandle n;
 
-	Expression expr;
-	ros::Subscriber dirSub = n.subscribe("direction_and_status", 10, &Expression::addLookDirection, &expr);
-	ros::Subscriber speechSub = n.subscribe("speech_topic", 10, &Expression::addSpeech, &expr);
+	Expression current;
+	Expression previous;
 
+	//subscribers with callback functions to update current Expression
+	ros::Subscriber dirSub = n.subscribe("direction_and_status", 10, &Expression::addLookDirection, &current);
+	ros::Subscriber speechSub = n.subscribe("speech_topic", 10, &Expression::addSpeech, &current);
+	ros::spin();
+
+	//rate set in hz
+	ros::Rate sending_rate (0.2);
+	std::string msgString;
+	while(ros::ok())
+	{
+		ROS_INFO("Sleeping");
+		sending_rate.sleep();
+		ROS_INFO("Awakening");
+		msgString = current.createExpression(previous);
+		sendString(socket_id, msgString);
+	}
 
 	//subscribes to publishExpression and adds to queue
-	ExprQueue queue;
 	//ros::Subscriber setExpression = n.subscribe("expression_topic", 100, &ExprQueue::addExpression, &queue);
-	ros::spin();
+	
 	//Send expression over TCP
 
 }

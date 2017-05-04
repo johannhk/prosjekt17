@@ -510,59 +510,59 @@ trollnode_generate_messages_py/fast:
 	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/build.make trollnode-master/CMakeFiles/trollnode_generate_messages_py.dir/build
 .PHONY : trollnode_generate_messages_py/fast
 
-src/createExpression.o: src/createExpression.cpp.o
+src/expression.o: src/expression.cpp.o
 
-.PHONY : src/createExpression.o
-
-# target to build an object file
-src/createExpression.cpp.o:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o
-.PHONY : src/createExpression.cpp.o
-
-src/createExpression.i: src/createExpression.cpp.i
-
-.PHONY : src/createExpression.i
-
-# target to preprocess a source file
-src/createExpression.cpp.i:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.i
-.PHONY : src/createExpression.cpp.i
-
-src/createExpression.s: src/createExpression.cpp.s
-
-.PHONY : src/createExpression.s
-
-# target to generate assembly for a file
-src/createExpression.cpp.s:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.s
-.PHONY : src/createExpression.cpp.s
-
-src/setExpression.o: src/setExpression.cpp.o
-
-.PHONY : src/setExpression.o
+.PHONY : src/expression.o
 
 # target to build an object file
-src/setExpression.cpp.o:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o
-.PHONY : src/setExpression.cpp.o
+src/expression.cpp.o:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o
+.PHONY : src/expression.cpp.o
 
-src/setExpression.i: src/setExpression.cpp.i
+src/expression.i: src/expression.cpp.i
 
-.PHONY : src/setExpression.i
+.PHONY : src/expression.i
 
 # target to preprocess a source file
-src/setExpression.cpp.i:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.i
-.PHONY : src/setExpression.cpp.i
+src/expression.cpp.i:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.i
+.PHONY : src/expression.cpp.i
 
-src/setExpression.s: src/setExpression.cpp.s
+src/expression.s: src/expression.cpp.s
 
-.PHONY : src/setExpression.s
+.PHONY : src/expression.s
 
 # target to generate assembly for a file
-src/setExpression.cpp.s:
-	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.s
-.PHONY : src/setExpression.cpp.s
+src/expression.cpp.s:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.s
+.PHONY : src/expression.cpp.s
+
+src/sendExpression.o: src/sendExpression.cpp.o
+
+.PHONY : src/sendExpression.o
+
+# target to build an object file
+src/sendExpression.cpp.o:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o
+.PHONY : src/sendExpression.cpp.o
+
+src/sendExpression.i: src/sendExpression.cpp.i
+
+.PHONY : src/sendExpression.i
+
+# target to preprocess a source file
+src/sendExpression.cpp.i:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.i
+.PHONY : src/sendExpression.cpp.i
+
+src/sendExpression.s: src/sendExpression.cpp.s
+
+.PHONY : src/sendExpression.s
+
+# target to generate assembly for a file
+src/sendExpression.cpp.s:
+	cd /home/johs/prosjekt/temp_ws/build && $(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.s
+.PHONY : src/sendExpression.cpp.s
 
 # Help Target
 help:
@@ -600,12 +600,12 @@ help:
 	@echo "... trollnode_generate_messages_nodejs"
 	@echo "... trollnode_gennodejs"
 	@echo "... trollnode_generate_messages_py"
-	@echo "... src/createExpression.o"
-	@echo "... src/createExpression.i"
-	@echo "... src/createExpression.s"
-	@echo "... src/setExpression.o"
-	@echo "... src/setExpression.i"
-	@echo "... src/setExpression.s"
+	@echo "... src/expression.o"
+	@echo "... src/expression.i"
+	@echo "... src/expression.s"
+	@echo "... src/sendExpression.o"
+	@echo "... src/sendExpression.i"
+	@echo "... src/sendExpression.s"
 .PHONY : help
 
 

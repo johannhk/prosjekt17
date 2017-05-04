@@ -57,64 +57,64 @@ include trollnode-master/CMakeFiles/setExpression.dir/progress.make
 # Include the compile flags for this target's objects.
 include trollnode-master/CMakeFiles/setExpression.dir/flags.make
 
-trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o: trollnode-master/CMakeFiles/setExpression.dir/flags.make
-trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o: /home/johs/prosjekt/temp_ws/src/trollnode-master/src/setExpression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o"
-	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/setExpression.dir/src/setExpression.cpp.o -c /home/johs/prosjekt/temp_ws/src/trollnode-master/src/setExpression.cpp
+trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o: trollnode-master/CMakeFiles/setExpression.dir/flags.make
+trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o: /home/johs/prosjekt/temp_ws/src/trollnode-master/src/sendExpression.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o"
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/setExpression.dir/src/sendExpression.cpp.o -c /home/johs/prosjekt/temp_ws/src/trollnode-master/src/sendExpression.cpp
 
-trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/setExpression.dir/src/setExpression.cpp.i"
-	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johs/prosjekt/temp_ws/src/trollnode-master/src/setExpression.cpp > CMakeFiles/setExpression.dir/src/setExpression.cpp.i
+trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/setExpression.dir/src/sendExpression.cpp.i"
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johs/prosjekt/temp_ws/src/trollnode-master/src/sendExpression.cpp > CMakeFiles/setExpression.dir/src/sendExpression.cpp.i
 
-trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/setExpression.dir/src/setExpression.cpp.s"
-	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johs/prosjekt/temp_ws/src/trollnode-master/src/setExpression.cpp -o CMakeFiles/setExpression.dir/src/setExpression.cpp.s
+trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/setExpression.dir/src/sendExpression.cpp.s"
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johs/prosjekt/temp_ws/src/trollnode-master/src/sendExpression.cpp -o CMakeFiles/setExpression.dir/src/sendExpression.cpp.s
 
-trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.requires:
+trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.requires:
 
-.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.requires
+.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.requires
 
-trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.provides: trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.requires
-	$(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.provides.build
-.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.provides
+trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.provides: trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.requires
+	$(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.provides.build
+.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.provides
 
-trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.provides.build: trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o
+trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.provides.build: trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o
 
 
-trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o: trollnode-master/CMakeFiles/setExpression.dir/flags.make
-trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o: /home/johs/prosjekt/temp_ws/src/trollnode-master/src/createExpression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o"
-	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/setExpression.dir/src/createExpression.cpp.o -c /home/johs/prosjekt/temp_ws/src/trollnode-master/src/createExpression.cpp
+trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o: trollnode-master/CMakeFiles/setExpression.dir/flags.make
+trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o: /home/johs/prosjekt/temp_ws/src/trollnode-master/src/expression.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johs/prosjekt/temp_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o"
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/setExpression.dir/src/expression.cpp.o -c /home/johs/prosjekt/temp_ws/src/trollnode-master/src/expression.cpp
 
-trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/setExpression.dir/src/createExpression.cpp.i"
-	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johs/prosjekt/temp_ws/src/trollnode-master/src/createExpression.cpp > CMakeFiles/setExpression.dir/src/createExpression.cpp.i
+trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/setExpression.dir/src/expression.cpp.i"
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johs/prosjekt/temp_ws/src/trollnode-master/src/expression.cpp > CMakeFiles/setExpression.dir/src/expression.cpp.i
 
-trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/setExpression.dir/src/createExpression.cpp.s"
-	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johs/prosjekt/temp_ws/src/trollnode-master/src/createExpression.cpp -o CMakeFiles/setExpression.dir/src/createExpression.cpp.s
+trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/setExpression.dir/src/expression.cpp.s"
+	cd /home/johs/prosjekt/temp_ws/build/trollnode-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johs/prosjekt/temp_ws/src/trollnode-master/src/expression.cpp -o CMakeFiles/setExpression.dir/src/expression.cpp.s
 
-trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.requires:
+trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.requires:
 
-.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.requires
+.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.requires
 
-trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.provides: trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.requires
-	$(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.provides.build
-.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.provides
+trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.provides: trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.requires
+	$(MAKE) -f trollnode-master/CMakeFiles/setExpression.dir/build.make trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.provides.build
+.PHONY : trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.provides
 
-trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.provides.build: trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o
+trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.provides.build: trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o
 
 
 # Object files for target setExpression
 setExpression_OBJECTS = \
-"CMakeFiles/setExpression.dir/src/setExpression.cpp.o" \
-"CMakeFiles/setExpression.dir/src/createExpression.cpp.o"
+"CMakeFiles/setExpression.dir/src/sendExpression.cpp.o" \
+"CMakeFiles/setExpression.dir/src/expression.cpp.o"
 
 # External object files for target setExpression
 setExpression_EXTERNAL_OBJECTS =
 
-/home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression: trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o
-/home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression: trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o
+/home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression: trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o
+/home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression: trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o
 /home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression: trollnode-master/CMakeFiles/setExpression.dir/build.make
 /home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression: /opt/ros/kinetic/lib/libimage_transport.so
 /home/johs/prosjekt/temp_ws/devel/lib/trollnode/setExpression: /opt/ros/kinetic/lib/libmessage_filters.so
@@ -197,8 +197,8 @@ trollnode-master/CMakeFiles/setExpression.dir/build: /home/johs/prosjekt/temp_ws
 
 .PHONY : trollnode-master/CMakeFiles/setExpression.dir/build
 
-trollnode-master/CMakeFiles/setExpression.dir/requires: trollnode-master/CMakeFiles/setExpression.dir/src/setExpression.cpp.o.requires
-trollnode-master/CMakeFiles/setExpression.dir/requires: trollnode-master/CMakeFiles/setExpression.dir/src/createExpression.cpp.o.requires
+trollnode-master/CMakeFiles/setExpression.dir/requires: trollnode-master/CMakeFiles/setExpression.dir/src/sendExpression.cpp.o.requires
+trollnode-master/CMakeFiles/setExpression.dir/requires: trollnode-master/CMakeFiles/setExpression.dir/src/expression.cpp.o.requires
 
 .PHONY : trollnode-master/CMakeFiles/setExpression.dir/requires
 

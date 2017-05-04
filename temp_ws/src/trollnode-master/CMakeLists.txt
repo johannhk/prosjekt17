@@ -97,7 +97,7 @@ include_directories(
 # )
 
 
-add_executable(setExpression src/setExpression.cpp src/createExpression.cpp)
+add_executable(setExpression src/sendExpression.cpp src/expression.cpp)
 target_link_libraries(setExpression ${catkin_LIBRARIES} )
 ##add_dependencies(setExpression  trollnode_generate_messages_cpp )
 add_dependencies(setExpression ${catkin_EXPORTED_TARGETS})

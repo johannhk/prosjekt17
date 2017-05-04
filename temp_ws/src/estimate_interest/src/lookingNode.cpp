@@ -31,13 +31,14 @@ int main(int argc, char** argv)
 	ros::init(argc, argv, "lookingNode");
 	ros::NodeHandle n;
 	ros::Publisher lookPublisher = n.advertise<estimate_interest::PersonsArray>("persons_information", 10);
-	ros::Rate loop_rate(1);
+	ros::Rate loop_rate(0.5);
 
 	estimate_interest::PersonsArray arr;
 
 
 	while(ros::ok())
 	{
+		arr.persons.clear();
 		updatePositions(&arr);
 		lookPublisher.publish(arr);
 		ROS_INFO("Sent PersonArray");

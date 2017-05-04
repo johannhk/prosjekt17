@@ -23,7 +23,7 @@
 #define STATIONARY_SPEED 0.2
 #define UPDATE_RATE 1
 
-//using carthesian coordinates with origo for current position of cyborg
+//using carthesian coordinates where origo is current position of cyborg
 class Position{
 	int x;
 	int y;
@@ -48,7 +48,7 @@ public:
 	{}
 
 	void print();
-	double getDistanceCyborg();
+	float getDistanceCyborg();
 	double getTimeDifference(Position position);
 	double getDistanceToPoint(Position position);
 
@@ -89,12 +89,13 @@ public:
 	{}
 	//member functions
 	void print();
-	Position getPosition();
+	
 	void setSpeed();
 	void addPosition(Position pos) { positions.push_back(pos); }
 	void setStatus();
 	void setDirection();
 
+	Position getPosition();
 	Status getStatus(){ return status;}
 	Direction getDirection(){return dir;}
 

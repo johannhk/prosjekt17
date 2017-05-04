@@ -10,28 +10,32 @@
 #include <ros/callback_queue.h>
 #include "std_msgs/String.h"
 //Custom ROS messages and headers(Messages are in uppercase)
-#include "trollnode/expression_class.h"
+#include "trollnode/expression.h"
 //#include "trollnode/expression_templates.h"
+#define NEUTRAL_INTENSITY 0
+#define DEFAULT_START_TIME 0
 
-/*mapping strings from ROS modules to templates with actions being sent to the trollface
-templates in lookup map are found in expression_templates.h*/
+
+
+
+/*mapping strings look and emotion from ROS modules to templates with actions being sent to the trollface*/
 void Expression::addActions(std::string action)
 {
 	//collection of actions for each expression
 	static std::map< std::string, std::vector<actionUnit> > lookup = {
-		{ "angry", {{3,1},{4,1},{5,1},{6,1},{7,1},{23,1}} },
-		{ "smile", {{12,1}} },
+		{ "angry", {{3,0,0,1,1},{4,0,0,1,1},{5,0,0,1,1},{6,0,0,1,1},{7,0,0,1,1},{23,0,0,1,1}} },
+		{ "smile", {{12,0,0,1,1}} },
 		{ "neutral", {}},
-		{ "happy", { {6,1},{12,1},{25,1}} },
-		{ "sad", {{1,1},{15,1},{41,1}} },
-		{ "surprise", { {1,1},{2,1},{5,1},{26,0.5},{27,0.5}} },
-		{ "suspicious", {{9,1},{17,1},{42,1}} },
-		{ "disgust", {{4,1},{6,1},{7,1},{9,1},{10,1},{11,1},{23,1},{44,1}} },
-		{ "pain", {{4,1},{7,1},{9,1},{10,1},{12,1},{25,1},{26,0.5},{43,1}} },
-		{ "right", {{52,0.35}} },
-		{ "left", {{51,0.35}} },
-		{ "up", {{53,0.35}} },
-		{ "down", {{54,0.35}} }
+		{ "happy", { {6,0,0,1,1},{12,0,0,1,1},{25,0,0,1,1}} },
+		{ "sad", {{1,0,0,1,1},{15,0,0,1,1},{41,0,0,1,1}} },
+		{ "surprise", { {1,0,0,1,1},{2,0,0,1,1},{5,0,0,1,1},{26,0,0,1,0.5},{27,0,0,1,0.5}} },
+		{ "suspicious", {{9,0,0,1,1},{17,0,0,1,1},{42,0,0,1,1}} },
+		{ "disgust", {{4,0,0,1,1},{6,0,0,1,1},{7,0,0,1,1},{90,0,0,1,1},{10,0,0,1,1},{11,0,0,1,1},{23,0,0,1,1},{44,0,0,1,1}} },
+		{ "pain", {{4,0,0,1,1},{7,0,0,1,1},{9,0,0,1,1},{10,0,0,1,1},{12,0,0,1,1},{25,0,0,1,1},{26,0,0,1,0.5},{43,0,0,1,1}} },
+		{ "right", {{52,0,0,1,0.35}} },
+		{ "left", {{51,0,0,1,0.35}} },
+		{ "up", {{53,0,0,1,0.35}} },
+		{ "down", {{54,0,0,1,0.35}} }
 	};
 
 	//setting actions to vector<actionUnit> corresponding to the recieved expression
@@ -51,6 +55,8 @@ void Expression::addActions(std::string action)
 void Expression::addLookDirection(const estimate_interest::DirectionStatus::ConstPtr& msg)
 {
 	lookDir = msg->direction;
+	emotion = "angry";
+	ROS_INFO("GOT DIRECTION %s EMOTION IS %s", msg->direction.c_str(), emotion);
 	return;
 }
 
@@ -63,8 +69,6 @@ void Expression::addSpeech(const speech_processing::Expression::ConstPtr& msg)
 
 std::string translateAction(actionUnit action)
 {
-	std::stringstream temp;
-
 	static std::map<int, std::string> actionNumberToString {
 		{1 ,  "AU01innerbrowraiser"},
 		{2 ,  "AU02outerbrowraiser"},
@@ -136,8 +140,7 @@ std::string translateAction(actionUnit action)
 
 	auto it = actionNumberToString.find(action.AU);
 	if (it != actionNumberToString.end()) {
-		temp<<it->second<<",0,"<<action.intensity;
-		return temp.str();
+		return it->second;      //","<<STOP_TIME<<","<<action.stopIntensity;
 
 	} else {
 		ROS_ERROR("Did not recognize action [%i], current action not added",action.AU);
@@ -145,20 +148,60 @@ std::string translateAction(actionUnit action)
 	}
 }
 
+void Expression::relaxExpression(Expression previous)
+{
+	bool found;
+	for (int i=0; i < previous.actions.size();i++)
+	{
+		found=false;
+		for (int j=0; j<this->actions.size();j++)
+		{
+			/*if the same action is used by following expressions, change new startIntensity to 
+			current intensity*/
+			if(this->actions[j].AU==previous.actions[i].AU)
+			{
+				this->actions[j].startIntensity = previous.actions[i].stopIntensity;
+				found=true;
+				break;
+			}
+		/*if a previous action has not ended with neutral_intensity, 
+		add relaxing action to new expression */
+		}
+		if(previous.actions[i].stopIntensity!=NEUTRAL_INTENSITY && !found)
+				this->actions.push_back({previous.actions[i].AU, previous.actions[i].startTime,
+				previous.actions[i].stopIntensity, previous.actions[i].stopTime, NEUTRAL_INTENSITY});
+	}
+}
 
-std::string Expression::createExpressionString()
+std::string Expression::translateToString()
 {
 	std::stringstream stringToSend;
 	//std::string temp;
 	if(0<actions.size())
 	{
+		/*translate all actions in expression to string accepted by trollface*/
 		for(int i=0;i<actions.size();i++)
 		{
-			stringToSend<<"["<<translateAction(actions[i])<<",0,0]";
-		}	
+
+			stringToSend << "[" << translateAction(actions[i]) << "," << actions[i].startTime << ","
+			<< actions[i].startIntensity << "," << actions[i].stopTime << "," <<actions[i].stopIntensity << "]";
+		}
+		//adds speech at the end of string
+		stringToSend << speech;
+		return stringToSend.str();
 	}
 	else
 		ROS_INFO("No actions in expression found");
-		return NULL;
+		return "";
 }
 
+std::string Expression::createExpression(Expression previous)
+{
+	//addLookDirection();
+	//addSpeech();
+	addActions(lookDir);
+	addActions(emotion);
+	relaxExpression(previous);
+	return translateToString();
+
+}
