@@ -73,6 +73,8 @@ unistd.h
 -
 string.h
 -
+ros/ros.h
+/home/johs/prosjekt/temp_ws/src/estimate_interest/include/estimate_interest/ros/ros.h
 ros/callback_queue.h
 -
 estimate_interest/PersonInfo.h
@@ -85,10 +87,6 @@ estimate_interest/DirectionStatus.h
 /home/johs/prosjekt/temp_ws/src/estimate_interest/src/person.cpp
 estimate_interest/person.h
 /home/johs/prosjekt/temp_ws/src/estimate_interest/src/estimate_interest/person.h
-ros/ros.h
-/home/johs/prosjekt/temp_ws/src/estimate_interest/src/ros/ros.h
-ros/callback_queue.h
--
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

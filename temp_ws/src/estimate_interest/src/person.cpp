@@ -1,8 +1,7 @@
 //headerfiles
 #include "estimate_interest/person.h"
 //ROS SPECIFIC
-#include "ros/ros.h"
-#include <ros/callback_queue.h>
+
 
 float Position::getDistanceCyborg()
 {
@@ -79,21 +78,29 @@ void Person::print()
 
 void PersonList::updatePersons(const estimate_interest::PersonsArray::ConstPtr& msg)
 {
-	ROS_INFO("SIZE IS %i", msg->persons.size());
-	for (int i=0; i<msg->persons.size(); i++)
-	{
+	ROS_INFO("%i persons tracked, %i persons in array", msg->persons.size(), persons.size());
+
+	bool tracked;
+	for (int i = 0; i < msg->persons.size(); i++) {
+		tracked = false;
 		Position pos(msg->persons[i].x, msg->persons[i].y, 2.0);
-		Person person(msg->persons[i]);
-		person.setStatus();
-		persons.push_back(person);
-		person.print();
+		for(int j = 0; j < persons.size(); j++) {
+			if (msg->persons[i].id == this->persons[j].id) {
+				tracked = true;
+				persons[j].positions.push_back(pos);
+			}	
+		}
+		if (!tracked) {
+			Person person(msg->persons[i]);
+			person.setStatus();
+			persons.push_back(person);
+			ROS_INFO("NEW ID IS %i", msg->persons[i].id);
+		}
 	}
-	
 	return;
 }
 
-void PersonList::setMessage(estimate_interest::DirectionStatus& msg)
-{
+void PersonList::setMessage(estimate_interest::DirectionStatus& msg) {
 	msg.interested=false;
 	//loop through list of person to find potentional interested
 	for(int i=0;i<persons.size(); i++) {
@@ -101,8 +108,7 @@ void PersonList::setMessage(estimate_interest::DirectionStatus& msg)
 			persons[i].getStatus() == Person::Status::INIT) {
 			ROS_INFO("INTERESTED PERSON FOUND");
 			msg.interested = true;
-			switch(persons[i].dir)
-			{
+			switch(persons[i].dir) {
 				case Person::Direction::RIGHT:
 					msg.direction = "right";
 					continue;
@@ -116,37 +122,40 @@ void PersonList::setMessage(estimate_interest::DirectionStatus& msg)
 					msg.direction = "front";
 			}
 		}
-
 	}
 }
 
+void PersonList::sendMessage(ros::Publisher& publisher, estimate_interest::DirectionStatus& msg) {
 
-int main(int argc, char** argv)
-{
+
+
+	return;
+}
+
+int main(int argc, char** argv) {
 	ros::init(argc, argv, "classifyPersons");
 	ros::NodeHandle n;
 
 	PersonList persons;
 	
 	//callback function updatePersons for perceived persons
-	ros::Subscriber classifyPerson = n.subscribe("persons_information", 10, &PersonList::updatePersons, &persons);
-	//publisher node sending direction and status
+	//ros::Subscriber classifyPerson = n.subscribe("persons_information", 10, &PersonList::updatePersons, &persons);
 	
-
-
+	//publisher node sending direction and status
 	ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10);
+	ros::Timer publishTimer = nh.createTimer(ros::Duration(1.0), ros::PersonList::sendMessage&, persons);
 
 	ros::Rate loop_rate (0.2);
 
 	estimate_interest::DirectionStatus msg;
+	
 	while(ros::ok())
 	{
-		ros::spinOnce();
-		persons.setMessage(msg);
-		dirPublisher.publish(msg);
-		ROS_INFO("sent DIRSTATUS");
-		
 
+		persons.setMessage(msg);
+		//dirPublisher.publish(msg);
+		ROS_INFO("sent DIRSTATUS");
+		ros::spinOnce();
 		loop_rate.sleep();
 	}
 	

@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include <string.h>
 
+#include "ros/ros.h"
 #include <ros/callback_queue.h>
 //Custom message files from /msg
 #include "estimate_interest/PersonInfo.h"
@@ -72,7 +73,11 @@ private:
 	FRONT
 	};
 
-	
+
+	ros::Subscriber classifyPerson = n.subscribe("persons_information", 10, &PersonList::updatePersons, this);
+	ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10);
+	//ros::Timer publishTimer = nh.createTimer(ros::Duration(1.0), ros::PersonList::sendMessage&, this);
+
 	int id;
 	std::vector<Position> positions;
 	double speed;
@@ -89,11 +94,11 @@ public:
 	{}
 	//member functions
 	void print();
-	
 	void setSpeed();
 	void addPosition(Position pos) { positions.push_back(pos); }
 	void setStatus();
 	void setDirection();
+
 
 	Position getPosition();
 	Status getStatus(){ return status;}
@@ -115,6 +120,7 @@ public:
 	void updatePositions();
 	void updateStatus();
 	void setMessage(estimate_interest::DirectionStatus& msg);
+	void sendMessage(ros::Publisher& publisher, estimate_interest::DirectionStatus& msg);
 };
 
 

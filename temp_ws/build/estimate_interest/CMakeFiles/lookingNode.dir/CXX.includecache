@@ -73,6 +73,8 @@ unistd.h
 -
 string.h
 -
+ros/ros.h
+/home/johs/prosjekt/temp_ws/src/estimate_interest/include/estimate_interest/ros/ros.h
 ros/callback_queue.h
 -
 estimate_interest/PersonInfo.h
