@@ -74,8 +74,7 @@ private:
 	};
 
 
-	ros::Subscriber classifyPerson = n.subscribe("persons_information", 10, &PersonList::updatePersons, this);
-	ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10);
+
 	//ros::Timer publishTimer = nh.createTimer(ros::Duration(1.0), ros::PersonList::sendMessage&, this);
 
 	int id;
@@ -91,6 +90,7 @@ public:
 		, positions(1, Position(msg))
 		, speed(0.0)
 		, status(static_cast<Person::Status>(5)) 
+		
 	{}
 	//member functions
 	void print();
@@ -113,14 +113,26 @@ public:
 class PersonList{
 
 	std::vector<Person> persons;
+
+	//ROS Subscriber and Publisher member
+	ros::NodeHandle personNh;
+	ros::Subscriber personSubscriber;
+	ros::Publisher personPublisher;
 public:
-	//constructors
-	PersonList() : persons(){}
 	void updatePersons(const estimate_interest::PersonsArray::ConstPtr& msg);
+
+	//constructors
+	PersonList() 
+		: persons()
+		, personSubscriber(personNh.subscribe("persons_information", 10, &PersonList::updatePersons, this))
+		, personPublisher(personNh.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10))
+	{}
+	
 	void updatePositions();
 	void updateStatus();
+
 	void setMessage(estimate_interest::DirectionStatus& msg);
-	void sendMessage(ros::Publisher& publisher, estimate_interest::DirectionStatus& msg);
+	void sendMessage(estimate_interest::DirectionStatus& msg);
 };
 
 

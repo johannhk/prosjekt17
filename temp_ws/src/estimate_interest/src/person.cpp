@@ -123,9 +123,12 @@ void PersonList::setMessage(estimate_interest::DirectionStatus& msg) {
 			}
 		}
 	}
+
+	personPublisher.publish(msg);
+
 }
 
-void PersonList::sendMessage(ros::Publisher& publisher, estimate_interest::DirectionStatus& msg) {
+void PersonList::sendMessage(estimate_interest::DirectionStatus& msg) {
 
 
 
@@ -139,26 +142,23 @@ int main(int argc, char** argv) {
 	PersonList persons;
 	
 	//callback function updatePersons for perceived persons
-	//ros::Subscriber classifyPerson = n.subscribe("persons_information", 10, &PersonList::updatePersons, &persons);
-	
+	//ros::Subscriber classifyPerson = n.subscribe("persons_information", 10, &PersonList::updatePersons, &persons);	
 	//publisher node sending direction and status
-	ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10);
-	ros::Timer publishTimer = nh.createTimer(ros::Duration(1.0), ros::PersonList::sendMessage&, persons);
-
+	//ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10);
+	//ros::Timer publishTimer = nh.createTimer(ros::Duration(1.0), ros::PersonList::sendMessage&, persons);
 	ros::Rate loop_rate (0.2);
 
-	estimate_interest::DirectionStatus msg;
-	
-	while(ros::ok())
+	//estimate_interest::DirectionStatus msg;
+	ros::spin();
+	/*while(ros::ok())
 	{
 
-		persons.setMessage(msg);
-		//dirPublisher.publish(msg);
 		ROS_INFO("sent DIRSTATUS");
-		ros::spinOnce();
 		loop_rate.sleep();
+		spinOnce();
+
 	}
 	
-	//ros::spin();
-	//std::cout<<"current position is"<<person1.get_position().get_distance_cyborg();
+	ros::spin();
+	std::cout<<"current position is"<<person1.get_position().get_distance_cyborg();*/
 }

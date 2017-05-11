@@ -15,11 +15,9 @@
 #include <netdb.h> 
 
 
-//ip4 address and port for the trollface TCP server
+//IP4 address and port for the trollface TCP server
 #define IP_ADDRESS 	"10.0.2.15"
 #define PORT 		"8888"
-
-//static const actionUnit emptyAU;
 
 //connects to trollserver via TCP
 int connectToServer(const char* ip_address, const char* port_number)
@@ -75,20 +73,15 @@ int main(int argc, char **argv)
 	Expression current;
 	Expression previous;
 
-	//subscribers with callback functions to update current Expression
-	ros::Subscriber dirSub = n.subscribe("direction_and_status", 10, &Expression::addLookDirection, &current);
-	ros::Subscriber speechSub = n.subscribe("speech_topic", 10, &Expression::addSpeech, &current);
-	
-
 	//rate set in hz
 	ros::Rate sending_rate (0.2);
 	std::string msgString;
 	while(ros::ok())
 	{
-		ROS_INFO("Sleeping");
+		ROS_INFO("Sleep");
 		sending_rate.sleep();
-		ROS_INFO("Awakening");
-		msgString = current.createExpression(previous);
+		ROS_INFO("!ASD!");
+		//msgString = current.createExpression(previous);
 		//sendString(socket_id, msgString);
 		ros::spinOnce();
 		sending_rate.sleep();	}

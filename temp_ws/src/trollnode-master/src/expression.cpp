@@ -56,7 +56,7 @@ void Expression::addLookDirection(const estimate_interest::DirectionStatus::Cons
 {
 	lookDir = msg->direction;
 	emotion = "angry";
-	ROS_INFO("GOT DIRECTION %s EMOTION IS %s", msg->direction.c_str(), emotion);
+	ROS_INFO("GOT DIRECTION %s EMOTION IS %s", lookDir, emotion);
 	return;
 }
 
@@ -204,4 +204,11 @@ std::string Expression::createExpression(Expression previous)
 	relaxExpression(previous);
 	return translateToString();
 
+}
+
+void Expression::sendString(const ros::TimerEvent& timer)
+{
+
+
+	return;
 }
