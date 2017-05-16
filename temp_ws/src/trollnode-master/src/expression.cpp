@@ -19,8 +19,11 @@
 
 
 /*mapping strings look and emotion from ROS modules to templates with actions being sent to the trollface*/
-void Expression::addActions(std::string action)
+void Expression::addActions(std::string expr)
 {
+	bool inUse;
+	std::vector<actionUnit> foundExpression;
+
 	//collection of actions for each expression
 	static std::map< std::string, std::vector<actionUnit> > lookup = {
 		{ "angry", {{3,0,0,1,1},{4,0,0,1,1},{5,0,0,1,1},{6,0,0,1,1},{7,0,0,1,1},{23,0,0,1,1}} },
@@ -39,12 +42,25 @@ void Expression::addActions(std::string action)
 	};
 
 	//setting actions to vector<actionUnit> corresponding to the recieved expression
-	if (action.compare("") != 0) {
-		auto it = lookup.find(action);
+	if (expr.compare("") != 0) {
+		auto it = lookup.find(expr);
 		if (it != lookup.end()) {
-			actions.insert(actions.end(), it->second.begin(), it->second.end());
+			ROS_INFO("setter foundExpression %i", it->second.size());
+			foundExpression = it->second;
+			for(int i = 0;i < foundExpression.size(); i++) {
+				ROS_INFO("looking at somehting");
+				inUse = false;
+				for(int j = 0; j < this->actions.size(); j++) { 
+					if(foundExpression[i].AU == this->actions[j].AU)
+						inUse = true;
+				}
+
+				if(!inUse)
+					actions.push_back(foundExpression[i]);
+			}
+
 		} else {
-			ROS_ERROR("Did not recognize action [%s], current expression not changed.",action.c_str());
+			ROS_ERROR("Did not recognize expression [%s], current expression not changed.", expr.c_str());
 			//actions = NULL;
 		}
 	 }	
@@ -56,7 +72,8 @@ void Expression::addLookDirection(const estimate_interest::DirectionStatus::Cons
 {
 	lookDir = msg->direction;
 	emotion = "angry";
-	ROS_INFO("GOT DIRECTION %s EMOTION IS %s", lookDir, emotion);
+	ROS_INFO_STREAM(*msg);
+	//ROS_INFO("GOT DIRECTION %s EMOTION IS %s", lookDir, emotion);
 	return;
 }
 
@@ -147,27 +164,28 @@ std::string translateAction(actionUnit action)
 		return "";
 	}
 }
-
-void Expression::relaxExpression(Expression previous)
+//This
+void Expression::relaxExpression(Expression &previous)
 {
 	bool found;
 	for (int i=0; i < previous.actions.size();i++)
 	{
 		found=false;
-		for (int j=0; j<this->actions.size();j++)
+		for (int j=0; j < this->actions.size();j++)
 		{
-			/*if the same action is used by following expressions, change new startIntensity to 
-			current intensity*/
+			/*if the same action is used by following expressions, change startIntensity to 
+			previous endIntensity*/
 			if(this->actions[j].AU==previous.actions[i].AU)
 			{
 				this->actions[j].startIntensity = previous.actions[i].stopIntensity;
 				found=true;
+				ROS_INFO("SAME ACTION");
 				break;
 			}
 		/*if a previous action has not ended with neutral_intensity, 
 		add relaxing action to new expression */
 		}
-		if(previous.actions[i].stopIntensity!=NEUTRAL_INTENSITY && !found)
+		if(previous.actions[i].stopIntensity != NEUTRAL_INTENSITY && !found)
 				this->actions.push_back({previous.actions[i].AU, previous.actions[i].startTime,
 				previous.actions[i].stopIntensity, previous.actions[i].stopTime, NEUTRAL_INTENSITY});
 	}
@@ -195,10 +213,11 @@ std::string Expression::translateToString()
 		return "";
 }
 
-std::string Expression::createExpression(Expression previous)
+std::string Expression::createExpression(Expression &previous)
 {
 	//addLookDirection();
 	//addSpeech();
+	ROS_INFO("create expr");
 	addActions(lookDir);
 	addActions(emotion);
 	relaxExpression(previous);
@@ -209,6 +228,15 @@ std::string Expression::createExpression(Expression previous)
 void Expression::sendString(const ros::TimerEvent& timer)
 {
 
+
+	return;
+}
+
+void Expression::unsubscribe()
+{
+	dirSub.shutdown();
+	speechSub.shutdown();
+	emotionSub.shutdown();
 
 	return;
 }

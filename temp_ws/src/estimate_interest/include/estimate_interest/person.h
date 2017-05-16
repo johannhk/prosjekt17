@@ -28,7 +28,7 @@
 class Position{
 	int x;
 	int y;
-	float time;
+	ros::Time time;
 
 public:
 	//constructors
@@ -36,16 +36,18 @@ public:
 	//!!!!Cant call from callback function
 	Position(estimate_interest::PersonInfo msg) 
 		: x(msg.x)
-		, y(msg.y) 
+		, y(msg.y)
+		, time(msg.timestamp)
+
 	{}
 	/*Position(estimate_interest::PersonInfo::ConstPtr& msg) 
 		: x(msg->x)
 		, y(msg->y) 
 	{}*/
-	Position(int x, int y, double ros_time) 
+	Position(int x, int y, float ros_time) 
 		: x(x)
 		, y(y)
-		, time(time) 
+		, time(ros_time) 
 	{}
 
 	void print();
@@ -116,16 +118,16 @@ class PersonList{
 
 	//ROS Subscriber and Publisher member
 	ros::NodeHandle personNh;
-	ros::Subscriber personSubscriber;
-	ros::Publisher personPublisher;
+	ros::Subscriber personSub;
+	ros::Publisher personPub;
 public:
 	void updatePersons(const estimate_interest::PersonsArray::ConstPtr& msg);
 
 	//constructors
 	PersonList() 
 		: persons()
-		, personSubscriber(personNh.subscribe("persons_information", 10, &PersonList::updatePersons, this))
-		, personPublisher(personNh.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10))
+		, personSub(personNh.subscribe("persons_information", 10, &PersonList::updatePersons, this))
+		, personPub(personNh.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10))
 	{}
 	
 	void updatePositions();

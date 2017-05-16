@@ -24,9 +24,7 @@ struct actionUnit
 
 class Expression
 {
-	//actionUnit lookDirection;
-
-	//ROS subcribers for topics influencing the trollface
+	//ROS subcribers for incoming topics and timer to not overload the trollface server
 	ros::NodeHandle exprNh;
 	ros::Subscriber dirSub;
 	ros::Subscriber speechSub ;
@@ -49,13 +47,19 @@ public:
 		, sendTimer(exprNh.createTimer(ros::Duration(4.0), &Expression::sendString, this))
 	{}
 
+	//std::vector<actionUnit> getActions() { return actions; }
+	
+	
+	//function headers
+	void unsubscribe();
 	void sendString(const ros::TimerEvent& timer);
 	void addActions(std::string expr);
 	void addLookDirection(const estimate_interest::DirectionStatus::ConstPtr& msg);
 	void addSpeech(const speech_processing::Expression::ConstPtr& msg);
-	void relaxExpression(Expression previous);
+	void relaxExpression(Expression &previous);
+	std::string createExpression(Expression &previous);
 	std::string translateToString();
-	std::string createExpression(Expression previous);
+	
 	
 
 };

@@ -14,9 +14,11 @@ double Position::getDistanceToPoint(Position position)
 	return sqrt(pow(this->x-position.x, 2)+pow(this->y-position.y, 2));
 }
 
+//returns seconds elapsed in float type
 double Position::getTimeDifference(Position position)
 {
-	return (this->time-position.time);
+
+	return (this->time - position.time).toSec();
 }
 
 void Position::print()
@@ -34,8 +36,11 @@ void Person::setSpeed()
 {
 	if(2<=positions.size())
 	{
+		//find distance between the two last tracked points
 		double dist = positions.back().getDistanceToPoint(positions.end()[-2]);
-		speed = dist/positions.back().getTimeDifference(positions.end()[-2]);
+		//find time interval between the two last tracked points
+		double secs = positions.back().getTimeDifference(positions.end()[-2]);
+		speed = dist/secs;
 	}
 }
 void Person::setDirection()
@@ -78,12 +83,12 @@ void Person::print()
 
 void PersonList::updatePersons(const estimate_interest::PersonsArray::ConstPtr& msg)
 {
-	ROS_INFO("%i persons tracked, %i persons in array", msg->persons.size(), persons.size());
+	ROS_INFO("%i persons found, %i persons already tracked", msg->persons.size(), persons.size());
 
 	bool tracked;
 	for (int i = 0; i < msg->persons.size(); i++) {
 		tracked = false;
-		Position pos(msg->persons[i].x, msg->persons[i].y, 2.0);
+		Position pos(msg->persons[i]);
 		for(int j = 0; j < persons.size(); j++) {
 			if (msg->persons[i].id == this->persons[j].id) {
 				tracked = true;
@@ -123,8 +128,9 @@ void PersonList::setMessage(estimate_interest::DirectionStatus& msg) {
 			}
 		}
 	}
-
-	personPublisher.publish(msg);
+	//ROS_INFO("sent DIRSTATUS dir: %s, bool: %B", msg.direction.str(), msg.interested);
+	ROS_INFO_STREAM(msg);
+	personPub.publish(msg);
 
 }
 
@@ -146,19 +152,16 @@ int main(int argc, char** argv) {
 	//publisher node sending direction and status
 	//ros::Publisher dirPublisher = n.advertise<estimate_interest::DirectionStatus>("direction_and_status", 10);
 	//ros::Timer publishTimer = nh.createTimer(ros::Duration(1.0), ros::PersonList::sendMessage&, persons);
-	ros::Rate loop_rate (0.2);
+	ros::Rate loop_rate (1);
 
-	//estimate_interest::DirectionStatus msg;
-	ros::spin();
-	/*while(ros::ok())
+	estimate_interest::DirectionStatus msg;
+	//ros::spin();
+	while(ros::ok())
 	{
-
-		ROS_INFO("sent DIRSTATUS");
 		loop_rate.sleep();
-		spinOnce();
-
+		ros::spinOnce();
+		persons.setMessage(msg);
 	}
 	
-	ros::spin();
-	std::cout<<"current position is"<<person1.get_position().get_distance_cyborg();*/
+	//std::cout<<"current position is"<<person1.get_position().get_distance_cyborg();
 }

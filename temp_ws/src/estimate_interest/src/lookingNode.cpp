@@ -23,6 +23,7 @@ void updatePositions(estimate_interest::PersonsArray* msg)
 		person.y=i;
 		msg->persons.push_back(person);
 	}
+	
 }
 
 int main(int argc, char** argv)
@@ -31,7 +32,7 @@ int main(int argc, char** argv)
 	ros::init(argc, argv, "lookingNode");
 	ros::NodeHandle n;
 	ros::Publisher lookPublisher = n.advertise<estimate_interest::PersonsArray>("persons_information", 10);
-	ros::Rate loop_rate(0.5);
+	ros::Rate loop_rate(2);
 
 	estimate_interest::PersonsArray arr;
 
